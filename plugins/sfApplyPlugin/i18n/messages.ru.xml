@@ -1,0 +1,167 @@
+<?xml version="1.0" ?>
+<xliff version="1.0">
+  <file original="global" source-language="en_US" datatype="plaintext">
+    <body>	    
+	  <trans-unit id="1">
+        <source>Please enter your username and click "Reset." A link permitting you to change your password will then be sent to the email address associated with your username. If you do not have an email address then your password hint will be displayed.</source>
+        <target>Пожалуста введите ваш логин и нажмите "Отправить". Линк позволяющий изменить ваш пароль будет отправлено в ваш адрес электронной почты связанный с вашим логинем. Если у вас нет электронной почты  то намек на парол будет показан.</target>
+      </trans-unit>
+	  <trans-unit id="2">
+        <source>Invite Your Friends</source>
+        <target>Пригласи Друзей</target>
+      </trans-unit>
+      <trans-unit id="3">
+        <source>(separate emails by commas)</source>
+        <target>(отделяй электронные адреса запятыми)</target>
+      </trans-unit>
+      <trans-unit id="4">
+        <source>From</source>
+        <target>От кого</target>
+      </trans-unit>
+	  <trans-unit id="5">
+        <source>Personal message</source>
+        <target>Личное Сообщения</target>
+      </trans-unit>
+	  <trans-unit id="6">
+        <source>(optional)</source>
+        <target>(необязателен)</target>
+      </trans-unit>
+	  <trans-unit id="7">
+        <source>Invite</source>
+        <target>Пригласи</target>
+      </trans-unit>
+	  <trans-unit id="8">
+        <source>Insert from my Address Book</source>
+        <target>Вставить из моей Адрес Книги</target>
+      </trans-unit>
+	  <trans-unit id="9">
+        <source>You cannot send invitation to yourself</source>
+        <target>Вы не можете отправить приглашение к себе</target>
+      </trans-unit>
+	  <trans-unit id="10">
+        <source>%email% already registered in hemsinif.com and you already have this user as a friend</source>
+        <target>%email% уже зарегистрирован в hemsinif.com и этот пользовател ваш друг</target>
+      </trans-unit>
+	  <trans-unit id="11">
+        <source>You have already sent friend request to %email%</source>
+        <target>Вы уже отправили приглашение пользователью %email%</target>
+      </trans-unit>
+	  <trans-unit id="12">
+        <source>%email% already registered in hemsinif.com and we send a friend request for you</source>
+        <target>%email% уже зарегистрирован в hemsinif.com и мы отправили приглашение этому пользователью</target>
+      </trans-unit>
+	  <trans-unit id="13">
+        <source>An invitation email has been sent to %email%</source>
+        <target>Приглашение было отправлено к %email%</target>
+      </trans-unit>	  
+	   <trans-unit id="14">
+        <source>A confirmation email has been sent to the email address. You will need to click on a link provided in that email in order to change your password. If you do not see the message, be sure to check your "spam" and "bulk" email folders.</source>
+        <target>Подтверждающее письмо было отправлено на ваш адрес. Вы должны кликнуть линк имеюшийся а этом письме чтобы изменить ваш пароль. Если вы не найдете это письмо проверте spam или bulk папки.</target>
+      </trans-unit>	
+	  <trans-unit id="15">
+        <source>Your password has been successfully reset. In the future, be sure to log in with your new password.</source>
+        <target>Ваш пароль был удачно изменень. В будущем используйте новый пароль.</target>
+      </trans-unit>
+	  <trans-unit id="16">
+        <source>Click the button below to change your password. For security reasons, you will receive a confirmation email containing a link allowing you to complete the password change.</source>
+        <target>Чтобы изменить пароль кликните внизу. Для того чтобы закончить изменение паролья вы получите электронное письмо содержащий линк</target>
+      </trans-unit>	
+	  <trans-unit id="17">
+        <source>Account Settings</source>
+        <target>Информация об аккаунте</target>
+      </trans-unit>
+	  <trans-unit id="18">
+        <source>Reset Password</source>
+        <target>Иэменить пароль</target>
+      </trans-unit>
+	  <trans-unit id="19">
+        <source>Invite more friends</source>
+        <target>Пригласи еще</target>
+      </trans-unit>	
+	  <trans-unit id="20">
+        <source>Thank you for confirming your account! You are now logged into the site.</source>
+        <target>Спасибо что подтвердили свой аккаунт. Вы сейчас вошли в сайт.</target>
+      </trans-unit>
+	  <trans-unit id="21">
+        <source>You may now change your password using the form below.</source>
+        <target>Сейчас вы сможете поменять свой пароль этой формой.</target>
+      </trans-unit>	
+	  <trans-unit id="22">
+        <source>Continue</source>
+        <target>Продолжай</target>
+      </trans-unit>
+	  <trans-unit id="23">
+        <source>One or more emails are invalid</source>
+        <target>Один или несколько электронных адресов неправилен</target>
+      </trans-unit>	
+	  <trans-unit id="24">
+        <source>new password</source>
+        <target>новый пароль</target>
+      </trans-unit>	
+	  <trans-unit id="25">
+        <source>confirm password</source>
+        <target>подтвердите пароль</target>
+      </trans-unit>
+	   <trans-unit id="26">
+        <source>The passwords did not match.</source>
+        <target>Пароли не совпадают</target>
+      </trans-unit>		
+	  <trans-unit id="27">
+        <source>"%value%" is too short (%min_length% characters min).</source>
+        <target>"%value%" слишком короткий (минимум %min_length% символов)</target>
+      </trans-unit>	
+	   <trans-unit id="28">
+        <source>"%value%" is too long (%max_length% characters max).</source>
+        <target>"%value%" слишком длинный (максимум %max_length% символов)</target>
+      </trans-unit>
+	   <trans-unit id="29">
+        <source>Your password hint word is "%hint%"</source>
+        <target>"%hint%" это ваш намек на пароль</target>
+      </trans-unit>
+	  <trans-unit id="30">
+        <source>If this was not helpful, please email us at info at hemsinif dot az</source>
+        <target>Если это вам не помогло, то напишите нам на info at hemsinif точка az</target>
+      </trans-unit>
+	  <trans-unit id="31">
+        <source>Click the button below to change your password.</source>
+        <target>Чтобы изменить пароль кликните внизу.</target>
+      </trans-unit>
+	    <trans-unit id="32">
+        <source>Enter your information</source>
+        <target>Введите информацию</target>
+      </trans-unit>
+	      <trans-unit id="33">
+        <source>Provider</source>
+        <target>Провайдер</target>
+      </trans-unit>
+      <trans-unit id="34">
+        <source>Please enter the full email, not just the username</source>
+        <target>Пожалуйста, введите полный адрес электронной почты, а не только имя пользователя</target>
+      </trans-unit>	
+      <trans-unit id="35">
+        <source>%user_domain%  is not a valid domain for this provider</source>
+        <target>%user_domain% не является допустимым именем для этого провайдера</target>
+      </trans-unit>	
+      <trans-unit id="36">
+        <source>Login failed. Please check the email and password you have provided and try again later</source>
+        <target>Войти не удалось. Пожалуйста, проверьте адрес электронной почты и пароль, которые вы предоставили, и попробуйте еще раз позже</target>
+      </trans-unit>
+      <trans-unit id="37">
+        <source>Unable to get contacts</source>
+        <target>Не удалось получить контакты</target>
+      </trans-unit>
+      <trans-unit id="38">
+        <source>Please enter just the username, not the full email</source>
+        <target>Пожалуйста, введите только имя пользователя, а не полный адрес электронной почты</target>
+      </trans-unit>
+      <trans-unit id="39">
+        <source>Your Contacts</source>
+        <target>Ваши контакты</target>
+      </trans-unit>	
+	  <trans-unit id="40">
+        <source>Select which contacts to invite from the list below</source>
+        <target>Выберите контакты из этого списка</target>
+      </trans-unit>										 																									 																					
+    </body>			   
+  </file>
+</xliff>

@@ -1,0 +1,14 @@
+default:
+  has_layout:     on
+  layout:         layout_music_main
+editSuccess:
+  has_layout:     on
+  layout:         layout_music
+searchajaxSuccess:
+  has_layout:     off
+loadplaylistSuccess:
+  has_layout:     off
+showSuccess:
+  has_layout:     on
+  layout:         layout_music  
+  stylesheets: [playlist]

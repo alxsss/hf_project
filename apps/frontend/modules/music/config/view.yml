@@ -1,0 +1,22 @@
+default:
+  has_layout:     on
+  layout:         layout
+
+addCommentSuccess:
+  has_layout: off
+indexpageSuccess:
+  has_layout: off
+playvideoSuccess:
+  has_layout: off
+showSuccess:
+  has_layout:     on
+  stylesheets:    [twm, layout]
+  javascripts:    [twm]
+  layout:         layout
+listSuccess:
+  has_layout:     on
+  stylesheets:    [twm, layout]
+  javascripts:    [twm]
+  layout:         layout
+searchajaxSuccess:
+  has_layout:     off

@@ -1,0 +1,15 @@
+about:
+  enabled:     on 
+help:
+  enabled:     on
+ts:
+  enabled:     on  
+privacyp:
+  enabled:     on
+contact:
+  enabled:     on  
+unavailable:
+  enabled:     on    
+all:
+  with_layout: false   # Default value
+  lifetime:    86400   # Default value

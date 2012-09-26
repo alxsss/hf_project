@@ -1,0 +1,29 @@
+<?php include('schemaConfig.php') ?>
+<?php echo $config['connection'] ?>:
+  _attributes:     { package: plugins.sfPropelPollsPlugin.lib.model }
+
+  <?php echo $config['polls_table'] ?>:
+    _attributes:   { phpName: sfPoll, package: plugins.sfPropelPollsPlugin.lib.model }
+    id:
+    title:         { type: varchar, size: 255, required: true }
+    description:   longvarchar
+    is_published:  { type: boolean, required: true, default: false }
+    is_active:     { type: boolean, required: true, default: false }
+    created_at:
+    updated_at:
+
+  <?php echo $config['polls_answers_table'] ?>:
+    _attributes:   { phpName: sfPollAnswer, package: plugins.sfPropelPollsPlugin.lib.model }
+    id:
+    poll_id:       { type: integer, foreignTable: <?php echo $config['polls_table'] ?>, foreignReference: id, onDelete: cascade }
+    name:          { type: varchar, size: 255, required: true }
+    votes:         { type: integer, required: true, default: 0 }
+    created_at:
+
+  <?php echo $config['polls_users_answers_table'] ?>:
+    _attributes:   { phpName: sfPollUserAnswer, package: plugins.sfPropelPollsPlugin.lib.model }
+    id:
+    poll_id:       { type: integer, foreignTable: <?php echo $config['polls_table'] ?>, foreignReference: id, onDelete: cascade }
+    answer_id:     { type: integer, foreignTable: <?php echo $config['polls_answers_table'] ?>, foreignReference: id, onDelete: cascade }
+    user_id:       { type: integer, foreignTable: <?php echo $config['user_table'] ?>, foreignReference: <?php echo $config['user_id'] ?>, onDelete: cascade }
+    created_at:

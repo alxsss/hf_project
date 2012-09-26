@@ -1,0 +1,66 @@
+all:
+  pager:
+    homepage_max: 25
+    games_max: 20
+    status_max: 10
+    friends_max: 35
+    popular_photos_max: 35
+    message_max: 10
+    video_max: 10
+    music_max: 10
+  sfReCaptchaPlugin:
+    recaptcha_publickey:  6LfeEQwAAAAAAGT9aBP0RG6D_efFZapVPeItXYZ6
+    recaptcha_privatekey:  6LfeEQwAAAAAAIlJZl72CRHz6qnlMUFRJoPoRn1A  
+  sfMediaLibrary:
+    use_thumbnails: true
+    thumbnails_dir: thumbnails
+    normal_dir:  normal
+    #upload_dir:  media  
+  sfSimpleForumPlugin:
+    post_mimetype: text/markdown
+    forum_name:              forum
+    display_categories:      false
+    use_feeds:               no  # requires sfFeed2Plugin
+    count_views:             true  # count each time a topic is viewed performance
+    max_per_block:           10    # maximum number of links displayed
+    include_breadcrumb:      true  # include breadcrumb slot content. 
+    #breadcrumb_separator:    ' » ' # separator for breadcrumb trail
+    breadcrumb_separator:    ' >> ' 
+    max_per_page:            10    # maximum threads or messages per page
+    pages_displayed:         5     # maximum pages displayed by the pager navigation
+    feed_max:                10    # maximum messages served by feed
+    show_author_details:     false # display number of messages of post authors
+    allow_new_topic_outside_forum: true
+    user_class:              sfGuardUser          # name of the class used to manage users
+    retrieve_by_name_method: retrieveByUsername  # name of the static method used to retrieve a user by its username
+    charset:                utf-8  
+  sfContactGrabberPlugin:
+    cookie_path: /uploads/assets/cookies
+  lcOpenInviter:
+    wish-list:
+      providers: [all]
+    message:
+      subject: sizi hemsinif.com saytina devet edir
+      body: Seni hemsinif.com satina devet edirem
+      footer: hemsinif kollektivi
+  sf_guard_plugin:
+     remember_key_expiration_age:  2592000   # 30 days in seconds
+     remember_cookie_name:         hemsinifRememberMe
+  sfLanguageSwitch:
+    flagPath:  /images/flag   # optional if you wanna change the path
+    availableLanguages:
+      az:
+        title: Az
+        image: /images/flag/az.png
+      en:
+        title: En
+        image: /images/flag/en.png
+      ru:
+        title: Ru
+        image: /images/flag/ru.png   # optional if you wanna change the flag
+  .array:
+    memcache:
+      servers:
+        server_01:
+          host: hemsinif.com
+          port: 11211

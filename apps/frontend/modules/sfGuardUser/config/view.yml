@@ -1,0 +1,9 @@
+all:    
+  has_layout:     on
+  layout:         layout_profile
+statusSuccess:
+  has_layout: off
+deleteschoolSuccess:
+  has_layout: off
+userupdatesSuccess:
+  has_layout: off

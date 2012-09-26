@@ -1,0 +1,58 @@
+advertise:
+  class: sfPropelRouteCollection
+  options:
+    model:                Advertise
+    module:               advertise
+    prefix_path:          advertise
+    column:               id
+    with_wildcard_routes: true
+
+sf_social_group:
+  class: sfPropelRouteCollection
+  options:
+    model:                sfSocialGroup
+    module:               group
+    prefix_path:          group
+    column:               id
+    with_wildcard_routes: true
+
+message:
+  class: sfPropelRouteCollection
+  options:
+    model:                Message
+    module:               message
+    prefix_path:          message
+    column:               id
+    with_wildcard_routes: true
+
+photo:
+  class: sfPropelRouteCollection
+  options:
+    model:                Photo
+    module:               photos
+    prefix_path:          photos
+    column:               id
+    with_wildcard_routes: true
+
+# default rules
+login:
+  url:   /login
+  param: { module: sfGuardAuth, action: signin }
+resetRequest:
+  url: /reset-request
+  param: { module: sfApply, action: resetRequest }
+homepage:
+  url:   /
+  param: { module: default, action: index }
+  requirements: { sf_culture: (?:az|en|ru) }
+register:
+  url:   /register/:id
+  param: { module: sfGuardAuth, action: register ,id: 0}
+
+default_index:
+  url:   /:sf_culture/:module
+  requirements: { sf_culture: (?:az|en|ru) }
+  param: { action: index }
+default:
+  url:   /:sf_culture/:module/:action/*
+  requirements: { sf_culture: (?:az|en|ru) }

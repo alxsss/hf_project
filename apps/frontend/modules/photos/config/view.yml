@@ -1,0 +1,15 @@
+all:
+  has_layout:     on
+  layout:         layout_profile   
+addCommentSuccess:
+  has_layout: off
+deleteCommentSuccess:
+  has_layout: off
+showalbumphotoSuccess:
+  has_layout:     off
+rateSuccess:
+  has_layout:     off  
+favoriteSuccess:
+  has_layout:     off
+deletefavphotoSuccess:
+  has_layout:     off

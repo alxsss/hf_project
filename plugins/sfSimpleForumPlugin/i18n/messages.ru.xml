@@ -1,0 +1,207 @@
+<?xml version="1.0" ?>
+<xliff version="1.0">
+  <file original="global" source-language="en_US" datatype="plaintext">
+    <body>
+	  <trans-unit id="1">
+        <source>Forum</source>
+        <target>Форум</target>
+      </trans-unit>
+	   <trans-unit id="2">
+        <source>New topic</source>
+        <target>Новая тема</target>
+      </trans-unit>
+	  <trans-unit id="3">
+        <source>No topic yet</source>
+        <target>Новых тем нет</target>
+      </trans-unit>
+	  <trans-unit id="4">
+        <source>No message</source>
+        <target>Новых сообщений нет</target>
+      </trans-unit>
+	  	  <trans-unit id="5">
+        <source>One topic</source>
+        <target>Одна тема</target>
+      </trans-unit>
+	   <trans-unit id="6">
+        <source>One message</source>
+        <target>Одно сообщение</target>
+      </trans-unit>	
+	    <trans-unit id="7">
+        <source>%posts% messages</source>
+        <target>%posts% сообщений</target>
+      </trans-unit>
+	  <trans-unit id="8">
+        <source>%topics% topics</source>
+        <target>%topics% тем</target>
+      </trans-unit>
+	  <trans-unit id="9">
+        <source>1 message, no reply</source>
+        <target>1 сообщение, нет ответов</target>
+      </trans-unit>	 
+	   <trans-unit id="11">
+        <source>1 view</source>
+        <target>1 показ</target>
+      </trans-unit>
+	   <trans-unit id="12">
+        <source>%views% views</source>
+        <target>%views% показов</target>
+      </trans-unit>
+	  <trans-unit id="13">
+        <source>topics</source>
+        <target>тем</target>
+      </trans-unit>	 
+	  <trans-unit id="14">
+        <source>Topics</source>
+        <target>Тем</target>
+      </trans-unit>     
+      <trans-unit id="15">
+        <source>Messages</source>
+        <target>Сообщения</target>
+      </trans-unit>	
+	  <trans-unit id="16">
+        <source>Last Message</source>
+        <target>Последная сообщения</target>
+      </trans-unit>
+	 <trans-unit id="17">
+        <source>Topic</source>
+        <target>Тема</target>
+      </trans-unit> 
+	  <trans-unit id="18">
+        <source>Replies</source>
+        <target>Ответы</target>
+      </trans-unit>
+	  <trans-unit id="19">
+        <source>Views</source>
+        <target>Показов</target>
+      </trans-unit>
+	  <trans-unit id="20">
+        <source>view</source>
+        <target>показ</target>
+      </trans-unit>	
+	  <trans-unit id="21">
+        <source>Post a reply</source>
+        <target>Ответить</target>
+      </trans-unit>	
+	  <trans-unit id="22">
+        <source>Stick</source>
+        <target>Прилипать</target>
+      </trans-unit>	
+	  <trans-unit id="23">
+        <source>Unstick</source>
+        <target>Отпустить</target>
+      </trans-unit>
+	  <trans-unit id="24">
+        <source>Lock</source>
+        <target>Закрыть</target>
+      </trans-unit>
+	  <trans-unit id="25">
+        <source>Unlock</source>
+        <target>Открыть</target>
+      </trans-unit>	
+	  <trans-unit id="26">
+        <source>Post</source>
+        <target>Отправить</target>
+      </trans-unit>	
+	  <trans-unit id="27">
+        <source>Content</source>
+        <target>Содержание</target>
+      </trans-unit>	
+	  <trans-unit id="28">
+        <source>This topic was locked by a forum moderator. No reply can be added.</source>
+        <target>Эта тема закрыта модератором.</target>
+      </trans-unit>	
+	  <trans-unit id="29">
+        <source>Last reply</source>
+        <target>Последний ответ</target>
+      </trans-unit>	
+	  <trans-unit id="30">
+        <source>Posted</source>
+        <target>Отправлено</target>
+      </trans-unit>	
+	  <trans-unit id="31">
+        <source>Sticked topic</source>
+        <target>sticky</target>
+      </trans-unit>	
+	  <trans-unit id="32">
+        <source>Locked topic</source>
+        <target>Закрытая тема</target>
+      </trans-unit>	  
+	  <trans-unit id="33">
+        <source>less than a minute</source>
+        <target>менше чем одна минута</target>
+      </trans-unit>
+	  <trans-unit id="34">
+        <source>1 minute</source>
+        <target>1 минут</target>
+      </trans-unit>	
+	  <trans-unit id="35">
+        <source>%minutes% minutes</source>
+        <target>%minutes% минут</target>
+      </trans-unit>
+	  <trans-unit id="36">
+        <source> ago by </source>
+        <target> тому назад </target>
+      </trans-unit>	
+	  <trans-unit id="37">
+        <source>about %hours% hours</source>
+        <target>около %hours% часа</target>
+      </trans-unit>
+	  <trans-unit id="38">
+        <source>%date% ago by %author%</source>
+        <target>%date% тому назад %author%</target>
+      </trans-unit>	
+	  <trans-unit id="39">
+        <source>about 1 hour</source>
+        <target>около 1 часа</target>
+      </trans-unit>	
+	  <trans-unit id="40">
+        <source>%days% days</source>
+        <target>%days% дней</target>
+      </trans-unit>
+	    <trans-unit id="41">
+        <source>about 1 month</source>
+        <target>около 1 месяца</target>
+      </trans-unit>
+	    <trans-unit id="42">
+        <source>%months% months</source>
+        <target>%months% месяцев</target>
+      </trans-unit>
+	    <trans-unit id="43">
+        <source>about 1 year</source>
+        <target>около 1 года</target>
+      </trans-unit>
+	  <trans-unit id="44">
+        <source>over %years% years</source>
+        <target>около %years% лет</target>
+      </trans-unit>
+	  <trans-unit id="45">
+        <source>Latest messages</source>
+        <target>Последняя сообщения</target>
+      </trans-unit>
+	  <trans-unit id="46">
+        <source>There is no topic in this discussion yet. Perhaps you would like to %start%?</source>
+        <target>Здесь нет тем. Может вы </target>
+      </trans-unit>	
+	  <trans-unit id="47">
+        <source>start a new one</source>
+        <target>создадите новую тему</target>
+      </trans-unit>
+	  <trans-unit id="48">
+        <source>1 day</source>
+        <target>1 день</target>
+      </trans-unit>
+	    <trans-unit id="49">
+        <source>last page</source>
+        <target>последняя страница</target>
+      </trans-unit>
+	   <trans-unit id="50">
+        <source>Messages by %user%</source>
+        <target>Сообщения пользователя %user%</target>
+      </trans-unit>	 
+	   <trans-unit id="51">
+        <source>Topics by %user%</source>
+        <target>Темы пользователя %user%</target>
+      </trans-unit>																									  		 
+    </body>
+  </file>
+</xliff>

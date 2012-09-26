@@ -1,0 +1,19 @@
+sf_propel_polls_list:
+  url: /polls
+  param: { module: sfPolls, action: list }
+  requirements: {id: \d+} 
+  
+sf_propel_polls_detail:
+  url: /poll_detail/:id/:lt
+  param: { module: sfPolls, action: detail, lt: 0 }
+  requirements: {id: \d+}
+
+sf_propel_polls_results:
+  url: /poll_results/:id/:lt
+  param: { module: sfPolls, action: results, lt: 0 }
+  requirements: {id: \d+} 
+  
+sf_propel_polls_vote:
+  url: /poll_vote
+  param: { module: sfPolls, action: vote }
+  requirements: {id: \d+} 

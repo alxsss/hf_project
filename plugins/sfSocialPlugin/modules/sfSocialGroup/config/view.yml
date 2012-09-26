@@ -1,0 +1,17 @@
+all: 
+  has_layout:  on
+  layout:  layout_profile
+statusSuccess:
+  has_layout:     off
+addstatuscommentSuccess:
+  has_layout:     off
+deletestatuscommentSuccess:
+  has_layout:     off
+deletegroupstatusSuccess:
+  has_layout:     off
+deletegroupuserSuccess:
+  has_layout:     off
+denySuccess:
+  has_layout:     off
+acceptSuccess:
+  has_layout:     off    

@@ -1,0 +1,63 @@
+<?xml version="1.0" ?>
+<xliff version="1.0">
+  <file original="global" source-language="en_US" datatype="plaintext">
+    <body>
+	  <trans-unit id="1">
+        <source>Featured</source>
+        <target>Populyar</target>
+      </trans-unit>
+      <trans-unit id="2">
+        <source>Hot Right Now</source>
+        <target>İndi İsti</target>
+      </trans-unit>
+      <trans-unit id="3">
+        <source>All Time Best</source>
+        <target>Həmişə yaxşı</target>
+      </trans-unit>
+	  <trans-unit id="4">
+        <source>Sports</source>
+        <target>İdman</target>
+      </trans-unit>
+	  <trans-unit id="5">
+        <source>Shooter</source>
+        <target>Atıcı</target>
+      </trans-unit>
+	  <trans-unit id="6">
+        <source>Strategy</source>
+        <target>Strategiya</target>
+      </trans-unit>
+	  <trans-unit id="7">
+        <source>Puzzle</source>
+        <target>Tapmaca</target>
+      </trans-unit>
+	  <trans-unit id="8">
+        <source>Multiplayer</source>
+        <target>Bir necə oyunçu</target>
+      </trans-unit>
+	  <trans-unit id="9">
+        <source>Adventure</source>
+        <target>Məcara</target>
+      </trans-unit>	
+	  <trans-unit id="10">
+        <source>Life and Style</source>
+        <target>Həyat və Stil</target>
+      </trans-unit>	
+	  <trans-unit id="11">
+        <source>Social</source>
+        <target>Sosial</target>
+      </trans-unit>	
+	  <trans-unit id="12">
+        <source>Action</source>
+        <target>Vuruşma</target>
+      </trans-unit>		 
+	  <trans-unit id="13">
+        <source>View %num_games% more</source>
+        <target>Əlavə %num_games% oyun</target>
+      </trans-unit>	
+	  <trans-unit id="14">
+        <source>All games played by %author%</source>
+        <target>%author% adlı istifadəçinin bütün oyunları</target>
+      </trans-unit>		    			  													 																																					 																					
+    </body>
+  </file>
+</xliff>

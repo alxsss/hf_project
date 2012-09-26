@@ -1,0 +1,207 @@
+<?xml version="1.0" ?>
+<xliff version="1.0">
+  <file original="global" source-language="en_US" datatype="plaintext">
+    <body>
+	  <trans-unit id="1">
+        <source>Forum</source>
+        <target>Forum</target>
+      </trans-unit>
+	  <trans-unit id="2">
+        <source>New topic</source>
+        <target>Yeni mövzu</target>
+      </trans-unit>
+	  <trans-unit id="3">
+        <source>No topic yet</source>
+        <target>Yeni mövzu yoxdur</target>
+      </trans-unit>
+	  <trans-unit id="4">
+        <source>No message</source>
+        <target>ismarıclar yoxdur</target>
+      </trans-unit> 
+	  <trans-unit id="5">
+        <source>One topic</source>
+        <target>Bir mövzu</target>
+      </trans-unit>
+	   <trans-unit id="6">
+        <source>One message</source>
+        <target>Bir ismarıc</target>
+      </trans-unit>	
+	    <trans-unit id="7">
+        <source>%posts% messages</source>
+        <target>%posts% ismarıc</target>
+      </trans-unit>
+	  <trans-unit id="8">
+        <source>%topics% topics</source>
+        <target>%topics% mövzu</target>
+      </trans-unit>
+	  <trans-unit id="9">
+        <source>1 message, no reply</source>
+        <target>1 ismarıc, cavab yoxdur</target>
+      </trans-unit>
+	  <trans-unit id="11">
+        <source>1 view</source>
+        <target>1 baxış</target>
+      </trans-unit>
+	   <trans-unit id="12">
+        <source>%views% views</source>
+        <target>%views% baxış</target>
+      </trans-unit>
+	  <trans-unit id="13">
+        <source>topics</source>
+        <target>mövzular</target>
+      </trans-unit>	
+	  <trans-unit id="14">
+        <source>Topics</source>
+        <target>Mövzular</target>
+      </trans-unit>       
+	  <trans-unit id="15">
+        <source>Messages</source>
+        <target>İsmarıclar</target>
+      </trans-unit>
+	  <trans-unit id="16">
+        <source>Last Message</source>
+        <target>Axırıncı ismarıc</target>
+      </trans-unit>
+	  <trans-unit id="17">
+        <source>Topic</source>
+        <target>Mövzu</target>
+      </trans-unit> 
+	  <trans-unit id="18">
+        <source>Replies</source>
+        <target>Cavablar</target>
+      </trans-unit>
+	  <trans-unit id="19">
+        <source>Views</source>
+        <target>Baxılmışdır</target>
+      </trans-unit>
+	  <trans-unit id="20">
+        <source>view</source>
+        <target>bax</target>
+      </trans-unit>	
+	  <trans-unit id="21">
+        <source>Post a reply</source>
+        <target>Cavab yaz</target>
+      </trans-unit>	
+	  <trans-unit id="22">
+        <source>Stick</source>
+        <target>Yapış</target>
+      </trans-unit>	
+	  <trans-unit id="23">
+        <source>Unstick</source>
+        <target>Açıl</target>
+      </trans-unit>
+	  <trans-unit id="24">
+        <source>Lock</source>
+        <target>Bağla</target>
+      </trans-unit>
+	  <trans-unit id="25">
+        <source>Unlock</source>
+        <target>Aç</target>
+      </trans-unit>	
+	  <trans-unit id="26">
+        <source>Post</source>
+        <target>Göndər</target>
+      </trans-unit>	
+	  <trans-unit id="27">
+        <source>Content</source>
+        <target>Tərkib</target>
+      </trans-unit>	
+	  <trans-unit id="28">
+        <source>This topic was locked by a forum moderator. No reply can be added.</source>
+        <target>Bu mövzu forum moderatoru tərəfindən bağlanmışdır.</target>
+      </trans-unit>	
+	  <trans-unit id="29">
+        <source>Last reply</source>
+        <target>Axırıncı cavab</target>
+      </trans-unit>	
+	  <trans-unit id="30">
+        <source>Posted</source>
+        <target>Göndərilmişdir</target>
+      </trans-unit>	
+	  <trans-unit id="31">
+        <source>Sticked topic</source>
+        <target>Yapışmış mövzu</target>
+      </trans-unit>	
+	  <trans-unit id="32">
+        <source>Locked topic</source>
+        <target>Bağlanmış mövzu</target>
+      </trans-unit>	  
+	  <trans-unit id="33">
+        <source>less than a minute</source>
+        <target>bir dəqiqədən</target>
+      </trans-unit>
+	  <trans-unit id="34">
+        <source>1 minute</source>
+        <target>1 dəqiqə</target>
+      </trans-unit>	
+	  <trans-unit id="35">
+        <source>%minutes% minutes</source>
+        <target>%minutes% dəqiqə</target>
+      </trans-unit>
+	  <trans-unit id="36">
+        <source> ago by </source>
+        <target> əvvəl </target>
+      </trans-unit>	
+	  <trans-unit id="37">
+        <source>about %hours% hours</source>
+        <target>hardasa %hours% saat</target>
+      </trans-unit>
+	  <trans-unit id="38">
+        <source>%date% ago by %author%</source>
+        <target>%date% əvvəl %author%</target>
+      </trans-unit>	
+	  <trans-unit id="39">
+        <source>about 1 hour</source>
+        <target>hardasa 1 saat</target>
+      </trans-unit>	
+	  <trans-unit id="40">
+        <source>%days% days</source>
+        <target>%days% gün</target>
+      </trans-unit>
+	    <trans-unit id="41">
+        <source>about 1 month</source>
+        <target>hardasa 1 ay</target>
+      </trans-unit>
+	    <trans-unit id="42">
+        <source>%months% months</source>
+        <target>%months% ay</target>
+      </trans-unit>
+	    <trans-unit id="43">
+        <source>about 1 year</source>
+        <target>hardasa 1 il</target>
+      </trans-unit>
+	  <trans-unit id="44">
+        <source>over %years% years</source>
+        <target>hardasa %years% il</target>
+      </trans-unit>
+	  <trans-unit id="45">
+        <source>Latest messages</source>
+        <target>Ən axırıncı ismarıclar</target>
+      </trans-unit>
+	  <trans-unit id="46">
+        <source>There is no topic in this discussion yet. Perhaps you would like to %start%?</source>
+        <target>Burda hələ hec bir mövzu yoxdur. Bəlkə siz </target>
+      </trans-unit>	
+	  <trans-unit id="47">
+        <source>start a new one</source>
+        <target>yeni mətn başlayazınız</target>
+      </trans-unit>
+	  <trans-unit id="48">
+        <source>1 day</source>
+        <target>1 gün</target>
+      </trans-unit>
+	   <trans-unit id="49">
+        <source>last page</source>
+        <target>son səhifə</target>
+      </trans-unit>	
+	   <trans-unit id="50">
+        <source>Messages by %user%</source>
+        <target>%user% adli istifadəçinin ismarıcları</target>
+      </trans-unit>
+      <trans-unit id="51">
+        <source>Topics by %user%</source>
+        <target>%user% adli istifadəçinin mövzuları</target>
+      </trans-unit>		  	  					 																					
+    </body>
+  </file>
+</xliff>

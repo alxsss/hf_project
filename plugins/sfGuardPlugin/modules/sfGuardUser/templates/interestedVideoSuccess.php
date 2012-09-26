@@ -1,0 +1,1 @@
+<?php include_partial('videos/interested_user', array('video' => $video)) ?> 

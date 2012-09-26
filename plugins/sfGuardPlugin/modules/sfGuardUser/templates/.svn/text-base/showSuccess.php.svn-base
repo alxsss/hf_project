@@ -1,0 +1,63 @@
+<?php use_helper('Global') ?>
+<h1><?php echo $subscriber ;?>'s profile</h1>
+<h2>Friends</h2>
+<ul>
+<?php foreach ($friends as $friend): ?>
+  <li>
+  <?php $friend= $friend->getFriend($friend->getFriendid());?>
+  <a href="<?php echo $friend;?>"><?php echo $friend;?></a>
+  <?php
+   //echo link_to($friend->getFriend($friend->getFriendid()), 'user/show?username='.$friend->getFriend($friend->getFriendid()) ) ?></li>
+<?php endforeach; ?>
+</ul>
+
+<h2>Music</h2>
+<ul>
+<?php foreach ($musics as $music): ?>
+  <li><?php echo link_to($music->getTitle(), 'music/show?id='.$music->getId()) ?></li>
+    <li><?php echo link_to($music->getPlaylist()->getName(), 'music/show?id='.$music->getId()) ?></li>
+	<?php //foreach ($music->getPlaylist()->getMusics() as $song): ?>
+    <li><?php //echo link_to($song->getTitle(), 'music/show?id='.$music->getId()) ?></li>
+    <?php //endforeach; ?>
+<?php endforeach; ?>
+</ul>
+
+<h2>Playlist</h2>
+<ul>
+<?php foreach ($playlists as $playlist): ?>
+  <li><?php echo link_to($playlist->getName(), 'editPlaylist/show?playlist_id='.$playlist->getId()) ?></li>    
+<?php endforeach; ?>
+</ul>
+
+<h2>Album</h2>
+<?php foreach ($albums as $album): ?>
+<?php $lastPhoto=$album->getLastPhoto(); if(!empty($lastPhoto)): ?>
+<?php $pic_url=path2url('/uploads/assets/photos/thumbnails/'.$lastPhoto->getFilename());?>
+<?php echo link_to(image_tag($pic_url, ''), 'albums/show?id='.$album->getId())?>
+<?php endif; ?>
+<?php echo $album->getTitle()?>
+<?php //echo $album->getDescription()?>
+<?php endforeach; ?>
+
+<h2>Videos</h2>
+<table>
+<tbody>
+<tr>
+<?php $cnt=0;?>
+
+<?php foreach ($videos as $video): ?>
+<?php $cnt++;?>
+<?php $pic_url=path2url('/uploads/assets/videos/thumbnails/'.$video->getFilename().'.png');?>
+<td><?php echo link_to(image_tag($pic_url, ''), 'videos/show?id='.$video->getId())?>
+ <br>
+  <?php echo $video->getHits() ?>
+ </td>
+ <?php if($cnt==4)
+       {
+	   ?>
+     </tr>
+	 <tr>
+	 <?php }?>
+</div><?php endforeach; ?>
+</tbody>
+</table>

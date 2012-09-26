@@ -1,0 +1,167 @@
+<?xml version="1.0" ?>
+<xliff version="1.0">
+  <file original="global" source-language="en_US" datatype="plaintext">
+    <body>	  
+	 <trans-unit id="1">
+        <source>Please enter your username and click "Reset." A link permitting you to change your password will then be sent to the email address associated with your username. If you do not have an email address then your password hint will be displayed.</source>
+        <target>Kullanıcı adınızı girin ve "Gönder" tuşuna basın. Sizin şifrenizi değiştirmeye imkan veren link sizin kullanıcı adi ile ilgili olan e-posta adresinize gönderilecektir. Eğer posta adresiniz yoksa onda parola işaret sözu gösterilecektir.</target>
+      </trans-unit>
+<trans-unit id="2">
+        <source>Invite Your Friends</source>
+        <target>Dostlarınızı davet edin</target>
+      </trans-unit>
+      <trans-unit id="3">
+        <source>(separate emails by commas)</source>
+        <target>(elektronik adreslerini virgül ile aralayın)</target>
+      </trans-unit>
+      <trans-unit id="4">
+        <source>From</source>
+        <target>Kimden</target>
+      </trans-unit>
+<trans-unit id="5">
+        <source>Personal message</source>
+        <target>Özel mesaj</target>
+      </trans-unit>
+<trans-unit id="6">
+        <source>(optional)</source>
+        <target>(gerekmez)</target>
+      </trans-unit>
+<trans-unit id="7">
+         <source>Invite</source>
+        <target>Davet et</target>
+      </trans-unit>
+<trans-unit id="8">
+        <source>Insert From My Address Book</source>
+        <target>Benim adres kitabımdan seç</target>
+      </trans-unit>
+<trans-unit id="9">
+        <source>You cannot send invitation to yourself</source>
+        <target>Siz kendinize davet gönderebilirsiniz yapamazsınız</target>
+      </trans-unit>
+<trans-unit id="10">
+         <source>%email% already registered in hemsinif.com and you already have this user as a friend</source>
+        <target>%email% artık hemsinif.com da qeydiyyatdadır ve bu kullanıcı sizin dostunuzdur</target>
+      </trans-unit>
+<trans-unit id="11">
+        <source>You have already sent friend request to %email%</source>
+        <target>Siz artık %email% adresine dostluk teklifi göndərmisiniz</target>
+      </trans-unit>
+<trans-unit id="12">
+        <source>% email% already registered in hemsinif.com and we send a friend request for you</source>
+        <target>% email% artık hemsinif.com da qeydiyyatdadır ve biz sizin için ona dost teklifi gönderdik</target>
+      </trans-unit>
+<trans-unit id="13">
+        <source>An invitation email has been sent to %email%</source>
+        <target>%email% adrese davet mektubu gönderildi</target>
+      </trans-unit>
+<trans-unit id="14">
+        <source>A confirmation email has been sent to the email address. You will need to click on a link provided in that email in order to change your password. If you do not see the message, be sure to check your "spam" and "bulk" email folders.</source>
+        <target>Tasdik eden elektronik posta sizin adrese gönderildi. Siz bu mektupta bulunan linke gitmelisiniz ki, parolanız dəyişilsin. Eker siz bu mektubu bulamazsanız, spam veya bulk klasörlerini kontrol edin.</target>
+      </trans-unit>
+<trans-unit id="15">
+        <source>Your password has been successfully reset. In the future, be sure to log in with your new password.</source>
+        <target>Sizin parola başarıyla dəyişirildi. Gelecekte emin olun yeni parola ile siteye girəsiniz.</target>
+      </trans-unit>
+<trans-unit id="16">
+        <source>Click the button below to change your password. For security reasons, you will receive a confirmation email containing a link allowing you to complete the password change.</source>
+        <target>Parolayı değiştirmek için aşağıdaki düğmeye basın. Siz parolası dəyişməyi tamamlamak için linki, yeni elektronik postada alacaqsiniz.</target>
+      </trans-unit>
+<trans-unit id="17">
+        <source>Account Settings</source>
+        <target>Hesap bilgileri</target>
+      </trans-unit>
+<trans-unit id="18">
+        <source>Reset Password</source>
+        <target>Parolayı Değiştir</target>
+      </trans-unit>
+<trans-unit id="19">
+        <source>Invite more friends</source>
+        <target>Çok dost davet et</target>
+      </trans-unit>
+<trans-unit id="20">
+        <source>Thank you for confirming your account! You are now logged into the site.</source>
+        <target>Oz hesabınızı teyit ettiğiniz için sağ olun. Siz şimdi siteye giribsiniz</target>
+      </trans-unit>
+<trans-unit id="21">
+        <source>You may now change your password using the form below.</source>
+        <target>Siz aşağıdaki formdan kullanarak şifrenizi değiştirebilirsiniz.</target>
+      </trans-unit>
+<trans-unit id="22">
+        <source>Continue</source>
+        <target>Devam</target>
+      </trans-unit>
+<trans-unit id="23">
+        <source>One or more emails are invalid</source>
+        <target>Bir veya birkaç elektronik adresi düzgün değil</target>
+      </trans-unit>
+<trans-unit id="24">
+        <source>new password</source>
+        <target>yeni parola</target>
+      </trans-unit>
+<trans-unit id="25">
+        <source>confirm password</source>
+        <target>parolası onaylayın</target>
+      </trans-unit>
+<trans-unit id="26">
+        <source>The passwords did not match.</source>
+        <target>Parollar bir birine uygun değildir</target>
+      </trans-unit>
+<trans-unit id="27">
+        <source>"%value%" is too short (%min_length% characters min).</source>
+        <target>"%value%" çok kısadır (en az %min_length% sembol olmalı)</target>
+      </trans-unit>
+<trans-unit id="28">
+        <source>"%value%" is too long (%max_length% characters max).</source>
+        <target>"% value%" çok uzun (maksimum %max_length% sembol olmalı)</target>
+      </trans-unit>
+<trans-unit id="29">
+         <source>Your password hint word is "%hint%"</source>
+        <target>"%hint%" sizin parola işaret sözünüz</target>
+      </trans-unit>
+<trans-unit id="30">
+         <source>If this was not helpful, please email us at info at hemsinif dot az</source>
+        <target>Eğer bu size yardım etmediyse bize info at hemsinif nokta biraz elektronik posta adresine yazın</target>
+      </trans-unit>
+<trans-unit id="31">
+        <source>Click the button below to change your password.</source>
+        <target>Parolayı değiştirmek için aşağıdaki düğmeye basın.</target>
+      </trans-unit>
+	  <trans-unit id="32">
+        <source>Enter your information</source>
+        <target>Bilgilerinizi girin</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Provider</source>
+        <target>Sağlayıcı</target>
+      </trans-unit>
+      <trans-unit id="34">
+        <source>Please enter the full email, not just the username</source>
+        <target>Lütfen tam e-posta daxil edin</target>
+      </trans-unit>
+      <trans-unit id="35">
+        <source>%user_domain%  is not a valid domain for this provider</source>
+        <target>%user_domain% bu sağlayıcı için geçerli bir etki alanı değil</target>
+      </trans-unit>	
+      <trans-unit id="36">
+        <source>Login failed. Please check the email and password you have provided and try again later</source>
+        <target>Giriş başarısız oldu. e-posta ve şifre vermiş ve daha sonra tekrar deneyin kontrol edin</target>
+      </trans-unit>	
+      <trans-unit id="37">
+        <source>Unable to get contacts</source>
+        <target>Kişileri alınamıyor</target>
+      </trans-unit>
+      <trans-unit id="38">
+        <source>Please enter just the username, not the full email</source>
+        <target>Lütfen Sadece adı değil edin</target>
+      </trans-unit>
+      <trans-unit id="39">
+        <source>Your Contacts</source>
+        <target>Kişiler</target>
+      </trans-unit>	
+	  <trans-unit id="40">
+        <source>Select which contacts to invite from the list below</source>
+        <target>Aşağıdaki listeden davet etmek hangi kişileri seçin</target>
+      </trans-unit>					
+    </body>
+  </file>
+</xliff>

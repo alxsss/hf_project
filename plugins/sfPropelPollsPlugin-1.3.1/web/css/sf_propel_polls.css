@@ -1,0 +1,11 @@
+#sfPropelPollsPlugin .poll_content .sf_poll_results,
+#sfPropelPollsPluginContent .sf_poll_results {
+	padding-left: 15px;
+}
+#sfPropelPollsPlugin .poll_content .sf_poll_results strong,
+#sfPropelPollsPluginContent .sf_poll_results strong { 
+  display: block; 
+  _height: 1%; 
+  border-left: 0px solid #1B87B5;
+}
+

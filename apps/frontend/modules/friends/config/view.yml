@@ -1,0 +1,19 @@
+all:      
+  has_layout:     on
+  layout:         layout_profile
+addstatuscommentSuccess:
+  has_layout:     off
+addphotocommentSuccess:
+  has_layout:     off
+deletestatuscommentSuccess:
+  has_layout:     off
+deletephotocommentSuccess:
+  has_layout:     off
+ignoreSuccess:
+  has_layout:     off
+removeguestSuccess:
+  has_layout:     off
+poststatusSuccess:
+  has_layout:     off
+fetchSuccess:
+  has_layout:     off

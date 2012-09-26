@@ -1,0 +1,40 @@
+9
+
+dir
+30722
+http://svn.symfony-project.com/plugins/dmChessPlugin/modules
+http://svn.symfony-project.com
+
+
+
+2010-01-09T15:44:17.389347Z
+26434
+ornicar2
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+ee427ae8-e902-0410-961c-c3ed070cd9f9
+
+dmChessGame
+dir
+
+dmChessAiServer
+dir
+
+dmChessGameAdmin
+dir
+
+dmChessPlayerAdmin
+dir
+

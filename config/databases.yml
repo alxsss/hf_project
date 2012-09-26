@@ -1,0 +1,57 @@
+dev:
+  propel:
+    param:
+      classname:  DebugPDO
+      dsn:        mysql:dbname=hemsinif;host=localhost
+      username:   hemsinif
+      password:   '<?php include("db.inc")?>'
+      encoding:   utf8
+      persistent: true
+test:
+  propel:
+    param:
+      classname:  DebugPDO
+      dsn:        mysql:dbname=hemsinif;host=localhost
+      username:   hemsinif
+      password:   '<?php include("db.inc")?>'
+      encoding:   utf8
+      persistent: true
+all:
+  propel:
+    class:        sfPropelDatabase
+    param:
+      classname:  PropelPDO
+      dsn:        mysql:dbname=hemsinif;host=localhost
+      username:   hemsinif
+      password:   '<?php include("db.inc")?>'
+      encoding:   utf8
+      persistent: true
+      pooling:    true
+      options:
+        MYSQL_ATTR_USE_BUFFERED_QUERY: {value: on}
+  sessions_db:
+    class:        sfPropelDatabase
+    param:
+      classname:  PropelPDO
+      dsn:        mysql:dbname=hemsinif;host=localhost
+      username:   hemsinif
+      password:   '<?php include("db.inc")?>'
+      encoding:   utf8
+      persistent: true
+      pooling:    true
+      options:
+        MYSQL_ATTR_USE_BUFFERED_QUERY: {value: on}
+
+prod:
+  propel:
+    class:        sfPropelDatabase
+    param:
+      classname:  PropelPDO
+      dsn:        mysql:dbname=hemsinif;host=localhost
+      username:   hemsinif
+      password:   '<?php include("db.inc")?>'
+      encoding:   utf8
+      persistent: true
+      pooling:    true
+      options:
+        MYSQL_ATTR_USE_BUFFERED_QUERY: {value: on}

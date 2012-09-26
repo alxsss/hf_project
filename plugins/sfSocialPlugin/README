@@ -1,0 +1,100 @@
+# sfSocialPlugin
+
+## Overview
+
+This plugin adds social network capabilities to your project's users.
+So, in example, your users will be able to mutually add as contact,
+send and receive messages, create groups, manage events, receive
+notifications about all this stuff, and so on.
+
+## Demo
+
+A working demo is online at [http://social.garak.it/](http://social.garak.it/)
+
+![Screenshot](http://symfony.altervista.org/_altervista_ht/sfSocial.png "Screenshot")
+
+## Installation
+
+To install (from your project's root):
+
+    cd plugins;
+    svn co http://svn.symfony-project.com/plugins/sfSocialPlugin/trunk sfSocialPlugin
+
+The package depends on sfGuardPlugin, as users are managed by it. There's also an
+optional dependance from sfThumbnailPlugin (to create thumbnails for profile pictures)
+
+
+## Usage
+
+Enable plugins in your `ProjectConfiguration` class
+
+    [php]
+    // config/ProjectConfiguration.class.php
+    public function setup()
+    {
+      // possibly add other plugins here...
+      $this->enablePlugins(array('sfGuardPlugin', 'sfThumbnailPlugin', 'sfSocialPlugin'));
+    }
+
+Enable modules in your application settings
+
+    [yml]
+    # apps/frontend/config/settings.yml
+    enabled_modules: [sfGuardAuth, sfSocialMessage, sfSocialEvent, sfSocialContact, sfSocialNotify, sfSocialUser, sfSocialGroup]
+    # this list is not complete: customize on your needs
+
+In you application's `lib/myUser.class.php`, set class to extend `sfSocialSecurityUser`
+
+Edit `plugins/sfGuardPlugin/lib/model/sfGuardUser.php` and set class to extend
+`sfSocialGuardUser` instead of `PluginsfGuardUser`. Do the same for `sfGuardUserPeer`,
+making it extend `sfSocialGuardUserPeer` instead of `PluginsfGuardUserPeer`.
+
+Note that plugin comes with full modules templates. To use customized templates, just
+create under your application a module with the same name as the module you want
+to customize (don't use `generate:module` task, just create the directory), then add your
+custom templates inside.
+If you prefer to use default templates, be aware that all forms inside are based on
+list formatter (tables are ugly!), so you must add this code:
+
+    [php]
+    // lib/form/BaseFormPropel.class.php
+    public function setup()
+    {
+      // default formatter to list (instead of table)
+      $this->widgetSchema->setDefaultFormFormatterName('list');
+
+      // i18n
+      $this->widgetSchema->getFormFormatter()->setTranslationCatalogue('sfSocial');
+    }
+
+About user's profile, the schema comes with a definition for `sfGuardUserProfile`,
+just to be ready-to-go. You can customize the schema for your needs, or just comment
+that part if you already have `sfGuardUserProfile` defined elsewhere.
+In case you customize, note that some templates from sfSocialUser module should be
+adapted (see above).
+
+
+## Roadmap
+
+Currently Contact, Message, Event, User, and Notify modules are working, with functional tests.
+
+The project aims to fully implement:
+
+  * **Contact** system (aka friends system): search for other users, request
+    contact, accept/deny contact request, see list of your contacts,
+    categorize contacts in groups, see contacts of other users,
+    see contact shared with other users, see "degrees of separation"
+
+  * **Message** system: send a message, read received messages, reply to a
+    message.
+
+  * **Group** system: create a group, invite users to join, manage groups.
+
+  * **Event** system: create an event, invite users to partecipate, confirm
+    partecipation (yes/no/maybe)
+
+  * **Comment** system: write commments, reply to comments. For groups, events
+    and maybe for something else.
+
+  * **Notification** system: a glue for all other systems. Notify your contacts
+    when you do an action (add a contact, create an event, etc.)

@@ -1,0 +1,167 @@
+<?xml version="1.0" ?>
+<xliff version="1.0">
+  <file original="global" source-language="en_US" datatype="plaintext">
+    <body>	  
+	 <trans-unit id="1">
+        <source>Please enter your username and click "Reset." A link permitting you to change your password will then be sent to the email address associated with your username. If you do not have an email address then your password hint will be displayed.</source>
+        <target>İstifadəçi adınızı daxil edin və "Göndər" düyməsini basin. Sizin parolunuzu dəyişməyə imkan verən link sizin istifadəçi adi ilə bağlı olan elektron poçt adresinizə göndəriləcək. Əgər sizin elektron poçt adresiniz yoxdursa onda parola işarə sözu göstəriləcəkdir.</target>
+      </trans-unit>
+	  <trans-unit id="2">
+        <source>Invite Your Friends</source>
+        <target>Dostlarınızı dəvət edin</target>
+      </trans-unit>
+      <trans-unit id="3">
+        <source>(separate emails by commas)</source>
+        <target>(electron adreslərini vergül ilə aralayın)</target>
+      </trans-unit>
+      <trans-unit id="4">
+        <source>From</source>
+        <target>Kimdən</target>
+      </trans-unit>
+	  <trans-unit id="5">
+        <source>Personal message</source>
+        <target>Şəxsi ismarış</target>
+      </trans-unit>
+	  <trans-unit id="6">
+        <source>(optional)</source>
+        <target>(tələb olunmur)</target>
+      </trans-unit>
+	  <trans-unit id="7">
+        <source>Invite</source>
+        <target>Dəvət et</target>
+      </trans-unit>
+	  <trans-unit id="8">
+        <source>Insert from my Address Book</source>
+        <target>Mənim adres kitabımdan seç</target>
+      </trans-unit>
+	  <trans-unit id="9">
+        <source>You cannot send invitation to yourself</source>
+        <target>Siz özünüzə dəvət göndərə bilməzsiniz</target>
+      </trans-unit>
+	  <trans-unit id="10">
+        <source>%email% already registered in hemsinif.com and you already have this user as a friend</source>
+        <target>%email% artıq hemsinif.com da qeydiyyatdadır və bu istifadəçi sizin dostunuzdur</target>
+      </trans-unit>
+	  <trans-unit id="11">
+        <source>You have already sent friend request to %email%</source>
+        <target>Siz artıq %email% adresinə dostluq təklifi göndərmisiniz</target>
+      </trans-unit>
+	  <trans-unit id="12">
+        <source>%email% already registered in hemsinif.com and we send a friend request for you</source>
+        <target>%email% artıq hemsinif.com da qeydiyyatdadır və biz sizin üçün ona dost təklifi göndərdik </target>
+      </trans-unit>
+	  <trans-unit id="13">
+        <source>An invitation email has been sent to %email%</source>
+        <target>%email% adresə dəvət məktubu göndərildi</target>
+      </trans-unit>
+	   <trans-unit id="14">
+        <source>A confirmation email has been sent to the email address. You will need to click on a link provided in that email in order to change your password. If you do not see the message, be sure to check your "spam" and "bulk" email folders.</source>
+        <target>Təsdiq edən elektron məktub sizin adresə göndərildi. Siz bu məktubda olan linkə getməlisiniz ki, parolunuz dəyişilsin. Əkər siz bu məktubu tapmasanız, spam və ya bulk qovluqlarını yoxlayın.</target>
+      </trans-unit>	
+	  <trans-unit id="15">
+        <source>Your password has been successfully reset. In the future, be sure to log in with your new password.</source>
+        <target>Sizin parol müvəffəqiyyətlə dəyişirildi. Gələcəkdə əmin olun ki, yeni parol ilə sayta girəsiniz.</target>
+      </trans-unit>
+	  <trans-unit id="16">
+        <source>Click the button below to change your password. For security reasons, you will receive a confirmation email containing a link allowing you to complete the password change.</source>
+        <target>Parolu dəyişmək üçün aşağıdakı düyməni basın. Siz parolu dəyişməyi tamamlamaq üçün linki, yeni elektron məktubda alacaqsiniz.</target>
+      </trans-unit>	
+	  <trans-unit id="17">
+        <source>Account Settings</source>
+        <target>Hesab məlumatı</target>
+      </trans-unit>
+	  <trans-unit id="18">
+        <source>Reset Password</source>
+        <target>Parolu dəyiş</target>
+      </trans-unit>
+	  <trans-unit id="19">
+        <source>Invite more friends</source>
+        <target>Çox dost dəvət et</target>
+      </trans-unit>	
+	  <trans-unit id="20">
+        <source>Thank you for confirming your account! You are now logged into the site.</source>
+        <target>Oz hesabınızı təsdiq etdiyiniz üçün sag olun. Siz indi sayta giribsiniz</target>
+      </trans-unit>	
+	  <trans-unit id="21">
+        <source>You may now change your password using the form below.</source>
+        <target>Siz aşağıdakı formadan istifadə edərək parolunuzu dəyişə bilərsiniz.</target>
+      </trans-unit>	
+	  <trans-unit id="22">
+        <source>Continue</source>
+        <target>Davam et</target>
+      </trans-unit>	
+	  <trans-unit id="23">
+        <source>One or more emails are invalid</source>
+        <target>Bir və ya bir neçə elektron adresi düz deyil</target>
+      </trans-unit>	
+	  <trans-unit id="24">
+        <source>new password</source>
+        <target>yeni parol</target>
+      </trans-unit>	
+	  <trans-unit id="25">
+        <source>confirm password</source>
+        <target>parolu təsdiq edin</target>
+      </trans-unit>	
+	  <trans-unit id="26">
+        <source>The passwords did not match.</source>
+        <target>Parollar bir birinə uyğun deyil</target>
+      </trans-unit>		
+	  <trans-unit id="27">
+        <source>"%value%" is too short (%min_length% characters min).</source>
+        <target>"%value%" çox qisadır (ən azı %min_length% simvol olmalıdı)</target>
+      </trans-unit>	
+	   <trans-unit id="28">
+        <source>"%value%" is too long (%max_length% characters max).</source>
+        <target>"%value%" çox uzundur (maksimum %max_length% simvol olmalıdı)</target>
+      </trans-unit>	
+	  <trans-unit id="29">
+        <source>Your password hint word is "%hint%"</source>
+        <target>"%hint%" sizin parola işarə sozünüzdür</target>
+      </trans-unit>
+	  <trans-unit id="30">
+        <source>If this was not helpful, please email us at info at hemsinif dot az</source>
+        <target>Əgər bu sizə kömək etmədisə bizə info at hemsinif nöqtə az elektron poçtu adresinə yazın</target>
+      </trans-unit>	
+	  <trans-unit id="31">
+        <source>Click the button below to change your password.</source>
+        <target>Parolu dəyişmək üçün aşağıdakı düyməni basın.</target>
+      </trans-unit>
+	    <trans-unit id="32">
+        <source>Enter your information</source>
+        <target>Məlumat daxil edin</target>
+      </trans-unit>	
+      <trans-unit id="33">
+        <source>Provider</source>
+        <target>Provayder</target>
+      </trans-unit>
+      <trans-unit id="34">
+        <source>Please enter the full email, not just the username</source>
+        <target>Xahish edirik tam elektron adresinizi daxil edəsiniz</target>
+      </trans-unit>
+      <trans-unit id="35">
+        <source>%user_domain%  is not a valid domain for this provider</source>
+        <target>%user_domain% bu provayderi üçün düzgün ad deyil</target>
+      </trans-unit>
+      <trans-unit id="36">
+        <source>Login failed. Please check the email and password you have provided and try again later</source>
+        <target>Login uğursuz oldu. Təmin etdiyiniz elektron poçtunuzu və parolunuzu yoxlayin və sonra bir daha cəhd edin</target>
+      </trans-unit>
+	  <trans-unit id="37">
+        <source>Unable to get contacts</source>
+        <target>Əlaqələri almaq mumkun olmadı</target>
+      </trans-unit>
+      <trans-unit id="38">
+        <source>Please enter just the username, not the full email</source>
+        <target>Xahish edirik istifadəçi adı deyil tam elektron adresinizi daxil edəsiniz</target>
+      </trans-unit>
+      <trans-unit id="39">
+        <source>Your Contacts</source>
+        <target>Sizin Əlaqələr</target>
+      </trans-unit>	
+	  <trans-unit id="40">
+        <source>Select which contacts to invite from the list below</source>
+        <target>Aşağıdakı siyahıdan dəvət etmək istədiyiniz əlaqələri seçin</target>
+      </trans-unit>																 																									 																					
+    </body>
+  </file>
+</xliff>

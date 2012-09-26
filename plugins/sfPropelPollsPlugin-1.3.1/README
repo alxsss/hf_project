@@ -1,0 +1,144 @@
+= sfPropelPollsPlugin =
+
+[[PageOutline]]
+
+sfPropelPollsPlugin is a Symfony plugin which make polling a piece of cake.
+
+= Documentation =
+
+== Installation ==
+
+To install the plugin, run this command within your symfony project :
+
+{{{
+symfony plugin:install sfPropelPollsPlugin
+}}}
+
+You must enable sfProtoculousPlugin
+
+{{{
+class ProjectConfiguration extends sfProjectConfiguration
+{
+  public function setup()
+  {
+    $this->enablePlugins('sfPropelPlugin');
+    $this->enablePlugins('sfPropelPollsPlugin');
+    $this->enablePlugins('sfProtoculousPlugin');
+  }
+}
+}}}
+
+
+Optional. If you want to specify the name of the existing user table and class:
+(see [#PluginConfiguration next section about the plugin configuration] for further details).
+Copy the sample configuration file from 
+{{{myproject/plugins/sfPropelPollsPlugin/config/sfPropelPollsPlugin.yml.sample}}} 
+into yout project's (not application!) {{{config/}}} folder. Rename it to 
+{{{myproject/config/sfPropelPollsPlugin.yml}}}. 
+You must manually register a config handler for this 
+configuration file by creating a {{{config_handlers.yml}}} file in your 
+application {{{config/}}} directory with the following content:
+
+{{{
+config/sfPropelPollsPlugin.yml:
+  class:    sfPropelPollsConfigHandler
+  param:
+    prefix: sf_propel_polls_
+}}}
+
+ Of course, il you already have a {{{config_handlers.yml}}} file in your 
+ {{{config/}}} directory, you have to append the previously mentionned content to 
+ the existing one.
+
+Then, rebuild your model :
+
+{{{
+symfony propel:build-all
+}}}
+
+Now, as a pure Symfony tradition, purge your cache :
+
+{{{
+symfony cc
+}}}
+
+=== Plugin configuration ===
+
+==== The {{{sfPropelPollsPlugin.yml}}} file ====
+
+The plugin schema is configurable to match your database table names. Here is 
+the default plugin configuration, taken from 
+{{{myproject/plugins/sfSimpleBlogPlugin/config/sfPropelPollsPlugin.yml.sample}}}:
+
+{{{
+schema:
+  connection:                propel                 # database connection you want to use (related to the databases.yml configuration)
+  user_table:                sf_guard_user          # user table name
+  user_id:                   id                     # primary key of the user table
+  user_class:                sfGuardUser            # name of the Propel object for users
+  polls_table:               sf_polls               # polls table name
+  polls_answers_table:       sf_polls_answers       # polls answers table name
+  polls_users_answers_table: sf_polls_users_answers # polls votes table name
+}}}
+
+You can customize these settings in {{{myproject/config/sfPropelPollsPlugin.yml}}}.
+
+'''Note:''' After modifying the schema settings, you must rebuild your model. 
+
+=== API ===
+
+The API is mainly available from the {{{./lib/model/sfPoll.php}}} class object, 
+phpdoc is quite exhaustive.
+
+=== Modules ===
+
+The plugin provide both Back and Front office standard modules that you can 
+activate in the {{{settings.yml}}} of your apps.
+
+In front office, you can activate the sfPolls module :
+
+{{{
+  .settings
+    enabled_modules: [default, ..., sfPolls]
+    i18n:            true
+}}}
+
+In back office, you should activate the sfPollsAdmin module :
+
+{{{
+  .settings
+    enabled_modules: [default, ..., sfPollsAdmin]
+}}}
+
+Front office routes url are provided by default, here they are:
+
+ * {{{@polls}}}: lists all published polls
+ * {{{@poll_detail?id=id}}}: shows poll form
+ * {{{@poll_results?id=id}}}: shows poll results
+ * {{{@poll_vote}}}: handle voting request
+ 
+
+=== Components ===
+
+The plugin also provide standard component to ease polls integration. To display 
+a polling form as a Symfony component, be sure to have activated the sfPolls 
+module in your settings.yml as described previously and put something like this 
+in a template :
+
+{{{
+<?php include_component('sfPolls', 'poll_form') ?>
+}}}
+
+This will display last active, published poll
+
+== Unit testing ==
+
+The plugin is unit tested, test suite is located in the 
+{{{./test/sfPropelPollsTest.php}}} file.
+
+== Uninstallation ==
+
+{{{
+symfony plugin:uninstall symfony/sfPropelPollsPlugin
+}}}
+

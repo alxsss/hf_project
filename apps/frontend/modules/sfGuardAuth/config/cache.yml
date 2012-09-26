@@ -1,0 +1,8 @@
+register:
+  enabled:     off
+  with_layout: false   # Default value
+  lifetime:    86400   # Default value
+registered:
+  enabled:     on
+  with_layout: true   # Default value
+  lifetime:    86400   # Default value

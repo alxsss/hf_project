@@ -1,0 +1,7 @@
+all:      
+  has_layout:     on
+  layout:         layout_profile
+postlinkSuccess:
+  has_layout:     off
+deletestatusSuccess:
+  has_layout:     off

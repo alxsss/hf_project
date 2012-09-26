@@ -1,0 +1,316 @@
+delete_fav_photo:
+  url:   /deletefavphoto/:id
+  param: { module: photos, action: deletefavphoto }
+all_favphotos:
+  url:   /allfavphotos/:username
+  param: { module: photos, action: allfavphotos, page: 1 }
+favorite:
+  url:  /favorite
+  param: { module: photos, action: favorite }
+popular_photos:
+  url:  /:sf_culture/popular
+  param: { module: photos, action: popularphotos }
+  requirements: { sf_culture: (?:az|en|ru|tr) }
+photos:
+  url:  /:sf_culture/photos/:page
+  param: { module: photos, action: index, page:1 }
+  requirements: { sf_culture: (?:az|en|ru|tr) }
+games:
+  url: /:sf_culture/games
+  param: { module: games, action: index }
+  requirements: { sf_culture: (?:az|en|ru|tr) }
+add_message:
+  url:   /addmessage
+  param: { module: message, action: add }
+delete_rating:
+  url:   /deleterating
+  param: { module: photos, action: deleterating }
+ratings:
+  url:  /ratings
+  param: { module: photos, action: ratings }
+rate:
+  url:  /rate
+  param: { module: photos, action: rate } 
+guest_remove:
+  url:   /guestremove/:id
+  param: { module: friends, action: removeguest }
+guest:
+  url:  /guest
+  param: { module: friends, action: guest}
+ignore:
+  url:  /ignore
+  param: { module: friends, action: ignore}
+interested:
+  url:  /interested
+  param: { module: sfGuardUser, action: interested }  
+invitefriend:
+  url: /:sf_culture/invitefriend
+  param: { module: sfApply, action: invitefriend }  
+reset:
+  url: /:sf_culture/reset
+  param: { module: sfApply, action: reset }
+resetRequest:
+  url: /:sf_culture/reset-request
+  param: { module: sfApply, action: resetRequest }
+validate:
+  url: /confirm/:validate
+  param: { module: sfApply, action: confirm }
+settings:
+  url: /settings
+  param: { module: sfApply, action: settings }
+friend_remove:
+  url:   /friendremove
+  param: { module: sfGuardUser, action: removefriend }
+friend_approve:
+  url:   /friendapprove
+  param: { module: friends, action: approve }
+all_users:
+  url:   /allusers
+  param: { module: friends, action: users }
+delete_status:
+  url:   /deletestatus
+  param: { module: links, action: deletestatus }
+delete_messagesfrominbox:
+  url:   /deletemessagesfrominbox
+  param: { module: message, action: deletemessagesfrominbox }
+delete_messagesfromsentbox:
+  url:   /deletemessagesfromsentbox
+  param: { module: message, action: deletemessagesfromsentbox }
+delete_school:
+  url:   /deleteschool
+  param: { module: sfGuardUser, action: deleteschool }
+delete_status_comment:
+  url:   /deletestatuscomment
+  param: { module: friends, action: deletestatuscomment }
+delete_updates_photo_comment:
+  url:   /deleteupdatesphotocomment
+  param: { module: friends, action: deletephotocomment }
+delete_photo_comment:
+  url:   /deletephotocomment
+  param: { module: photos, action: deleteComment }
+add_comment:
+  url:   /add_comment
+  param: { module: photos, action: addComment }
+add_status_comment:
+  url:   /addstatuscomment
+  param: { module: friends, action: addstatuscomment }
+add_photo_comment:
+  url:   /addphotocomment
+  param: { module: friends, action: addphotocomment }
+user_status:
+  url:   /user_status
+  param: { module: sfGuardUser, action: status }
+help:
+  url:   /:sf_culture/help
+  param: { module: content, action: help }
+copyright:
+  url:   /copyright
+  param: { module: content, action: copyright }
+ts:
+  url:   /termsofservice
+  param: { module: content, action: ts }
+privacyp:
+  url:   /privacypolicy
+  param: { module: content, action: privacyp }
+contact:
+  url:   /contact
+  param: { module: contact, action: create }
+friend_search:
+  url:    /:sf_culture/friendsearch
+  param: { module: friends, action: search }
+  requirements: { sf_culture: (?:az|en|ru|tr) }
+updates:
+  url:  /:sf_culture/updates/:page
+  param: { module: friends, action: updates, page:1 }
+  requirements: { sf_culture: (?:az|en|ru|tr) }
+user_updates:
+  url:   /userupdates/:page
+  param: { module: sfGuardUser, action: userupdates, page:1 }
+profile:
+  url:     /:sf_culture/profile/:token
+  class:   sfPropelRoute
+  param:   { module: profile, action: edit }
+  options: { model: sfGuardUser, type: list, method: getForToken }  
+user_sentbox:
+  url:   /sentbox
+  param: { module: message, action: sentbox }
+user_inbox:
+  url:   /inbox
+  param: { module: message, action: inbox }
+login:
+  url:   /login
+  param: { module: sfGuardAuth, action: signin } 
+logout:
+  url:   /logout
+  param: { module: sfGuardAuth, action: signout }
+register:
+  url:   /:sf_culture/register/:id
+  param: { module: sfGuardAuth, action: register ,id: 0}
+upload: 
+  url:   /:sf_culture/upload 
+  param: { module: sfMediaLibrary, action: upload }
+sfMediaLibrary_delete: 
+  url:   /sfMediaLibrary_delete 
+  param: { module: sfMediaLibrary, action: delete }
+user_profile:
+  url:   /:sf_culture/user/:username
+  param: { module: sfGuardUser, action: show }
+  requirements: { sf_culture: (?:az|en|ru|tr),  username: \S+(\.?|\+?|\-?|\s?)\S* }
+recent_photos:
+  url:   /photos/recent/:page
+  param: { module: photos, action: recent, page: 1 }
+all_friends:
+  url:   /allfriends/:username
+  param: { module: friends, action: allfriends }
+  requirements: {username: \S+(\.?|\+?|\-?|\s?)\S* }
+all_albums:
+  url:   /:sf_culture/:username/allalbums/:page
+  param: { module: albums, action: list, page: 1 }
+  requirements: { sf_culture: (?:az|en|ru|tr), username: \S+(\.?|\+?|\-?|\s?)\S* }
+all_photos:
+  url:   /:sf_culture/:username/allphotos/:page
+  param: { module: photos, action: list, page: 1 }
+  requirements: { sf_culture: (?:az|en|ru|tr), username: \S+(\.*|\+*|\-*)+\S*, page: \d+ }
+showalbumphoto:
+  url:   /showalbumphoto
+  param: { module: photos, action: showalbumphoto }
+forum_home: 
+  url:   /:sf_culture/forum
+  param: { module: sfSimpleForum, action: forumList }
+forum_latest_messages: 
+  url:   /:sf_culture/forum/latest/:page
+  param: { module: sfSimpleForum, action: latestPosts, page: 1 }
+  requirements: { page: \d+ }
+forum_forum: 
+  url:   /:sf_culture/forum/:forum_name/:page
+  param: { module: sfSimpleForum, action: forum, page: 1 }
+  requirements: { page: \d+ }
+forum_latest_messages_for_forum: 
+  url:   /:sf_culture/forum/:forum_name/latest/:page
+  param: { module: sfSimpleForum, action: latestForumPosts, page: 1 }
+  requirements: { page: \d+ }
+forum_topic: 
+  url:   /:sf_culture/forum/topic/:id/:stripped_title/:page
+  param: { module: sfSimpleForum, action: topic, page: 1 }
+  requirements: { page: \d+ }
+forum_new_topic:
+  url:   /:sf_culture/forum/new_topic/:forum_name
+  param: { module: sfSimpleForum, action: createTopic }
+forum_latest_messages_by_user: 
+  url:   /:sf_culture/forum/user/:username/:page
+  param: { module: sfSimpleForum, action: latestUserPosts, page: 1 }
+  requirements: { page: \d+ , username: \S+(\.?|\+?|\-?|\s?)\S* }
+forum_messages_by_user: 
+  url:   /:sf_culture/forummessages/user/:username/:page
+  param: { module: sfSimpleForum, action: userLatestPosts, page: 1 }
+#  requirements: { page: \d+ , username: \S+(\.?|\+?|\-?|\s?)[^\/]}
+forum_post: 
+  url:   /:sf_culture/forum_message/:id
+  param: { module: sfSimpleForum, action: post }
+
+#music video rules
+video_search:
+  url:   /videosearch
+  param: { module: videos, action: search }
+video_search_ajax:
+  url:   /videosearchajax
+  param: { module: videos, action: searchajax }
+play_video:
+  url:   /playvideo
+  param: { module: videos, action: playvideo }
+play_videolist:
+  url:   /playvideolist
+  param: { module: editvideolist, action: playvideolist }
+no_video:
+  url:   /novideo
+  param: { module: videos, action: novideo }
+no_music:
+  url:   /nomusic
+  param: { module: music, action: nomusic }
+video_refresh:
+  url:  /video_refresh
+  param: { module: videos, action: refresh}  
+user_loadplaylist:
+  url:  /user_loadplaylist
+  param: { module: sfGuardUser, action: loadplaylist}
+music_loadplaylist:
+  url:  /music_loadplaylist
+  param: { module: music, action: loadplaylist}
+music_refresh:
+  url:  /music_refresh
+  param: { module: music, action: refresh}
+music_search:
+  url:   /musicsearch
+  param: { module: music, action: search }
+music_search_ajax:
+  url:   /musicsearchajax
+  param: { module: music, action: searchajax }
+
+interestedVideo:
+  url:  /interestedVideo
+  param: { module: sfGuardUser, action: interestedVideo }
+
+favplaylist:
+  url:  /favplaylist
+  param: { module: sfGuardUser, action: favplaylist }
+
+favorite_ytvideo:
+  url:  /favorite_ytvideo
+  param: { module: sfGuardUser, action: favytvideo }
+
+fav_playlist_remove:
+  url:   /playlistremove/:id
+  param: { module: sfGuardUser, action: removeplaylist }
+
+fav_video_remove:
+  url:   /videoremove/:video_id
+  param: { module: sfGuardUser, action: removefavytvideo }
+
+generate_playlist:
+  url:   /generateplaylist
+  param: { module: editPlaylist, action: generate }
+signin_music:
+  url:   /signin_music
+  param: { module: sfGuardAuth, action: signin_music }
+
+add_commentVideo:
+  url:   /add_commentVideo
+  param: { module: videos, action: addCommentVideo }
+add_comment_playlist:
+  url:   /add_comment_playlist
+  param: { module: editPlaylist, action: addComment }
+all_playlists:
+  url:   /allplaylist/:username
+  param: { module: playlist, action: allplaylists, page: 1 }
+all_favplaylists:
+  url:   /allfavplaylist/:username
+  param: { module: playlist, action: allfavplaylists, page: 1 }
+all_videos:
+  url:   /allvideos/:username
+  param: { module: videos, action: allvideos, page: 1 }
+all_favvideos:
+  url:   /allfavvideos/:username
+  param: { module: videos, action: allfavvideos, page: 1 }
+videolist:
+  url:   /videolist
+  param: { module: videolist, action: index }
+videos:
+  url:   /:sf_culture/videos
+  param: { module: videos, action: index }
+videos_page:
+  url:   /:sf_culture/videos_page
+  param: { module: videos, action: indexpage }
+
+# default rules
+
+homepage:
+  url:   /
+  param: {module: home, action: home }
+  requirements: { sf_culture: (?:az|en|ru|tr) }
+default_index:
+  url:   /:sf_culture/:module
+  requirements: { sf_culture: (?:az|en|ru|tr) }
+  param: { action: index }
+default:
+  url:   /:sf_culture/:module/:action/*
+  requirements: { sf_culture: (?:az|en|ru|tr) }

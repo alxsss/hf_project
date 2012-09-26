@@ -1,0 +1,7 @@
+all:
+  has_layout:     on
+  layout:         layout
+showajaxSuccess:
+  has_layout: off
+addSuccess:
+  has_layout: off

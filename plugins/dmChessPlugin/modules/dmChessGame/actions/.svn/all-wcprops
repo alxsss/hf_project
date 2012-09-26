@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/!svn/ver/26434/plugins/dmChessPlugin/modules/dmChessGame/actions
+END
+components.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/!svn/ver/26010/plugins/dmChessPlugin/modules/dmChessGame/actions/components.class.php
+END
+actions.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/!svn/ver/26434/plugins/dmChessPlugin/modules/dmChessGame/actions/actions.class.php
+END

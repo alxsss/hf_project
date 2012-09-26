@@ -1,0 +1,139 @@
+group_user_delete:
+  url:   /groupuserdelete/:group_id/:user_id
+  param: { module: sfSocialGroup, action: deletegroupuser }
+group_edit_members:
+  url:   /:sf_culture/groupeditmembers/:id
+  param: { module: sfSocialGroup, action: editmembers }
+group_allmembers:
+  url:   /:sf_culture/groupallmembers/:id
+  param: { module: sfSocialGroup, action: allmembers }
+leave_group:
+  url:    /:sf_culture/leavegroup/:id
+  param: { module: sfSocialGroup, action: leave }
+delete_group_status:
+  url:    /:sf_culture/deletegroupstatus
+  param: { module: sfSocialGroup, action: deletegroupstatus }
+delete_group_status_comment:
+  url:   /deletegroupstatuscomment
+  param: { module: sfSocialGroup, action: deletegroupstatuscomment }
+group_status:
+  url:   /group_status
+  param: { module: sfSocialGroup, action: status }
+suggest:
+  url:    /:sf_culture/suggest/:id/:page
+  param: { module: sfSocialGroup, action: suggest,page: 1  }
+  requirements: { id: \d+ }
+suggest_event:
+  url:   /suggestevent/:id/:page
+  param: { module: sfSocialEvent, action: suggest,page: 1  }
+  requirements: { id: \d+ }
+delete_group_comment:
+  url:   /deletegroupcomment
+  param: { module: sfSocialGroup, action: deletecomment }
+add_group_status_comment:
+  url:   /add_group_status_comment
+  param: { module: sfSocialGroup, action: addstatuscomment }
+# TOOD move this on an event based lib class
+
+# events
+event_allconfirmed:
+  url:   /:sf_culture/eventallconfirmed/:id
+  param: { module: sfSocialEvent, action: allconfirmed }
+event_allimaybe:
+  url:   /:sf_culture/eventallmaybe/:id
+  param: { module: sfSocialEvent, action: allmaybe }
+event_allno:
+  url:   /:sf_culture/eventallno/:id
+  param: { module: sfSocialEvent, action: allno }
+event_allawaitingreply:
+  url:   /:sf_culture/eventallawaitingreply/:id
+  param: { module: sfSocialEvent, action: allawaitingreply }
+add_event_status_comment:
+  url:   /add_event_status_comment
+  param: { module: sfSocialEvent, action: addstatuscomment }
+delete_event_status_comment:
+  url:   /deleteeventstatuscomment
+  param: { module: sfSocialEvent, action: deleteeventstatuscomment }
+
+event_status:
+  url:   /event_status
+  param: { module: sfSocialEvent, action: status }
+delete_event_status:
+  url:   /deleteeventstatus
+  param: { module: sfSocialEvent, action: deleteeventstatus }
+
+sf_social_event_invitedlist:
+  url:   /events/invited/*
+  param: { module: sfSocialEvent, action: invitedlist }
+
+sf_social_event_list:
+  url:    /:sf_culture/events/*
+  param: { module: sfSocialEvent, action: list }
+
+sf_social_event_pastlist:
+  url:   /pastevents/*
+  param: { module: sfSocialEvent, action: pastlist }
+
+sf_social_event_edit:
+  url:    /:sf_culture/event/:id/edit
+  param: { module: sfSocialEvent, action: edit }
+  requirements: { id: \d+ }
+
+sf_social_event_invite:
+  url:   /event/:id/invite/*
+  param: { module: sfSocialEvent, action: invite }
+  requirements: { id: \d+ }
+
+sf_social_event:
+  url:    /:sf_culture/event/:id
+  param: { module: sfSocialEvent, action: view }
+  requirements: { id: \d+ }
+
+sf_social_event_new:
+  url:   /:sf_culture/event/create
+  param: { module: sfSocialEvent, action: create }
+
+
+# groups
+
+sf_social_group_list:
+  url:   /:sf_culture/groups/*
+  param: { module: sfSocialGroup, action: list }
+
+sf_social_group_mylist:
+  url:   /mygroups
+  param: { module: sfSocialGroup, action: mylist }
+
+sf_social_group_edit:
+  url:    /:sf_culture/group/:id/edit
+  param: { module: sfSocialGroup, action: edit }
+  requirements: { id: \d+ }
+
+sf_social_group_invite:
+  url:   /group/:id/invite/*
+  param: { module: sfSocialGroup, action: invite }
+  requirements: { id: \d+ }
+
+sf_social_group_join:
+  url:   /group/:id/join
+  param: { module: sfSocialGroup, action: join }
+  requirements: { id: \d+ }
+
+sf_social_group_accept:
+  url:   /groupaccept
+  param: { module: sfSocialGroup, action: accept }
+  #requirements: { id: \d+ }
+
+sf_social_group_deny:
+  url:   /group/:id/deny
+  param: { module: sfSocialGroup, action: deny }
+  requirements: { id: \d+ }
+
+sf_social_group:
+  url:    /:sf_culture/group/:id/:page
+  param: { module: sfSocialGroup, action: view, page:1 }
+  requirements: { id: \d+ }
+
+sf_social_group_new:
+  url:   /group/create
+  param: { module: sfSocialGroup, action: create }

@@ -1,0 +1,63 @@
+<?xml version="1.0" ?>
+<xliff version="1.0">
+  <file original="global" source-language="en_US" datatype="plaintext">
+    <body>
+	  <trans-unit id="1">
+        <source>Featured</source>
+        <target>Популярные</target>
+      </trans-unit>
+      <trans-unit id="2">
+        <source>Hot Right Now</source>
+        <target>Горячие прямо сейчас</target>
+      </trans-unit>
+      <trans-unit id="3">
+        <source>All Time Best</source>
+        <target>За все время Лучшие</target>
+      </trans-unit>
+	  <trans-unit id="4">
+        <source>Sports</source>
+        <target>Спорт</target>
+      </trans-unit>
+	  <trans-unit id="5">
+        <source>Shooter</source>
+        <target>Стрелок</target>
+      </trans-unit>
+	  <trans-unit id="6">
+        <source>Strategy</source>
+        <target>Стратегии</target>
+      </trans-unit>
+	  <trans-unit id="7">
+        <source>Puzzle</source>
+        <target>Загадка</target>
+      </trans-unit>
+	  <trans-unit id="8">
+        <source>Multiplayer</source>
+        <target>Много игроков</target>
+      </trans-unit>
+	  <trans-unit id="9">
+        <source>Adventure</source>
+        <target>Приключение</target>
+      </trans-unit>	
+	  <trans-unit id="10">
+        <source>Life and Style</source>
+        <target>Жизнь и Стиль</target>
+      </trans-unit>	
+	  <trans-unit id="11">
+        <source>Social</source>
+        <target>Социальный</target>
+      </trans-unit>	
+	  <trans-unit id="12">
+        <source>Action</source>
+        <target>Бой</target>
+      </trans-unit>	
+	  <trans-unit id="13">
+        <source>View %num_games% more</source>
+        <target>Еще %num_games% игр</target>
+      </trans-unit>
+	  <trans-unit id="14">
+        <source>All games played by %author%</source>
+        <target>Все игры %author%</target>
+      </trans-unit>		  				  																																		  		 
+    </body>
+  </file>
+</xliff>

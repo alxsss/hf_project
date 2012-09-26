@@ -1,0 +1,21 @@
+    # Be sure to only have this line once in your configuration
+    NameVirtualHost 127.0.0.1:80
+
+    # This is the configuration for hemsinif
+    Listen 127.0.0.1:80
+
+    <VirtualHost 127.0.0.1:80>
+      ServerName hemsinif.localhost
+      DocumentRoot "C:\wamp\bin\php\php5.2.7\PEAR\symfony\sfprojects\hemsinif\web"
+      DirectoryIndex index.php
+      <Directory "C:\wamp\bin\php\php5.2.7\PEAR\symfony\sfprojects\hemsinif\web">
+        AllowOverride All
+        Allow from All
+      </Directory>
+
+      Alias /sf "C:\wamp\bin\php\php5.2.7\PEAR\symfony\sfprojects\hemsinif\data\web\sf"
+      <Directory "C:\wamp\bin\php\php5.2.7\PEAR\symfony\sfprojects\hemsinif\data\web\sf">
+        AllowOverride All
+        Allow from All
+      </Directory>
+    </VirtualHost>

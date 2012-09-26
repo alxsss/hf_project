@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" packagerversion="1.9.0" version="2.0" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0 http://pear.php.net/dtd/tasks-1.0.xsd http://pear.php.net/dtd/package-2.0 http://pear.php.net/dtd/package-2.0.xsd">
+ <name>sfSocialPlugin</name>
+ <channel>pear.symfony-project.com</channel>
+ <summary>add social features to user base</summary>
+ <description>add social features to user base</description>
+ <lead>
+  <name>Massimiliano Arione</name>
+  <user>garak</user>
+  <email>garakkio@gmail.com</email>
+  <active>yes</active>
+ </lead>
+ <date>2009-12-01</date>
+ <time>11:10:41</time>
+ <version>
+  <release>0.0.4</release>
+  <api>0.0.4</api>
+ </version>
+ <stability>
+  <release>alpha</release>
+  <api>alpha</api>
+ </stability>
+ <license uri="http://www.symfony-project.com/license">LGPL license</license>
+ <notes>
+-
+ </notes>
+ <contents>
+  <dir name="/">
+   <file md5sum="fd4ca05d5c62189a288107e43fa80050" name="config/routing.yml" role="data"/>
+   <file md5sum="cce84634dbe74b88128923b957cc6d54" name="config/schema.yml" role="data"/>
+   <file md5sum="1ac987e805a764d9465982adfdae653f" name="config/sfSocialPluginConfiguration.class.php" role="data"/>
+   <file md5sum="f67b10e7978caa602ac70c503ac1d6af" name="lib/model/om/BasesfSocialContactPeer.php" role="data"/>
+   <file md5sum="dff1dd4233de54978adf4458663840ee" name="lib/model/om/BasesfSocialContact.php" role="data"/>
+   <file md5sum="46063ad0772273b345c403c9a2766ef2" name="lib/model/om/BasesfSocialContactGroupPeer.php" role="data"/>
+   <file md5sum="6ce050bc05a53ec25e2db636d776d098" name="lib/model/om/BasesfSocialContactGroup.php" role="data"/>
+   <file md5sum="db8a2c3767ac1e2f30cc68f10e52065d" name="lib/model/om/BasesfSocialContactGroupContactPeer.php" role="data"/>
+   <file md5sum="a2ee3b102a6e28d291ee9b099474de9d" name="lib/model/om/BasesfSocialContactGroupContact.php" role="data"/>
+   <file md5sum="1d81bcefbee014c97c109b6340501f55" name="lib/model/om/BasesfSocialContactRequestPeer.php" role="data"/>
+   <file md5sum="44fdafa9285540d07c420571df131268" name="lib/model/om/BasesfSocialContactRequest.php" role="data"/>
+   <file md5sum="7f66ba6c65f02c8cb9298bd1d91451ce" name="lib/model/om/BasesfSocialEventPeer.php" role="data"/>
+   <file md5sum="2436172c049b6a10a691244c8bec25f8" name="lib/model/om/BasesfSocialEvent.php" role="data"/>
+   <file md5sum="aea8e610d95869ca74f11c8037843d71" name="lib/model/om/BasesfSocialEventInvitePeer.php" role="data"/>
+   <file md5sum="d2bc0f3dcf5f7361d1e7cb0bfbaf5db6" name="lib/model/om/BasesfSocialEventInvite.php" role="data"/>
+   <file md5sum="5e30eaf8f5e811686960160181af477a" name="lib/model/om/BasesfSocialEventUserPeer.php" role="data"/>
+   <file md5sum="051e455862828354d0b8a54a1d835112" name="lib/model/om/BasesfSocialEventUser.php" role="data"/>
+   <file md5sum="d42fea0a6722ef4debdae431016f321b" name="lib/model/om/BasesfSocialGroupPeer.php" role="data"/>
+   <file md5sum="8e812fb00ea7502775ef05ee17108bdd" name="lib/model/om/BasesfSocialGroup.php" role="data"/>
+   <file md5sum="8effd99f1098cb68d171ee69dd30cc86" name="lib/model/om/BasesfSocialGroupInvitePeer.php" role="data"/>
+   <file md5sum="f104a2f34a7bc8a73f5616ee02678289" name="lib/model/om/BasesfSocialGroupInvite.php" role="data"/>
+   <file md5sum="fd9b7ff1df3bff67f7b301d4117273ad" name="lib/model/om/BasesfSocialGroupUserPeer.php" role="data"/>
+   <file md5sum="25657eca7b3c5b56fcfd205b42b7edbe" name="lib/model/om/BasesfSocialGroupUser.php" role="data"/>
+   <file md5sum="f135db36ed38eb46c2eaf6cbd46c88fe" name="lib/model/om/BasesfSocialMessagePeer.php" role="data"/>
+   <file md5sum="dece9cc5185b5244a6d570b759361250" name="lib/model/om/BasesfSocialMessage.php" role="data"/>
+   <file md5sum="e889e5dd24c87d69cfeb62384bd3d030" name="lib/model/om/BasesfSocialMessageRcptPeer.php" role="data"/>
+   <file md5sum="15d12529f28c0d1d8e061976dfba8d5e" name="lib/model/om/BasesfSocialMessageRcpt.php" role="data"/>
+   <file md5sum="d4ca02c9621c380856630f99ae72dc5c" name="lib/model/om/BasesfSocialNotifyPeer.php" role="data"/>
+   <file md5sum="55da841ae1aba99b38bc12d08afe2ae4" name="lib/model/om/BasesfSocialNotify.php" role="data"/>
+   <file md5sum="c611f5794eca46069cddc81596bb04df" name="lib/model/map/sfSocialContactMapBuilder.php" role="data"/>
+   <file md5sum="d216ee7f23b494e10efd43171be1abae" name="lib/model/map/sfSocialContactGroupMapBuilder.php" role="data"/>
+   <file md5sum="8c304fd8bdae55bd2371bc6367136dd4" name="lib/model/map/sfSocialContactGroupContactMapBuilder.php" role="data"/>
+   <file md5sum="a38bf526f2aba77a3d61f0c31a3c8ca5" name="lib/model/map/sfSocialContactRequestMapBuilder.php" role="data"/>
+   <file md5sum="a2f13cf1abc068e2489732ca111c0739" name="lib/model/map/sfSocialEventMapBuilder.php" role="data"/>
+   <file md5sum="ec3e232aa771234d69a1285f8d3f326e" name="lib/model/map/sfSocialEventInviteMapBuilder.php" role="data"/>
+   <file md5sum="54cf33110443cb309636823e609b3e14" name="lib/model/map/sfSocialEventUserMapBuilder.php" role="data"/>
+   <file md5sum="597c3e787aecd5bb2a7750d59a430332" name="lib/model/map/sfSocialGroupMapBuilder.php" role="data"/>
+   <file md5sum="cc76d568b00e8dff364279d5eb1ba2ea" name="lib/model/map/sfSocialGroupInviteMapBuilder.php" role="data"/>
+   <file md5sum="93789ed84c5e889bf7cefd3586b0dc97" name="lib/model/map/sfSocialGroupUserMapBuilder.php" role="data"/>
+   <file md5sum="33c538b4c11dcdf8a3745ce9b9eec46e" name="lib/model/map/sfSocialMessageMapBuilder.php" role="data"/>
+   <file md5sum="d06eef18e7548992c5f8e1cd1903f7b8" name="lib/model/map/sfSocialMessageRcptMapBuilder.php" role="data"/>
+   <file md5sum="2b90702cfa34cc6bb87ab43f96f36f2c" name="lib/model/map/sfSocialNotifyMapBuilder.php" role="data"/>
+   <file md5sum="5c674bf5b7032235806ff787e85ab75d" name="lib/model/map/sfSocialContactTableMap.php" role="data"/>
+   <file md5sum="9f862c8e0838d59d3ff5bbc5ca8d8a4f" name="lib/model/map/sfSocialContactGroupTableMap.php" role="data"/>
+   <file md5sum="7902edd517f6ca31add608ef6b7e6754" name="lib/model/map/sfSocialContactGroupContactTableMap.php" role="data"/>
+   <file md5sum="1d99de0d4b32c2ced8d664e063687487" name="lib/model/map/sfSocialContactRequestTableMap.php" role="data"/>
+   <file md5sum="e1b21fc57947e5a2d197cf3703c1afa4" name="lib/model/map/sfSocialEventTableMap.php" role="data"/>
+   <file md5sum="c68f48cec992f542584ca5821a622805" name="lib/model/map/sfSocialEventInviteTableMap.php" role="data"/>
+   <file md5sum="94f95432ba597a8d1272a283ce0cd698" name="lib/model/map/sfSocialEventUserTableMap.php" role="data"/>
+   <file md5sum="e113976c600feea88497f7706653bdbe" name="lib/model/map/sfSocialGroupTableMap.php" role="data"/>
+   <file md5sum="66daf02017b4d58a2b92127a2a52bc35" name="lib/model/map/sfSocialGroupInviteTableMap.php" role="data"/>
+   <file md5sum="d654727a25e5c1926b463b4ac2acd68c" name="lib/model/map/sfSocialGroupUserTableMap.php" role="data"/>
+   <file md5sum="9064d03f0905ad048c0cb2893ada25ba" name="lib/model/map/sfSocialMessageTableMap.php" role="data"/>
+   <file md5sum="45e6d4bb924bb1a6abb8784f6cdc50c2" name="lib/model/map/sfSocialMessageRcptTableMap.php" role="data"/>
+   <file md5sum="018d73ac8b53f54642a41eade3c741cb" name="lib/model/map/sfSocialNotifyTableMap.php" role="data"/>
+   <file md5sum="e71a2b74b4ec9d08945fe11cbd09040e" name="lib/model/sfSocialGroupUserPeer.php" role="data"/>
+   <file md5sum="814426d2cbcb0184a92e8101f7ec51df" name="lib/model/sfSocialContactPeer.php" role="data"/>
+   <file md5sum="e5bb8f115fa8739850c02d95548333ea" name="lib/model/sfSocialEventInvitePeer.php" role="data"/>
+   <file md5sum="ad9f89c00a966bc4dbadd4bf7c228e00" name="lib/model/sfSocialContactGroup.php" role="data"/>
+   <file md5sum="7f1344e44aaee60a62e5710ef13c2882" name="lib/model/sfSocialGroupPeer.php" role="data"/>
+   <file md5sum="66e99e1139ccd17994e3ee7b999b154a" name="lib/model/sfSocialGroupInvite.php" role="data"/>
+   <file md5sum="2757d3067c7dee6515e06a98b1897c7d" name="lib/model/sfSocialContactGroupPeer.php" role="data"/>
+   <file md5sum="e991fd560337e0893ccf96a1489f215f" name="lib/model/sfSocialNotifyPeer.php" role="data"/>
+   <file md5sum="87360f97e9887feb389858d9b5fc820f" name="lib/model/sfSocialEventUser.php" role="data"/>
+   <file md5sum="580c5aa661e44878723a225ee046e944" name="lib/model/sfSocialEvent.php" role="data"/>
+   <file md5sum="11de8b5945a5f28a300e9750c488dc11" name="lib/model/sfSocialContactRequestPeer.php" role="data"/>
+   <file md5sum="f821a401d9c187d35bc9e20c62f04a9e" name="lib/model/sfSocialContactGroupContactPeer.php" role="data"/>
+   <file md5sum="476c2f3dc7c4dc572d9dbdbb428e926f" name="lib/model/sfSocialContactGroupContact.php" role="data"/>
+   <file md5sum="4f5c5f57b18ab798370a80b7abe478ac" name="lib/model/sfSocialMessage.php" role="data"/>
+   <file md5sum="0258fb07b7b9696eeef2e1921ae7669b" name="lib/model/sfSocialGroupInvitePeer.php" role="data"/>
+   <file md5sum="3ad23af844115e160f517736794c73fb" name="lib/model/sfSocialNotify.php" role="data"/>
+   <file md5sum="6188b437a898ea408bb40aab661e3ec1" name="lib/model/sfSocialContact.php" role="data"/>
+   <file md5sum="9b24aeb0f2750d6556d7dc61387edddb" name="lib/model/sfSocialGroupUser.php" role="data"/>
+   <file md5sum="da0cc92097067a2d168a982350843c2c" name="lib/model/sfSocialEventUserPeer.php" role="data"/>
+   <file md5sum="f75720239555b46c793aa2259bf26b13" name="lib/model/sfSocialGroup.php" role="data"/>
+   <file md5sum="630861da4295c4c2852bc4c7b4912c18" name="lib/model/sfSocialEventPeer.php" role="data"/>
+   <file md5sum="9e3532086fbb7b7ecf0846067e8aba65" name="lib/model/sfSocialEventInvite.php" role="data"/>
+   <file md5sum="2943e5deec80aed391238f8dda3231ef" name="lib/model/sfSocialContactRequest.php" role="data"/>
+   <file md5sum="8b905ef179e3b8574ca68e64c81e93ec" name="lib/model/sfSocialMessagePeer.php" role="data"/>
+   <file md5sum="3fc189d0b940091be88c0f60efc31051" name="lib/model/sfSocialMessageRcptPeer.php" role="data"/>
+   <file md5sum="e4001a456e38eb9dfe5852a35f387f60" name="lib/model/sfSocialMessageRcpt.php" role="data"/>
+   <file md5sum="fb913575632e8516fd54a0048de3caed" name="lib/model/sfSocialGuardUser.php" role="data"/>
+   <file md5sum="775906f95174ddb7822a869525e451da" name="lib/model/sfSocialGuardUserPeer.php" role="data"/>
+   <file md5sum="ac087a15c24be75ed943b17424975602" name="lib/form/base/BasesfSocialContactForm.class.php" role="data"/>
+   <file md5sum="22e1497389c5035312021e2a72777be5" name="lib/form/base/BasesfSocialContactGroupForm.class.php" role="data"/>
+   <file md5sum="73de11cd0bf4ef7cbe310d0aa7989ef1" name="lib/form/base/BasesfSocialContactGroupContactForm.class.php" role="data"/>
+   <file md5sum="f74261f9bd9251cb0bc244582c178172" name="lib/form/base/BasesfSocialContactRequestForm.class.php" role="data"/>
+   <file md5sum="b2f50dd87e842d2e45174f218d7f43b2" name="lib/form/base/BasesfSocialEventForm.class.php" role="data"/>
+   <file md5sum="974a96339a45423f50c1de291203e546" name="lib/form/base/BasesfSocialEventInviteForm.class.php" role="data"/>
+   <file md5sum="a54de94f225728e3be846cf8c4d9ac87" name="lib/form/base/BasesfSocialEventUserForm.class.php" role="data"/>
+   <file md5sum="876d5381d9946984ae7d2337633c0411" name="lib/form/base/BasesfSocialGroupForm.class.php" role="data"/>
+   <file md5sum="0181caeaf83eee175d33c1cfa1205ba8" name="lib/form/base/BasesfSocialGroupInviteForm.class.php" role="data"/>
+   <file md5sum="c7a2868f82ec56eb428e485ab062dad5" name="lib/form/base/BasesfSocialGroupUserForm.class.php" role="data"/>
+   <file md5sum="1e476a9357edfca8b256655a45539355" name="lib/form/base/BasesfSocialMessageForm.class.php" role="data"/>
+   <file md5sum="bac4f3a8c28f71eb1e7bb8b0b830d4c2" name="lib/form/base/BasesfSocialMessageRcptForm.class.php" role="data"/>
+   <file md5sum="92c05206cc886721043e61de03175182" name="lib/form/base/BasesfSocialNotifyForm.class.php" role="data"/>
+   <file md5sum="32cfd2f344e9c4b32d34c94879c450a7" name="lib/form/sfSocialMessageRcptForm.class.php" role="data"/>
+   <file md5sum="34fe1f24e948142a838df5cef32dcc0e" name="lib/form/sfSocialNotifyForm.class.php" role="data"/>
+   <file md5sum="a63dd14a01c3c753bdb9c119565db687" name="lib/form/sfSocialEventInviteForm.class.php" role="data"/>
+   <file md5sum="e71c91c84a86944180e084bbc5c34e5e" name="lib/form/sfSocialEventUserForm.class.php" role="data"/>
+   <file md5sum="4bfd9fbaa7b52c08b69b5ff4a49b6497" name="lib/form/sfSocialEventForm.class.php" role="data"/>
+   <file md5sum="48a34b2287be53e07fefe9606c6a66cf" name="lib/form/sfSocialContactRequestForm.class.php" role="data"/>
+   <file md5sum="74aed02750af953ec213303a8ce7d625" name="lib/form/sfSocialContactGroupContactForm.class.php" role="data"/>
+   <file md5sum="c3a0c85299324e3394bba5b9a458c2c2" name="lib/form/sfSocialMessageForm.class.php" role="data"/>
+   <file md5sum="ad2cc4aa15d72ae62be41c71ccb7c8e6" name="lib/form/sfSocialContactGroupForm.class.php" role="data"/>
+   <file md5sum="1ec4b1cc991c21ac685ab7af97d39c8b" name="lib/form/sfSocialContactForm.class.php" role="data"/>
+   <file md5sum="4819c9a64ac7d5ffd2ebf22d5af7a8e2" name="lib/form/sfSocialGroupInviteForm.class.php" role="data"/>
+   <file md5sum="9d53b37684044a8124e86d8aec4517d0" name="lib/form/sfSocialGroupUserForm.class.php" role="data"/>
+   <file md5sum="9395efd5c3435f1e86c1a15c4e2c95ab" name="lib/form/sfSocialGroupForm.class.php" role="data"/>
+   <file md5sum="4fda8ead0ce9d25e996dab99d71e3aad" name="lib/form/sfSocialProfileForm.class.php" role="data"/>
+   <file md5sum="f7f550a4a21fb17e567256f00e995a9b" name="lib/filter/base/BasesfSocialContactFormFilter.class.php" role="data"/>
+   <file md5sum="92e891f731d1b0b203590f4778223213" name="lib/filter/base/BasesfSocialContactGroupFormFilter.class.php" role="data"/>
+   <file md5sum="9cc3add5034e4ccf3b6832495d57da4e" name="lib/filter/base/BasesfSocialContactGroupContactFormFilter.class.php" role="data"/>
+   <file md5sum="76073f2247179215c472c209d5d7bfae" name="lib/filter/base/BasesfSocialContactRequestFormFilter.class.php" role="data"/>
+   <file md5sum="fbd72f58d52c756246d6b77f744beeb7" name="lib/filter/base/BasesfSocialEventFormFilter.class.php" role="data"/>
+   <file md5sum="240faffc4a13a349b845e9fa4d681c5a" name="lib/filter/base/BasesfSocialEventInviteFormFilter.class.php" role="data"/>
+   <file md5sum="ab243ffdfc56efa8d8ef8a9777eabeda" name="lib/filter/base/BasesfSocialEventUserFormFilter.class.php" role="data"/>
+   <file md5sum="15976a0bb5ef971e45f976353171d27b" name="lib/filter/base/BasesfSocialGroupFormFilter.class.php" role="data"/>
+   <file md5sum="7ecfc640d33a1805f1adda685ad252fd" name="lib/filter/base/BasesfSocialGroupInviteFormFilter.class.php" role="data"/>
+   <file md5sum="4143a94683b3bb6c3467d4042d37c386" name="lib/filter/base/BasesfSocialGroupUserFormFilter.class.php" role="data"/>
+   <file md5sum="bad671f7a580a15a586d1fac999d0e29" name="lib/filter/base/BasesfSocialMessageFormFilter.class.php" role="data"/>
+   <file md5sum="4537d39c0459b1cb55c3cb7207a3371c" name="lib/filter/base/BasesfSocialMessageRcptFormFilter.class.php" role="data"/>
+   <file md5sum="f98a93f3f6b92919931a978b729f5629" name="lib/filter/base/BasesfSocialNotifyFormFilter.class.php" role="data"/>
+   <file md5sum="50648eabbebadfcab34a9c5e1a6a7fcb" name="lib/filter/sfSocialContactRequestFormFilter.class.php" role="data"/>
+   <file md5sum="3a3066b1363681b9024c04f74016f8f6" name="lib/filter/sfSocialContactGroupFormFilter.class.php" role="data"/>
+   <file md5sum="16675d76e23d2dac67555f1d7702c296" name="lib/filter/sfSocialContactFormFilter.class.php" role="data"/>
+   <file md5sum="93f1ba9e0355f439117a5da7b4cfba67" name="lib/filter/sfSocialGroupInviteFormFilter.class.php" role="data"/>
+   <file md5sum="42ef3505c91ea5cccc0a809e404994d1" name="lib/filter/sfSocialGroupUserFormFilter.class.php" role="data"/>
+   <file md5sum="4d9ee522f535e6e87a1e4812ab26fa72" name="lib/filter/sfSocialGroupFormFilter.class.php" role="data"/>
+   <file md5sum="e496bed49e32370e158b4e2d065e1138" name="lib/filter/sfSocialNotifyFormFilter.class.php" role="data"/>
+   <file md5sum="530e6b36fc5992f2b58624f14519f3fa" name="lib/filter/sfSocialEventInviteFormFilter.class.php" role="data"/>
+   <file md5sum="1395458b12a0d3db70ffdd2442a915d5" name="lib/filter/sfSocialEventUserFormFilter.class.php" role="data"/>
+   <file md5sum="9ba2be0be5fe78d93caafd7c931cafd2" name="lib/filter/sfSocialEventFormFilter.class.php" role="data"/>
+   <file md5sum="3cb0bf49fb3f76edaed4f87132431d71" name="lib/filter/sfSocialMessageRcptFormFilter.class.php" role="data"/>
+   <file md5sum="91f5a09cc33f218453f13a4ca028377e" name="lib/filter/sfSocialContactGroupContactFormFilter.class.php" role="data"/>
+   <file md5sum="1d90aec65f0ac8ec39480b2ab81f14ad" name="lib/filter/sfSocialMessageFormFilter.class.php" role="data"/>
+   <file md5sum="6315c389a5212761103e4580e25d7fa2" name="lib/user/sfSocialSecurityUser.class.php" role="data"/>
+   <file md5sum="1ad5a53eed86e9dc9d27061d2313a872" name="lib/helper/sfSocialNotifyHelper.php" role="data"/>
+   <file md5sum="30fc73acc3538a312a5f637520e2d82d" name="lib/test/loggedTest.class.php" role="data"/>
+   <file md5sum="8168daa940ac6c084ca5326200f2adba" name="lib/sfSocialNotifyListener.class.php" role="data"/>
+   <file md5sum="b9986713ac4f460999917b343f46ec49" name="lib/sfSocial.class.php" role="data"/>
+   <file md5sum="da3b1af314d5b514d4656ffbfe13ccbc" name="modules/sfSocialContact/actions/actions.class.php" role="data"/>
+   <file md5sum="e2c48be7baa14d9a84231c3e60021210" name="modules/sfSocialContact/lib/BasesfSocialContactActions.class.php" role="data"/>
+   <file md5sum="a3b003b7001b50d876de3236c9f9c16a" name="modules/sfSocialContact/templates/searchSuccess.json.php" role="data"/>
+   <file md5sum="1ea553d791e8d20301ba945445a53ead" name="modules/sfSocialContact/templates/sendrequestSuccess.php" role="data"/>
+   <file md5sum="fcfe9be3269e6866041ccc6d15cbe5a3" name="modules/sfSocialContact/templates/listSuccess.php" role="data"/>
+   <file md5sum="6ad5c6ca2eef202cf5e3e17f3e8e0d36" name="modules/sfSocialContact/templates/requestsSuccess.php" role="data"/>
+   <file md5sum="88079ba18d2b9668e8b15f709fa81c17" name="modules/sfSocialContact/templates/sentrequestsSuccess.php" role="data"/>
+   <file md5sum="47ae5779910d1c3c130c38ed82defb8f" name="modules/sfSocialGroup/actions/actions.class.php" role="data"/>
+   <file md5sum="e46acad1a4760d31cd098b2811d5b626" name="modules/sfSocialGroup/lib/BasesfSocialGroupActions.class.php" role="data"/>
+   <file md5sum="38ad2c30411f0f58e8c151a6561bfdea" name="modules/sfSocialGroup/templates/listSuccess.php" role="data"/>
+   <file md5sum="53dbe4af2e8c01d16790b95c61d43a8e" name="modules/sfSocialGroup/templates/viewSuccess.php" role="data"/>
+   <file md5sum="fdd1e8a533eba3f78a7d3cd2ac868aa0" name="modules/sfSocialGroup/templates/editSuccess.php" role="data"/>
+   <file md5sum="4ef1e7a08ac27b4840969457db089e9b" name="modules/sfSocialGroup/templates/createSuccess.php" role="data"/>
+   <file md5sum="82276b8cfd4ecdb98b26d59b3edd1d00" name="modules/sfSocialGroup/templates/mylistSuccess.php" role="data"/>
+   <file md5sum="906e6b4b28705f276206190e27f2c825" name="modules/sfSocialGroup/templates/invitejsSuccess.js.php" role="data"/>
+   <file md5sum="57a9755621410bb0e2735ad3d0b38b71" name="modules/sfSocialGroup/config/view.yml" role="data"/>
+   <file md5sum="bc29cedc143d31eeca06056c238b1358" name="modules/sfSocialEvent/actions/actions.class.php" role="data"/>
+   <file md5sum="c1736e0ab492138afb365e1e7656732d" name="modules/sfSocialEvent/lib/BasesfSocialEventActions.class.php" role="data"/>
+   <file md5sum="83c5221e287bcb43ef30ac9d0af2b6aa" name="modules/sfSocialEvent/templates/listSuccess.php" role="data"/>
+   <file md5sum="a2e44e9e9b5233c1e0866e0984634b4e" name="modules/sfSocialEvent/templates/createSuccess.php" role="data"/>
+   <file md5sum="b977971777e5585698f5ce2791856283" name="modules/sfSocialEvent/templates/pastlistSuccess.php" role="data"/>
+   <file md5sum="11d51c024f3bedd48681de9694dc2cf0" name="modules/sfSocialEvent/templates/viewSuccess.php" role="data"/>
+   <file md5sum="1e7e17319f508e5071961ab35e214185" name="modules/sfSocialEvent/templates/invitedlistSuccess.php" role="data"/>
+   <file md5sum="199e184334532ae3519922433220ffa8" name="modules/sfSocialEvent/templates/inviteSuccess.php" role="data"/>
+   <file md5sum="a5850da980beac225fdc9e61e1bae2a7" name="modules/sfSocialEvent/templates/editSuccess.php" role="data"/>
+   <file md5sum="d15d9a7baf4c589b3cc6e4010e731c48" name="modules/sfSocialEvent/templates/invitejsSuccess.js.php" role="data"/>
+   <file md5sum="5a14c5c1f3422f098c36df1c653ca1ae" name="modules/sfSocialEvent/config/view.yml" role="data"/>
+   <file md5sum="dd9392f18c493bd5e0da8cc1ba6e197b" name="modules/sfSocialMessage/actions/actions.class.php" role="data"/>
+   <file md5sum="646037c5db2bbd5584b0887facbeee96" name="modules/sfSocialMessage/lib/BasesfSocialMessageActions.class.php" role="data"/>
+   <file md5sum="6123a2ec563c3b4e72b4236feaf15e18" name="modules/sfSocialMessage/templates/sentSuccess.php" role="data"/>
+   <file md5sum="6bfa9430b083e5dcbc86d5fe66020a77" name="modules/sfSocialMessage/templates/listSuccess.php" role="data"/>
+   <file md5sum="9d2257e6b3174c87d83e79792f0fd455" name="modules/sfSocialMessage/templates/composeSuccess.php" role="data"/>
+   <file md5sum="1a9d41d31f2b5cb2cee119c382cf1c84" name="modules/sfSocialMessage/templates/readSuccess.php" role="data"/>
+   <file md5sum="000bb324f587fc4a3fb8aa5b05888386" name="modules/sfSocialMessage/templates/sentlistSuccess.php" role="data"/>
+   <file md5sum="1341668fdbe2d2e9333ed82ef7bf06e2" name="modules/sfSocialMessage/templates/sentreadSuccess.php" role="data"/>
+   <file md5sum="6d69b5fd0f908251e5c41512d2ff0bf4" name="modules/sfSocialMessage/templates/composejsSuccess.js.php" role="data"/>
+   <file md5sum="ed354b6a51293f5afb6526b8d95a89ae" name="modules/sfSocialMessage/config/view.yml" role="data"/>
+   <file md5sum="30c53f8d6cffd204d37e78e4c9b6aab6" name="modules/sfSocialNotify/actions/actions.class.php" role="data"/>
+   <file md5sum="1425533761817324f43df5ccac353a71" name="modules/sfSocialNotify/lib/BasesfSocialNotifyActions.class.php" role="data"/>
+   <file md5sum="0032e653d5378da944b97912f314345d" name="modules/sfSocialUser/actions/actions.class.php" role="data"/>
+   <file md5sum="fd8fee04a051f67725c2d7a46919fbc3" name="modules/sfSocialUser/lib/BasesfSocialUserActions.class.php" role="data"/>
+   <file md5sum="5cb9da44064090b22ccd562645385460" name="modules/sfSocialUser/templates/userSuccess.php" role="data"/>
+   <file md5sum="0d7b07effc9673da66e44d95d4719653" name="modules/sfSocialUser/templates/editSuccess.php" role="data"/>
+   <file md5sum="b99a4f872b464c6902d9d915a0085d26" name="modules/sfSocialUser/templates/contactsSuccess.php" role="data"/>
+   <file md5sum="50de516fabe6859796716aa96a749d44" name="modules/sfSocialUser/templates/searchSuccess.php" role="data"/>
+   <file md5sum="c12e4f8960fca42de5855ddd900404bc" name="data/fixtures/01_users.yml" role="data"/>
+   <file md5sum="16bd7a9a843bb9e269e93d6e21d37a96" name="data/fixtures/02_contacts.yml" role="data"/>
+   <file md5sum="4135d4101ffc4e078c8953970570e5a4" name="data/fixtures/03_messages.yml" role="data"/>
+   <file md5sum="b23fb0c018ea4c23dd5bc9d7933786e6" name="data/fixtures/04_groups.yml" role="data"/>
+   <file md5sum="560782aa026abdec78ef41db30554334" name="data/fixtures/05_events.yml" role="data"/>
+   <file md5sum="3f39fa1a52b89e4471a21c4a315a3eb9" name="data/fixtures/06_notifies.yml" role="data"/>
+   <file md5sum="87dc50933fc5c24d4da9c09766491eb1" name="web/css/sfsac.css" role="data"/>
+   <file md5sum="814efa667398edd8e371e92f2fce4ec0" name="web/images/default.jpg" role="data"/>
+   <file md5sum="74231277f1e64c40d7bbe088a76e26ae" name="web/js/sfsac.js" role="data"/>
+   <file md5sum="effb7efbb717503de28f96a8308fb854" name="i18n/sfSocial.it.xml" role="data"/>
+   <file md5sum="6a6a8e020838b23406c81b19c1d46df6" name="LICENSE" role="data"/>
+   <file md5sum="8afa01a065c53059389e1b2d1723f9d1" name="README" role="data"/>
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.2.4</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.1</min>
+   </pearinstaller>
+   
+   <package>
+    <name>sfGuardPlugin</name>
+    <channel>plugins.symfony-project.org</channel>
+    <min>3.1.3</min>
+    <max>4.1.0</max>
+    <exclude>4.1.0</exclude>
+   </package>
+  </required>
+  <optional>
+   <package>
+    <name>sfThumbnailPlugin</name>
+    <channel>plugins.symfony-project.org</channel>
+    <min>1.5.6</min>
+    <max>2.1.0</max>
+    <exclude>2.1.0</exclude>
+   </package>
+  </optional>
+ </dependencies>
+ <phprelease/>
+ <changelog>
+  <release>
+   <version>
+    <release>0.0.4</release>
+    <api>0.0.4</api>
+   </version>
+   <stability>
+    <release>alpha</release>
+    <api>alpha</api>
+   </stability>
+   <license uri="http://www.symfony-project.com/license">LGPL license</license>
+   <license>LGPL</license>
+   <date>2009-12-01</date>
+   <notes>
+* garak: fully compatibility with symfony 1.4
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>0.0.3</release>
+    <api>0.0.3</api>
+   </version>
+   <stability>
+    <release>alpha</release>
+    <api>alpha</api>
+   </stability>
+   <license uri="http://www.symfony-project.com/license">LGPL license</license>
+   <license>LGPL</license>
+   <date>2009-07-11</date>
+   <notes>
+* garak: almost complete alpha release
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>0.0.2</release>
+    <api>0.0.2</api>
+   </version>
+   <stability>
+    <release>alpha</release>
+    <api>alpha</api>
+   </stability>
+   <license uri="http://www.symfony-project.com/license">LGPL license</license>
+   <license>LGPL</license>
+   <date>2009-07-03</date>
+   <notes>
+* garak: first working release
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>0.0.1</release>
+    <api>0.0.1</api>
+   </version>
+   <stability>
+    <release>alpha</release>
+    <api>alpha</api>
+   </stability>
+   <license uri="http://www.symfony-project.com/license">LGPL license</license>
+   <license>LGPL</license>
+   <date>2009-01-08</date>
+   <notes>
+* garak: first pre-alpha release
+   </notes>
+  </release>
+ </changelog>
+</package>

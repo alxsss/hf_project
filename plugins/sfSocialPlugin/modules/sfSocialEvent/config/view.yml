@@ -1,0 +1,7 @@
+all:
+  has_layout:  on
+  layout:  layout_profile
+statusSuccess:
+  has_layout:     off
+deleteeventstatusSuccess:
+  has_layout:     off

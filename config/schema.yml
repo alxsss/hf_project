@@ -1,0 +1,279 @@
+propel: 
+  album: 
+    _attributes: 
+      idMethod: native
+    id:  { type: INTEGER, required: true, autoIncrement: true, primaryKey: true }
+    title: { type: VARCHAR, size: 255, required: true }
+    description: { type: LONGVARCHAR, required: true  }
+    visibility: { type: INTEGER, required: true}
+    user_id:     { type: INTEGER, foreignTable: sf_guard_user, foreignReference: id, required: true, onDelete: cascade }
+    created_at:     ~  
+  canadastates:
+    _attributes: { phpName: Canadastates }
+    id: { type: INTEGER, size: '10', primaryKey: true, autoIncrement: true, required: true }
+    code: { type: VARCHAR, size: '5', required: true, defaultValue: '' }
+    name: { type: VARCHAR, size: '30', required: true, defaultValue: '' }  
+  country:
+    _attributes: { idMethod:  native }
+    id: { type: INTEGER, size: '10', primaryKey: true, required: true, defaultValue: '0' }
+    name: { type: VARCHAR, size: '64', required: true, defaultValue: '' }
+    iso_code_2: { type: CHAR, size: '2', required: true, defaultValue: '' }
+    iso_code_3: { type: CHAR, size: '3', required: true, defaultValue: '' }
+    address_format_id: { type: INTEGER, size: '10', required: true, defaultValue: '0' }  
+  friend:
+    _attributes: 
+      idMethod: native
+    id: { type: INTEGER, required: true, autoIncrement: true, primaryKey: true }    
+    user_id: { type: integer, foreignTable: sf_guard_user, foreignReference: id, required: true, onDelete: cascade}
+    friend_id: { type: integer, foreignTable: sf_guard_user, foreignReference: id, required: true, onDelete: cascade}       
+    approved: { type:BOOLEAN, default:0}
+    created_at: ~
+    _indexes: 
+      friends_FI_1: 
+        - user_id  
+  message: 
+    _attributes: 
+      idMethod: native
+    id:  { type: SMALLINT, required: true, autoIncrement: true,       primaryKey: true }
+    subject: { type: VARCHAR, size: 255, required: true }
+    from_userid:  { type: integer, foreignTable: sf_guard_user, foreignReference: id, onDelete: cascade }
+    to_userid:    { type: integer, foreignTable: sf_guard_user, foreignReference: id, onDelete: cascade }
+    from_deltype: { type: TINYINT, default: 0 }
+    to_deltype:   { type: TINYINT, default: 0  }
+    created_at: ~      
+    msgtext: { type: LONGVARCHAR, required: true  }
+    read_unread: { type: BOOLEAN, default:0} 
+  photo: 
+    _attributes: 
+      idMethod: native
+    id: { type: INTEGER, required: true, autoIncrement: true, primaryKey: true }
+    album_id: { type: INTEGER, foreignTable: album, foreignReference: id,   onDelete: cascade}
+    user_id: { type: integer, foreignTable: sf_guard_user, foreignReference: id, required: true, onDelete: cascade }
+    filename: { type: VARCHAR, size: 255, required: true }
+    hits: { type: INTEGER} 
+    created_at: ~      
+    rating: { type: INTEGER }
+    num_comment: { type: INTEGER }
+    vote:   { type: INTEGER }
+    title:  { type: VARCHAR, size: 255 }
+    approved:  { type: BOOLEAN, default: 1 }
+    visibility: { type: TINYINT, required: true, default: 0}
+    popular_photo: { type: BOOLEAN, default:0}    
+    raw_ip:  { type: VARCHAR, size: 50  }
+    _indexes: 
+       photo_FI_1: 
+        - album_id    
+  photo_comment: 
+    _attributes: 
+      idMethod: native
+    photo_id: { type: INTEGER, required: true, foreignTable: photo, foreignReference: id, required: true, onDelete: cascade }      
+    id: { type: INTEGER, required: true, autoIncrement: true, primaryKey: true}
+    comment: { type: LONGVARCHAR }
+    created_at: ~       
+    raw_ip:  { type: VARCHAR, size: 50  }
+    user_id: { type: integer, foreignTable: sf_guard_user, foreignReference: id, required: true, onDelete: cascade }
+    _indexes:
+      photo_comment_FI_1: 
+        - photo_id
+      photo_comment_FI_2: 
+        - user_id
+  photo_tag: 
+    photo_id: { type: INTEGER, required: true, primaryKey: true, foreignTable: photo, foreignReference: id, required: true, onDelete: cascade }      
+    user_id:  { type: integer, foreignTable: sf_guard_user, foreignReference: id, required: true, onDelete: cascade }
+    created_at: ~      
+    tag: { type: VARCHAR, size: 100  }
+    normalized_tag: { type: VARCHAR, size: 100, required: true,       primaryKey: true, index: true }
+    _indexes: 
+      photo_tag_FI_2: 
+        - user_id
+  photo_fav: 
+    photo_id: { type: INTEGER, required: true, primaryKey: true, foreignTable: photo, foreignReference: id, required: true, onDelete: cascade }        
+    user_id:  { type: integer, foreignTable: sf_guard_user, foreignReference: id, required: true, onDelete: cascade, primaryKey: true }
+    created_at: ~      
+    _indexes:
+      photo_fav_FI_1: 
+        - photo_id 
+      photo_fav_FI_2: 
+        - user_id
+  photo_vote: 
+    photo_id: { type: INTEGER, required: true, primaryKey: true, foreignTable: photo, foreignReference: id, required: true, onDelete: cascade }        
+    user_id:  { type: integer, foreignTable: sf_guard_user, foreignReference: id, required: true, onDelete: cascade, primaryKey: true }
+    created_at: ~      
+    _indexes: 
+      photo_vote_FI_2: 
+        - user_id
+  photo_rate:     
+    photo_id: { type: INTEGER, required: true, primaryKey: true, foreignTable: photo, foreignReference: id, required: true, onDelete: cascade }        
+    user_id:  { type: integer, foreignTable: sf_guard_user, foreignReference: id, required: true, onDelete: cascade, primaryKey: true }
+    rate:  {  type:integer  }
+    created_at: ~
+    checked:  {type: BOOLEAN, default: 0 }
+    deleted:  {type: BOOLEAN, default: 0 }          
+  states:
+    _attributes: { phpName: States }
+    id: { type: INTEGER, size: '10', primaryKey: true, autoIncrement: true, required: true }
+    code: { type: VARCHAR, size: '5', required: true, defaultValue: '' }
+    name: { type: VARCHAR, size: '30', required: true, defaultValue: '' }   
+  advertise:
+    _attributes:  {idMethod:  native }
+    id:  { type: INTEGER, required:  true,  autoIncrement: true, primaryKey: true  }
+    name:  { type:  VARCHAR, size: 100, required:  true  }
+    company:  { type:  VARCHAR, size: 100, required:  true  }
+    email:  { type:  VARCHAR, size: 100, required:  true  }
+    phone:  { type:  VARCHAR, size: 15, required:  true  }
+    comment: { type:  LONGVARCHAR }
+    created_at: ~
+  search:
+    _attributes:  {idMethod:  native  }
+    id:  {type: INTEGER, required:  true,  autoIncrement: true, primaryKey: true  }
+    query:  {  type:  LONGVARCHAR}
+  region:
+    _attributes: { idMethod:  native }
+    id: { type: INTEGER, size: '10', primaryKey: true, autoIncrement: true, required: true }
+    name: { type: VARCHAR, size: '250', required: true, defaultValue: '' }
+    country_id: { type: integer, foreignTable: country, foreignReference: id, onDelete: cascade }   
+  village:
+    _attributes: { idMethod:  native }
+    id: { type: INTEGER, size: '10', primaryKey: true, autoIncrement: true, required: true }
+    name: { type: VARCHAR, size: '250', required: true, defaultValue: '' }
+    region_id: { type: integer, foreignTable: region, foreignReference: id, required: true, onDelete: cascade }  
+  school:
+    _attributes: { idMethod:  native }
+    id: { type: INTEGER, size: '10', primaryKey: true, autoIncrement: true, required: true }
+    name: { type: VARCHAR, size: '250', required: true, defaultValue: '' }
+    village_id: { type: integer, foreignTable: village, foreignReference: id, onDelete: cascade }
+
+  school_user:
+    _attributes:    { idMethod:  native }
+    school_id:       { type: integer, primaryKey: true, required: true, foreignTable: school, foreignReference: id, onDelete: cascade }
+    user_id:  { type: integer, primaryKey: true, required: true, foreignTable: sf_guard_user, foreignReference: id, onDelete: cascade }
+    grad_year: { type: INTEGER}
+  updates:
+    _attributes: { idMethod: none, defaultIdMethod: none, readOnly: true}
+    _attributes: { idMethod: native}
+    pid: { type: INTEGER}
+    id: { type: INTEGER}
+    user_id:  { type: integer, foreignTable: sf_guard_user, foreignReference: id }
+    friend_id: { type: INTEGER}
+    group_id: { type: INTEGER}
+    f_status_name: { type: LONGVARCHAR }
+    p_owner_id: {type: INTEGER}
+    num_comment: {type: INTEGER}
+    created_at: ~ 
+  ignorelist:
+    _attributes: { idMethod:native }
+    id: { type: INTEGER, size: '10', primaryKey: true, autoIncrement: true, required: true }
+    user_id: { type: integer, foreignTable: sf_guard_user, foreignReference: id, onDelete: cascade}
+    ignored_user_id: { type: integer, foreignTable: sf_guard_user, foreignReference: id, onDelete: cascade}
+  sessions:
+    id:           ~
+    sess_id:         { type: varchar(255), required: false }
+    sess_data:         { type: longvarchar, required: false }
+    sess_time:         { type: varchar(255), required: false }
+    user_id:         { type: integer, foreignTable: sf_guard_user, foreignReference: id, onDelete: cascade}
+  guest:
+    _attributes: { idMethod:native }
+    id: { type: INTEGER, size: '10', primaryKey: true, autoIncrement: true, required: true }
+    user_id: { type: integer, foreignTable: sf_guard_user, foreignReference: id, onDelete: cascade}
+    guest_id: { type: integer, foreignTable: sf_guard_user, foreignReference: id, onDelete: cascade}
+    checked:  {type: BOOLEAN, default: 0 }
+    created_at: ~
+  game_category:
+    _attributes: { idMethod:native }
+    id: { type: INTEGER, size: '10', primaryKey: true, autoIncrement: true, required: true }
+    name: { type: VARCHAR, size: '250'}
+    display_name: { type: VARCHAR, size: '250'}
+    num_games: { type: INTEGER, size: '10'}
+  game:
+    _attributes: { idMethod:native }
+    id: { type: INTEGER, size: '10', primaryKey: true, autoIncrement: true, required: true }
+    game_category_id: { type: integer, foreignTable: game_category, foreignReference: id, onDelete: cascade}
+    name: { type: VARCHAR, size: '250'} 
+    description: { type: LONGVARCHAR}
+    embed_code: { type: LONGVARCHAR}
+    thumb: { type: LONGVARCHAR}
+    creative_screenshot: { type: LONGVARCHAR}
+    created_at: ~
+    score:  { type: INTEGER, size:11 }
+  game_user:
+    _attributes:    { idMethod:  native }
+    game_id:       { type: integer, primaryKey: true, required: true, foreignTable: game, foreignReference: id, onDelete: cascade }
+    user_id:  { type: integer, primaryKey: true, required: true, foreignTable: sf_guard_user, foreignReference: id, onDelete: cascade }   
+    created_at: ~
+  music:
+    _attributes:{ idMethod: native}
+    id: { type:INTEGER, size: '10', required:true,  autoIncrement:true, primaryKey:true }
+    url: { type:VARCHAR, size: '255', required: true}
+    title: { type:VARCHAR, size: '255', required: false}
+    artist: { type:VARCHAR, size: '255', required: false}
+    visibility: { type:BOOLEAN, default:'0'}
+    raw_ip: {  type: VARCHAR, size:'50' }
+    user_id: { type: integer, foreignTable: sf_guard_user, foreignReference: id, required: true, onDelete: cascade }
+    created_at: ~  
+  playlist:
+    _attributes:{ idMethod: native }
+    id: { type: INTEGER, size: '10', primaryKey: true, autoIncrement: true, required: true }
+    name: {type: VARCHAR, size: '255'}
+    user_id: { type: integer, foreignTable: sf_guard_user, foreignReference:id, required:true, onDelete:cascade }
+    created_at: { type: TIMESTAMP }
+  playlist_comment:
+    _attributes:{idMethod: native }
+    id: { type:INTEGER, size: '10', required:true,  autoIncrement:true, primaryKey:true }
+    playlist_id: { type: INTEGER, required: true, foreignTable: playlist, foreignReference: id, required: true, onDelete: cascade }
+    body:
+      type: LONGVARCHAR
+    created_at:
+      type: TIMESTAMP
+    raw_ip:  {  type: VARCHAR, size: '50'  }
+    user_id:     { type: integer, foreignTable: sf_guard_user, foreignReference: id, required: true, onDelete: cascade }
+    _indexes:
+      playlist_comment_FI_1:
+        - playlist_id
+      playlist_comment_FI_2:
+        - user_id
+  playlist_fav:
+    playlist_id: { type: INTEGER, size: '10', required: true, primaryKey: true, foreignTable: playlist, foreignReference: id, required: true, onDelete: cascade }
+    user_id:  { type: integer, size: '10', foreignTable: sf_guard_user, foreignReference: id, required: true, onDelete: cascade, primaryKey: true }
+    created_at: ~
+    _indexes:
+      playlist_fav_FI_1:
+        - playlist_id
+      playlist_fav_FI_2:
+        - user_id
+  playlist_music:
+    _attributes: {idMethod: native}
+    playlist_id: {type: INTEGER, size: '10', required: true, primaryKey: true, foreignTable: playlist, foreignReference: id, onDelete: CASCADE,  onUpdate: CASCADE}
+    music_id: {type: INTEGER, required: true, primaryKey: true, foreignTable: music, foreignReference: id, onDelete: CASCADE, onUpdate: CASCADE}
+  videolist_ytvideo:
+    _attributes: {idMethod: native}
+    id: { type: INTEGER, size: '10', primaryKey: true, autoIncrement: true, required: true }
+    videolist_id:  {type: INTEGER, size: '11', required: true, foreignTable: videolist, foreignReference: id,       onDelete: CASCADE, onUpdate: CASCADE  }
+    ytvideo_id: {type: VARCHAR, required: true, size: '30',  }
+    created_at: { type: TIMESTAMP }
+  ytvideo_fav:
+    id: { type: INTEGER, size: '10', primaryKey: true, autoIncrement: true, required: true }
+    video_id: { type: VARCHAR, required: true, size '30' }
+    user_id:  { type: integer, foreignTable: sf_guard_user, foreignReference: id, required: true, onDelete: cascade}
+    created_at: ~
+  videolist:
+    _attributes: { idMethod: native }
+    id: { type: INTEGER, required: true,  autoIncrement: true,       primaryKey: true}
+    name: {type: VARCHAR, size: 255}
+    user_id:     { type: integer, foreignTable: sf_guard_user, foreignReference: id, required: true, onDelete: cascade }
+    created_at: { type: TIMESTAMP }
+  recent_ytvideo:
+    _attributes: { idMethod: native }
+    id: { type: INTEGER, size: '10', primaryKey: true, autoIncrement: true, required: true }
+    ytvideo_id: { type: VARCHAR, required: true, size '30' }
+    created_at: ~
+  user_link:
+    _attributes:{ idMethod: native}
+    id: { type:INTEGER, size: '10', required:true,  autoIncrement:true, primaryKey:true }
+    user_id: { type: integer, foreignTable: sf_guard_user, foreignReference: id, required: true, onDelete: cascade }
+    status_text:  LONGVARCHAR
+    num_comment: { type: INTEGER }
+    img: {type: varchar, size: '50'}
+    url: { type:VARCHAR, size: '255'}
+    title: { type:VARCHAR, size: '255'}
+    description: { type: LONGVARCHAR  }
+    created_at: ~  

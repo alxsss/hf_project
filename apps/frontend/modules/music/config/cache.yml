@@ -1,0 +1,4 @@
+_fp:
+  enabled:     on
+  with_layout: false   # Default value
+  lifetime:    86400   # Default value

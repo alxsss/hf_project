@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="170"
+   name=""
+   committed-date="2008-06-20T17:33:32.125000Z"
+   url="file:///C:/svnrepos/fmpsv/trunk/plugins/sfAjaxUploaderPlugin/modules/ajaxUploader/templates"
+   last-author="Shervgi"
+   kind="dir"
+   repos="file:///C:/svnrepos/fmpsv"
+   revision="170"/>
+<entry
+   committed-rev="170"
+   name="submitSuccess.php"
+   text-time="2008-06-24T07:41:46.890625Z"
+   committed-date="2008-06-20T17:33:32.125000Z"
+   checksum="514c3e0bfa208fe4f570cdae15956628"
+   last-author="Shervgi"
+   kind="file"
+   revision="171"/>
+<entry
+   committed-rev="225"
+   name="uploaderSuccess.php"
+   text-time="2008-11-01T20:20:04.890625Z"
+   committed-date="2008-11-03T06:43:06.062500Z"
+   checksum="963086eb89a2c887af2cce71f93a3e32"
+   last-author="Shervgi"
+   kind="file"
+   revision="225"/>
+</wc-entries>

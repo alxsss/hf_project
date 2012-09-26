@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="170"
+   name=""
+   committed-date="2008-06-20T17:33:32.125000Z"
+   url="file:///C:/svnrepos/fmpsv/trunk/plugins/sfAjaxUploaderPlugin/modules/ajaxUploader/config"
+   last-author="Shervgi"
+   kind="dir"
+   repos="file:///C:/svnrepos/fmpsv"
+   revision="170"/>
+<entry
+   committed-rev="170"
+   name="view.yml"
+   text-time="2008-06-17T00:13:20.312500Z"
+   committed-date="2008-06-20T17:33:32.125000Z"
+   checksum="52edb3864cf2983e49dce536c2fdd35a"
+   last-author="Shervgi"
+   kind="file"/>
+</wc-entries>

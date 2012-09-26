@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="184"
+   name=""
+   committed-date="2008-11-03T05:28:51.250000Z"
+   url="file:///C:/svnrepos/fmpsv/trunk/plugins/sfGuardPlugin/modules/sfGuardUser/validate"
+   last-author="Shervgi"
+   kind="dir"
+   repos="file:///C:/svnrepos/fmpsv"
+   revision="184"/>
+<entry
+   committed-rev="184"
+   name="edit.yml"
+   text-time="2008-11-01T04:51:11.953125Z"
+   committed-date="2008-11-03T05:28:51.250000Z"
+   checksum="aa213f724f25d2a367b184bc9fdd36d1"
+   last-author="Shervgi"
+   kind="file"/>
+</wc-entries>

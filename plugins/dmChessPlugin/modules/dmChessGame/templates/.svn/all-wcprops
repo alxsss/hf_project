@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/26011/plugins/dmChessPlugin/modules/dmChessGame/templates
+END
+_cemetery.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/!svn/ver/26008/plugins/dmChessPlugin/modules/dmChessGame/templates/_cemetery.php
+END
+_tableNotStarted.php
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/!svn/ver/26010/plugins/dmChessPlugin/modules/dmChessGame/templates/_tableNotStarted.php
+END
+_tableFinished.php
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/!svn/ver/25984/plugins/dmChessPlugin/modules/dmChessGame/templates/_tableFinished.php
+END
+_justInstalled.php
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/!svn/ver/26010/plugins/dmChessPlugin/modules/dmChessGame/templates/_justInstalled.php
+END
+_play.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/!svn/ver/26010/plugins/dmChessPlugin/modules/dmChessGame/templates/_play.php
+END
+_board.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/!svn/ver/25984/plugins/dmChessPlugin/modules/dmChessGame/templates/_board.php
+END
+_table.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/!svn/ver/26010/plugins/dmChessPlugin/modules/dmChessGame/templates/_table.php
+END
+_notCreated.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/!svn/ver/26011/plugins/dmChessPlugin/modules/dmChessGame/templates/_notCreated.php
+END

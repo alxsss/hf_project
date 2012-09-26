@@ -1,0 +1,14 @@
+fields:
+  filename:
+    required: 
+      msg:    please upload a file
+    file:     True 
+    sfFileValidator:
+     mime_types:
+       - 'image/jpeg'
+       - 'image/png'
+       - 'video/mpeg'
+       - 'video/mng'
+     mime_types_error: only PNG and JPEG images are allowed
+     max_size:        5120000
+     max_size_error: Max size is 5120Kb

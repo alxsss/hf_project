@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/!svn/ver/25985/plugins/dmChessPlugin/config/dm
+END
+assets.yml
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/25984/plugins/dmChessPlugin/config/dm/assets.yml
+END
+services.yml
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/!svn/ver/25985/plugins/dmChessPlugin/config/dm/services.yml
+END
+modules.yml
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/25984/plugins/dmChessPlugin/config/dm/modules.yml
+END

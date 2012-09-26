@@ -1,0 +1,111 @@
+<?php
+
+class ajaxUploaderActions extends sfActions
+ {
+   private  $tfiles=array();
+   
+  public function preExecute()
+  {
+    sfConfig::set('sf_web_debug', false);
+  }
+  public function executeUploader()
+  {
+    $this->name = $this->getRequestParameter('name', 'filename');
+  }
+  private function keyGen($length = 10)
+  {
+    $keychars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+    if($length < 0)
+	{
+      $length = 0;
+    }
+    $max=strlen($keychars)-1;
+    $key = '';    
+    for ($i=0; $i<$length; $i++)
+	{
+      $key .= substr($keychars, rand(0, $max), 1);
+    }    
+    return $key;
+  }
+  public function executeSubmit()
+  {
+    //$uploadDir = sfConfig::get('sf_upload_dir');
+	$uploadDir = sfConfig::get('sf_upload_dir').'/assets/tmp';
+    foreach ($this->getRequest()->getFileNames() as $filename)
+	 {
+        if($filename == "upload")
+	    {
+           if(!$this->getRequest()->getFileError($filename)) 
+		   {
+		      //if ($this->getUser()->isAuthenticated())
+		      {
+                 $filetoUpload=$this->getRequest()->getFileName($filename);
+				 $filetoUpload = $this->sanitizeFile($filetoUpload);
+                 $info['ext']  = substr($filetoUpload, strpos($filetoUpload, '.') - strlen($filetoUpload) + 1);
+		         $newfileName = md5($this->getRequest()->getFileName($filename).time().rand(0, 99999));
+                 //$ext = $this->getRequest()->getFileExtension('filename');
+		         $ext ='.'.$info['ext'];
+                 if ($this->isImage($info['ext']))
+                 {
+                    $thumbnail = new sfThumbnail(76, 76);
+                    $thumbnail->loadFile($this->getRequest()->getFilePath($filename));
+	                //$currentDir='photos';
+	                //$absCurrentDir = $this->uploadDir.'/'.$currentDir;
+					$absCurrentDir = $uploadDir;
+					$this->thumbnailsDir='thumbnails';
+	                $this->forward404Unless(is_dir($absCurrentDir));
+                    $thumbnail->save($absCurrentDir.'/thumbnails/'.$newfileName.$ext);
+	                //$mediaName = 'Photo'; 
+                  }
+				}
+			 ///////////////////////////
+			 
+			 
+			 
+			  $this->filename=$newfileName;
+			  //$this->filename = $this->keyGen() . $filename . '___' . $this->getRequest()->getFileName($filename);
+              $this->getRequest()->moveFile($filename, $uploadDir. DIRECTORY_SEPARATOR .$this->filename.$ext);
+			  
+			  //set session variables////////////////////////////
+			  $this->tfiles=$this->getUser()->getAttribute('tfiles');
+	          $this->tfiles[$this->filename.$ext]= $this->filename.$ext;
+			  $this->getUser()->setAttribute('tfiles', $this->tfiles);
+			  /////////////////////////////
+              foreach($this->getRequest()->getParameterHolder()->getAll() as $name=>$value) 
+			  {
+                if(!in_array($name, array('module', 'action'))) 
+				{
+                  if($value == "__fieldname")
+				  {
+                    $value =  $this->filename;
+                  } 
+				  elseif (is_array($value)) 
+				  {
+                    $keys = array_keys($value);
+                    if(count($keys)) {
+                    if($this->getUser()->hasAttribute($name, AjaxUploaderFilter::namespace) && is_array($this->getUser()->getAttribute($name, null, AjaxUploaderFilter::namespace)))
+					{
+                      $value = $this->getUser()->getAttribute($name, null, AjaxUploaderFilter::namespace);
+                    }
+                  $value[$keys[0]] = $this->filename;
+                }
+              }
+              $this->getUser()->setAttribute($name, $value, AjaxUploaderFilter::namespace);
+              break;
+            }
+          }
+        }
+      }
+      break;
+    }
+  }
+ //functions from mediaLibrary plugin to be removed later 
+  protected function sanitizeFile($file)
+  {
+    return preg_replace('/[^a-z0-9_\.-]/i', '_', $file);
+  }
+   protected function isImage($ext)
+  {
+    return in_array(strtolower($ext), array('png', 'jpg', 'gif'));
+  }
+}

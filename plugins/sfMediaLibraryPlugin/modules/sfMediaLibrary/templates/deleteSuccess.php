@@ -1,0 +1,1 @@
+<?php include_partial('item/itemimgupload', array('files' => $files,  'webAbsCurrentDir' => $webAbsCurrentDir, 'id'=>$id)) ?>	  

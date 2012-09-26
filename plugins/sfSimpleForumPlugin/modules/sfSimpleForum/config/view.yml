@@ -1,0 +1,4 @@
+all:
+  stylesheets: [/sfSimpleForumPlugin/css/default.css]
+  has_layout:     on
+  layout:         layout_forum

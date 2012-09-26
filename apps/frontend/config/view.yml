@@ -1,0 +1,13 @@
+default:
+  http_metas:
+    content-type:  text/html;  charset:utf-8
+  metas:
+    title:  hemsinif-sinif yoldaslarini dostlari tampaq ve onlarla elaqede olmaq ucun sosial sebeke
+    robots:  index, follow
+    description:   hemsinif-sinif yoldaslarini ve dostlari tampaq ve onlarla elaqede olmaq ucun sosial sebeke
+    keywords:  hemsinif, sinif yoldaslari, dostlar, friends
+    language: az, en, ru
+  stylesheets:  [layout]
+  javascripts:  [jquery, jquery.hf.js,parse_link.js]
+  has_layout:  on
+  layout:  layout

@@ -1,0 +1,1 @@
+<?php include_partial('photos/interested_user', array('photos' => $photo)) ?> 

@@ -1,0 +1,983 @@
+<?xml version="1.0" ?>
+<xliff version="1.0">
+  <file original="global" source-language="en_US" datatype="plaintext">
+    <body>
+	  <trans-unit id="1">
+        <source>about</source>
+        <target>о нас</target>
+      </trans-unit>
+	  <trans-unit id="2">
+        <source>Advertisement</source>
+        <target>Реклама</target>
+      </trans-unit>
+      <trans-unit id="3">
+        <source>contact us</source>
+        <target>контакты</target>
+      </trans-unit>
+      <trans-unit id="4">
+        <source>Year graduated</source>
+        <target>Год окончания учебы</target>
+      </trans-unit>
+	  <trans-unit id="5">
+        <source>home</source>
+        <target>главная </target>
+      </trans-unit>
+	  <trans-unit id="6">
+        <source>First name</source>
+        <target>Имя</target>
+      </trans-unit>
+	  <trans-unit id="7">
+        <source>Last name</source>
+        <target>Фамилия</target>
+      </trans-unit>
+	  <trans-unit id="8">
+        <source>school</source>
+        <target>школа</target>
+      </trans-unit>
+	  <trans-unit id="9">
+        <source>terms of service</source>
+        <target>правила пользование</target>
+      </trans-unit>
+	  <trans-unit id="10">
+        <source>Name</source>
+        <target>Имя</target>
+      </trans-unit>	
+	  <trans-unit id="11">
+        <source>Company</source>
+        <target>Компания</target>
+      </trans-unit>	
+	  <trans-unit id="12">
+        <source>Email</source>
+        <target>Электронная почта</target>
+      </trans-unit>	
+	  <trans-unit id="13">
+        <source>Phone</source>
+        <target>Телефон</target>
+      </trans-unit>	
+	  <trans-unit id="14">
+        <source>Comment</source>
+        <target>Замечания</target>
+      </trans-unit>	
+	  <trans-unit id="15">
+        <source>Submit</source>
+        <target>Отправить</target>
+      </trans-unit>	
+	  <trans-unit id="16">
+        <source>Thank you for your submission. We will contact you as soon as possible.</source>
+        <target>Спасибо. Мы скоро вас контактируем.</target>
+      </trans-unit>		
+	  <trans-unit id="17">
+        <source>sign out</source>
+        <target>выход</target>
+      </trans-unit>
+	  <trans-unit id="18">
+        <source>sign in</source>
+        <target>логин</target>
+      </trans-unit>	
+	  <trans-unit id="19">
+        <source>register</source>
+        <target>регистрация</target>
+      </trans-unit>	
+	  <trans-unit id="20">
+        <source>help</source>
+        <target>помощь</target>
+      </trans-unit>
+	  <trans-unit id="21">
+        <source>forum</source>
+        <target>форум</target>
+      </trans-unit>	
+	  <trans-unit id="22">
+        <source>Photos</source>
+        <target>Фото</target>
+      </trans-unit>	
+	  <trans-unit id="23">
+        <source>Add to favorite</source>
+        <target>Добавить в любимые</target>
+      </trans-unit>	
+	  <trans-unit id="24">
+        <source>Friends</source>
+        <target>Друзья</target>
+      </trans-unit>
+	  <trans-unit id="25">
+        <source>Registered users</source>
+        <target>Зарегистрировано</target>
+      </trans-unit>		
+	  <trans-unit id="26">
+        <source>Your registration was successful. You will receive an email with your login information.</source>
+        <target>Ваша регистрация была успешна. Вы получите электронную почту со своей информацией логина.</target>
+      </trans-unit>	
+	  <trans-unit id="27">
+        <source>Add</source>
+        <target>Добавить</target>
+      </trans-unit>
+	  <trans-unit id="28">
+        <source>What are you up to?</source>
+        <target>Я сейчас</target>
+      </trans-unit>
+	  <trans-unit id="29">
+        <source>invite friends</source>
+        <target>пригласи друзей</target>
+      </trans-unit>
+	  <trans-unit id="30">
+        <source>see all</source>
+        <target>посмотреть все</target>
+      </trans-unit>
+	  <trans-unit id="31">
+        <source>Username</source>
+        <target>Логин</target>
+      </trans-unit>
+	  <trans-unit id="32">
+        <source>Password</source>
+        <target>Пароль</target>
+      </trans-unit>	
+	  <trans-unit id="33">
+        <source>Gender</source>
+        <target>Пол</target>
+      </trans-unit>	
+	  <trans-unit id="34">
+        <source>Birthday</source>
+        <target>День рождения</target>
+      </trans-unit>
+	  <trans-unit id="35">
+        <source>Add region/village</source>
+        <target>добав район/деревнью</target>
+      </trans-unit>	
+	  <trans-unit id="36">
+        <source>Add school</source>
+        <target>добав школу</target>
+      </trans-unit>
+	  <trans-unit id="37">
+        <source>Required.</source>
+        <target>требуется</target>
+      </trans-unit>
+	  <trans-unit id="38">
+        <source>I graduated school in</source>
+        <target>Я закончил школу в</target>
+      </trans-unit>
+	  <trans-unit id="39">
+        <source>Choose a region in order to find your school</source>
+        <target>Выберите регион чтобы найти вашу школу</target>
+      </trans-unit>	
+	  <trans-unit id="40">
+        <source>Forgot your password?</source>
+        <target>Забыли пароль?</target>
+      </trans-unit>
+	  <trans-unit id="41">
+        <source>Registration</source>
+        <target>Регистрация</target>
+      </trans-unit>
+	  <trans-unit id="42">
+        <source>In  hemsinif.com</source>
+        <target>В hemsinif.com</target>
+      </trans-unit>
+	   <trans-unit id="43">
+        <source>you can</source>
+        <target>вы сможете</target>
+      </trans-unit>
+	   <trans-unit id="44">
+        <source>find classmates, friends</source>
+        <target>найти одноклассников, друзей</target>
+      </trans-unit>	
+	   <trans-unit id="45">
+        <source>upload a photo</source>
+        <target>добавить фотографий</target>
+      </trans-unit>
+	  <trans-unit id="46">
+        <source>and more</source>
+        <target>и многое др</target>
+      </trans-unit>
+	  <trans-unit id="47">
+        <source>add your school</source>
+        <target>добавить свою школу</target>
+      </trans-unit>	
+	  <trans-unit id="48">
+        <source>edit profile</source>
+        <target>изменить профиль</target>
+      </trans-unit>	
+	  <trans-unit id="49">
+        <source>messages</source>
+        <target>сообщения</target>
+      </trans-unit>	
+	  <trans-unit id="50">
+        <source>friend requests</source>
+        <target>предложения</target>
+      </trans-unit>
+	  <trans-unit id="51">
+        <source>Info</source>
+        <target>Инфо</target>
+      </trans-unit>
+	  <trans-unit id="52">
+        <source>Recent Activity</source>
+        <target>Лента активности</target>
+      </trans-unit>
+	  <trans-unit id="53">
+        <source>Albums</source>
+        <target>Альбомы</target>
+      </trans-unit>
+	  <trans-unit id="54">
+        <source>Schools</source>
+        <target>Школы</target>
+      </trans-unit>	
+	  <trans-unit id="55">
+        <source>Search</source>
+        <target>Поиск людей</target>
+      </trans-unit>	
+	  <trans-unit id="56">
+        <source>Add to friends</source>
+        <target>Добавить в список друзей</target>
+      </trans-unit>
+	  <trans-unit id="57">
+        <source>Send a message</source>
+        <target>Отправить сообщение</target>
+      </trans-unit>	
+	  <trans-unit id="58">
+        <source>You message has been successfully sent</source>
+        <target>Ваше сообщение успешно отправлено</target>
+      </trans-unit>	
+	  <trans-unit id="59">
+        <source>inbox</source>
+        <target>входящие</target>
+      </trans-unit>		
+	  <trans-unit id="60">
+        <source>sentbox</source>
+        <target>отправленные</target>
+      </trans-unit>
+	  <trans-unit id="61">
+        <source>From</source>
+        <target>От кого</target>
+      </trans-unit>		
+	  <trans-unit id="62">
+        <source>Subject</source>
+        <target>Тема</target>
+      </trans-unit>		
+	  <trans-unit id="63">
+        <source>Date</source>
+        <target>Дата</target>
+      </trans-unit>
+      <trans-unit id="64">
+        <source>date</source>
+        <target>дата</target>
+      </trans-unit>			
+	  <trans-unit id="65">
+        <source>To</source>
+        <target>Кому</target>
+      </trans-unit>		
+	  <trans-unit id="66">
+        <source>Sent at</source>
+        <target>Отправлено</target>
+      </trans-unit>		
+	  <trans-unit id="67">
+        <source>Reply</source>
+        <target>Ответить</target>
+      </trans-unit>	
+	  <trans-unit id="68">
+        <source>Send</source>
+        <target>Отправить</target>
+      </trans-unit>	
+	  <trans-unit id="69">
+        <source>Cancel</source>
+        <target>Отменить</target>
+      </trans-unit>	
+	  <trans-unit id="70">
+        <source>You are not authorized to view this page</source>
+        <target>У вас не хватает полномочий смотрет эту страницу</target>
+      </trans-unit>
+	  <trans-unit id="71">
+        <source>This album is set to private</source>
+        <target>Этот альбом могут посмотреть толко друзья этого пользователя</target>
+      </trans-unit>	
+	  <trans-unit id="72">
+        <source>No photos in this album</source>
+        <target>В этом альбоме нет фотографий</target>
+      </trans-unit>	
+	  <trans-unit id="73">
+        <source>'s profile</source>
+        <target> профиль</target>
+      </trans-unit>
+	   <trans-unit id="74">
+        <source>edit album</source>
+        <target>изменить альбом</target>
+      </trans-unit>		
+	   <trans-unit id="75">
+        <source>edit photo</source>
+        <target>изменить  фото</target>
+      </trans-unit>	
+	  <trans-unit id="76">
+        <source>uploaded on</source>
+        <target>добавлено в</target>
+      </trans-unit>	
+	  <trans-unit id="77">
+        <source>Your comment</source>
+        <target>Ваш комментарий</target>
+      </trans-unit>		
+	  <trans-unit id="78">
+        <source>You must </source>
+        <target>Вы должны </target>
+      </trans-unit>		
+	  <trans-unit id="79">
+        <source> to submit a comment</source>
+        <target> чтобы комментировать</target>
+      </trans-unit>
+	   <trans-unit id="80">
+        <source>recommend</source>
+        <target>рекомендовать</target>
+      </trans-unit>	
+	  <trans-unit id="81">
+        <source>recommended</source>
+        <target>рекомендовано</target>
+      </trans-unit>
+	  <trans-unit id="82">
+        <source>description</source>
+        <target>описание</target>
+      </trans-unit>	
+	  <trans-unit id="83">
+        <source>upload your photos</source>
+        <target>добавить ваши фотографий</target>
+      </trans-unit>	
+	  <trans-unit id="84">
+        <source>Delete</source>
+        <target>Удалить</target>
+      </trans-unit>
+	  <trans-unit id="85">
+        <source>title</source>
+        <target>название</target>
+      </trans-unit>
+	  <trans-unit id="86">
+        <source>visibility</source>
+        <target>видимость</target>
+      </trans-unit>
+	  <trans-unit id="87">
+        <source>Save</source>
+        <target>Сохранить</target>
+      </trans-unit>	
+	  <trans-unit id="88">
+        <source>Friends only</source>
+        <target>Только друзья</target>
+      </trans-unit>
+	  <trans-unit id="89">
+        <source>Everyone</source>
+        <target>Все</target>
+      </trans-unit>	
+	  <trans-unit id="90">
+        <source>album name</source>
+        <target>название альбома</target>
+      </trans-unit>	
+	  <trans-unit id="91">
+        <source>Create new album</source>
+        <target>Создать новый альбом</target>
+      </trans-unit>	
+	  <trans-unit id="92">
+        <source>Create</source>
+        <target>Создать</target>
+      </trans-unit>	
+	  <trans-unit id="93">
+        <source>cancel</source>
+        <target>отменить</target>
+      </trans-unit>	
+	  <trans-unit id="94">
+        <source>edit friends</source>
+        <target>изменить друзей</target>
+      </trans-unit>
+	  <trans-unit id="95">
+        <source>comment</source>
+        <target>комментировать</target>
+      </trans-unit>	
+	  <trans-unit id="96">
+        <source> hr </source>
+        <target> час </target>
+      </trans-unit>		
+	  <trans-unit id="97">
+        <source> min ago</source>
+        <target> мин. тому назад</target>
+      </trans-unit>
+	  <trans-unit id="98">
+        <source>statuses</source>
+        <target>статусы</target>
+      </trans-unit>
+	  <trans-unit id="99">
+        <source>photos</source>
+        <target>фото</target>
+      </trans-unit>
+	  <trans-unit id="100">
+        <source>uploaded new photo</source>
+        <target>добавил новое фото</target>
+      </trans-unit>
+	  <trans-unit id="101">
+        <source>commented on photo</source>
+        <target>комментировал о фоте</target>
+      </trans-unit>	
+	  <trans-unit id="102">
+        <source>Are you sure?</source>
+        <target>Вы действительно хотите удалить?</target>
+      </trans-unit>		
+	  <trans-unit id="103">
+        <source>OK</source>
+        <target>Да</target>
+      </trans-unit>
+	  <trans-unit id="104">
+        <source>No</source>
+        <target>Нет</target>
+      </trans-unit>	
+	  <trans-unit id="105">
+        <source>From album</source>
+        <target>Из альбома</target>
+      </trans-unit>		
+	  <trans-unit id="106">
+        <source>is</source>
+        <target>сейчас</target>
+      </trans-unit>	 
+	  <trans-unit id="108">
+        <source>Reset</source>
+        <target>Отправить</target>
+      </trans-unit>
+	  <trans-unit id="109">
+        <source>There is no such user.</source>
+        <target>Нет такого пользователя.</target>
+      </trans-unit>	
+	  <trans-unit id="110">
+        <source>my profile</source>
+        <target>мой профиль</target>
+      </trans-unit>
+	  <trans-unit id="111">
+        <source>communicate with them</source>
+        <target>общатсья с ними</target>
+      </trans-unit>
+	  <trans-unit id="112">
+        <source>Male</source>
+        <target>Мужчина</target>
+      </trans-unit>
+	  <trans-unit id="113">
+        <source>Female</source>
+        <target>Женщина</target>
+       </trans-unit>
+	  <trans-unit id="114">
+        <source>Profile picture</source>
+        <target>Профиль фото</target>
+      </trans-unit>
+	  <trans-unit id="115">
+        <source>About Me</source>
+        <target>О мне</target>
+      </trans-unit>
+	  <trans-unit id="116">
+        <source>TV shows</source>
+        <target>ТВ шоу</target>
+      </trans-unit>
+	   <trans-unit id="117">
+        <source>Looking for</source>
+        <target>Ищу</target>
+      </trans-unit>
+	  <trans-unit id="118">
+        <source>City</source>
+        <target>Город</target>
+      </trans-unit>
+	  <trans-unit id="119">
+        <source>State</source>
+        <target>Штат</target>
+      </trans-unit>
+	  <trans-unit id="120">
+        <source>Country of residence</source>
+        <target>Страна проживание</target>
+      </trans-unit>
+	  <trans-unit id="121">
+        <source>Activities</source>
+        <target>Деятельности</target>
+      </trans-unit>
+	  <trans-unit id="122">
+        <source>Books</source>
+        <target>Книги</target>
+      </trans-unit>
+	  <trans-unit id="123">
+        <source>Music</source>
+        <target>Музыка</target>
+      </trans-unit>
+	  <trans-unit id="124">
+        <source>Movies</source>
+        <target>Фильмы</target>
+      </trans-unit>
+	  <trans-unit id="125">
+        <source>Zip</source>
+        <target>Почтовый индекс</target>
+      </trans-unit>	
+	  <trans-unit id="126">
+        <source>If you do not see your region/village in the above list, you can add it here. If your school is not in a village, you can add it here in the schools link.</source>
+        <target>Если вашего района/деревни нет в списке, то вы сможете добавить его здесь. Если ваша школа не находиться деревне то вы сможете добавить его переходив в линк "Məktəblər" наверху.</target>
+      </trans-unit>	
+	  <trans-unit id="127">
+        <source>If you do not see your school in the above list, you can add it here</source>
+        <target>Если вашей школы нет в списке, то вы сможете добавить его здесь</target>
+      </trans-unit>
+	  		<trans-unit id="128">
+        <source>Yes</source>
+        <target>Да</target>
+      </trans-unit>
+	  <trans-unit id="129">
+        <source>Do you really want to add</source>
+        <target>Вы действительно хотите добавить</target>
+      </trans-unit>	
+	  <trans-unit id="130">
+        <source>as a friend</source>
+        <target>в список друзей</target>
+      </trans-unit>
+	  <trans-unit id="131">
+        <source>Your request has been sent. The user needs to approve it</source>
+        <target>Ваша просьба была отправлена. Пользователь должен его одобрить</target>
+      </trans-unit>	
+	  <trans-unit id="132">
+        <source>Back to</source>
+        <target>  </target>
+      </trans-unit>
+	  <trans-unit id="133">
+        <source>You already have this user as a friend.</source>
+        <target>Этот пользователь уже ваш друг.</target>
+      </trans-unit>		
+	  <trans-unit id="134">
+        <source>You have already sent friend request to this user or this user has sent you a friend request.</source>
+        <target>Вы уже отправили просьбу этому пользователью или этот пользователь вам отправил такую же просьбу.</target>
+      </trans-unit>
+	  <trans-unit id="135">
+        <source>Interests</source>
+        <target>Интересы</target>
+      </trans-unit>
+	  <trans-unit id="136">
+        <source>Information</source>
+        <target>Инфо</target>
+      </trans-unit>
+	  <trans-unit id="137">
+        <source>Approve</source>
+        <target>Одобрить</target>
+      </trans-unit>
+	    <trans-unit id="138">
+        <source>Friend Requests</source>
+        <target>Предложения о дружбе</target>
+      </trans-unit>	
+	  <trans-unit id="139">
+        <source>Message</source>
+        <target>Сообщение</target>
+      </trans-unit>
+	   <trans-unit id="140">
+        <source>years old</source>
+        <target>года</target>
+      </trans-unit>	
+	  <trans-unit id="141">
+        <source>continue</source>
+        <target>продолжать</target>
+      </trans-unit>
+	  <trans-unit id="142">
+        <source>Select Gender</source>
+        <target>Выбирай пол</target>
+      </trans-unit>		
+	   <trans-unit id="143">
+        <source>commented on %photo% by %author%</source>
+        <target>комментировал на %photo% %author%а</target>
+      </trans-unit>
+	  <trans-unit id="144">
+        <source>photo</source>
+        <target>фото</target>
+      </trans-unit>
+	  <trans-unit id="145">
+        <source>Please fill out this contact form or email us at info at hemsinif dot az</source>
+        <target>Пожалуйста заполните эту форму или напишите нам на info at hemsinif точка az</target>
+      </trans-unit>
+	  <trans-unit id="146">
+        <source>Contact us</source>
+        <target>Контакт</target>
+      </trans-unit>
+	  <trans-unit id="147">
+        <source>Visibility</source>
+        <target>Видимость</target>
+      </trans-unit>
+	  <trans-unit id="148">
+        <source>All albums by %author%</source>
+        <target>Все альбомы %author% а</target>
+      </trans-unit>	
+	  <trans-unit id="149">
+        <source>All photos by %author%</source>
+        <target>Все фото %author% а</target>
+      </trans-unit>	
+	  <trans-unit id="150">
+        <source>This profile is set to private</source>
+        <target>Этот пользователь выбрал видимость своего профилья только для друзей</target>
+      </trans-unit>	
+	  <trans-unit id="151">
+        <source>remove the current file</source>
+        <target>удалить настоящий фото</target>
+      </trans-unit>
+	  <trans-unit id="152">
+        <source>The username and/or password is invalid.</source>
+        <target>Логин или пароль неправилень.</target>
+      </trans-unit>	
+	   <trans-unit id="153">
+        <source>You are not registered yet?</source>
+        <target>Вы еще не зарегистрировались?</target>
+      </trans-unit>		
+	   <trans-unit id="154">
+        <source>Register</source>
+        <target>Регистрация</target>
+      </trans-unit>	
+	  <trans-unit id="155">
+        <source>Select Year</source>
+        <target>Выбирай год</target>
+      </trans-unit>
+	  <trans-unit id="156">
+        <source>year</source>
+        <target>год</target>
+      </trans-unit>		
+	  <trans-unit id="157">
+        <source>month</source>
+        <target>месяц</target>
+      </trans-unit>		
+	  <trans-unit id="158">
+        <source>day</source>
+        <target>день</target>
+      </trans-unit>
+	  <trans-unit id="159">
+        <source>Invalid.</source>
+        <target>неправилень</target>
+      </trans-unit>	
+	  <trans-unit id="160">
+        <source>Please sign in first</source>
+        <target>Просьба зайти в сайт</target>
+      </trans-unit>
+	  <trans-unit id="161">
+        <source>Previous</source>
+        <target>Предыдущий</target>
+      </trans-unit>
+	  <trans-unit id="162">
+        <source>Next</source>
+        <target>Следующий</target>
+      </trans-unit>
+	   <trans-unit id="163">
+        <source>search for %query% did not give any results. You can invite %query% using this link</source>
+        <target>поиск для слова %query% не дало результатов. Вы можете пригласить %query% пользуясь этим линком</target>
+      </trans-unit>	
+	  <trans-unit id="164">
+        <source>New</source>
+        <target>Новый</target>
+      </trans-unit>
+	  <trans-unit id="165">
+        <source>Delete Marked</source>
+        <target>Удалить отмеченные</target>
+      </trans-unit>
+	   <trans-unit id="166">
+        <source>This photo is set to private</source>
+        <target>Это фото могут посмотреть толко друзья этого пользователя</target>
+      </trans-unit>
+	  <trans-unit id="167">
+        <source>An object with the same "%column%" already exist.</source>
+        <target>Этот логин уже существует</target>
+      </trans-unit>
+	   <trans-unit id="168">
+        <source>First</source>
+        <target>Первый</target>
+      </trans-unit>	
+	  <trans-unit id="169">
+        <source>Last</source>
+        <target>Последний</target>
+      </trans-unit>
+	  <trans-unit id="170">
+        <source>and</source>
+        <target>и</target>
+      </trans-unit>			
+	  <trans-unit id="171">
+        <source>are friends now</source>
+        <target>сейчас друзья</target>
+      </trans-unit>	
+	  <trans-unit id="172">
+        <source>Suggestions</source>
+        <target>Предложение</target>
+      </trans-unit>
+	   <trans-unit id="173">
+        <source>the same school</source>
+        <target>одинаковая школа</target>
+      </trans-unit>	
+	  <trans-unit id="173">
+        <source>updates</source>
+        <target>у друзей</target>
+      </trans-unit>
+	  <trans-unit id="175">
+        <source>mutual friends</source>
+        <target>общий друг</target>
+      </trans-unit>
+	   <trans-unit id="176">
+        <source>Find Friends</source>
+        <target>Найди друзей</target>
+      </trans-unit>
+	  <trans-unit id="177">
+        <source>With your help we can build the most powerful social networking. Please find and invite friends. Also let us know if you have any suggestions.</source>
+        <target>С вашей помощью мы можем построить самый мощный сосиалный нетворк. Пожалуйста найдите и пригласите друзей. Еще пришлите нам свои предложения.</target>
+      </trans-unit>
+	   <trans-unit id="178">
+        <source>select country</source>
+        <target>выбирай страну</target>
+      </trans-unit>	
+	   <trans-unit id="179">
+        <source>Password hint</source>
+        <target>Намек на пароль</target>
+      </trans-unit>		
+	  <trans-unit id="180">
+        <source>a word that can help you to remember your password</source>
+        <target>любое слово чтобы вспомнить пароль</target>
+      </trans-unit>
+	   <trans-unit id="181">
+        <source>is not required if you have an email</source>
+        <target>не требуется если у вас есть электронная почта</target>
+      </trans-unit>
+	  <trans-unit id="182">
+        <source>Password hint cannot be empty when there is no email</source>
+        <target>требуется если у вас нет электронная почта</target>
+      </trans-unit>	
+	  <trans-unit id="183">
+        <source>"%value%" is not an integer.</source>
+        <target>"%value%" не число</target>
+      </trans-unit>
+	   <trans-unit id="184">
+        <source>Marital Status</source>
+        <target>Семейное положение</target>
+      </trans-unit>
+	  <trans-unit id="185">
+        <source>Single</source>
+        <target>Без пары</target>
+      </trans-unit>
+	  <trans-unit id="186">
+        <source>In a realtionship</source>
+        <target>Встречаюсь</target>
+      </trans-unit>
+	  <trans-unit id="187">
+        <source>Engaged</source>
+        <target>Помолвлен(а)</target>
+      </trans-unit>
+	  <trans-unit id="188">
+        <source>Married</source>
+        <target>Женат/замужем</target>
+      </trans-unit>
+	  <trans-unit id="189">
+        <source>It is complicated</source>
+        <target>Всё сложно</target>
+      </trans-unit>	
+	  <trans-unit id="190">
+        <source>Divorced/Widowed</source>
+        <target>Вдовец/вдова</target>
+      </trans-unit>	
+	  <trans-unit id="191">
+        <source>users</source>
+        <target>юзеры</target>
+      </trans-unit>
+	  <trans-unit id="192">
+        <source>Website</source>
+        <target>Вебсайт</target>
+      </trans-unit>
+	   <trans-unit id="193">
+        <source>guests</source>
+        <target>гости</target>
+      </trans-unit>
+	  <trans-unit id="194">
+        <source>ignore</source>
+        <target>игнорировать</target>
+      </trans-unit>
+	  <trans-unit id="195">
+        <source>last login</source>
+        <target>был здесь</target>
+      </trans-unit>	
+	  <trans-unit id="196">
+        <source>user</source>
+        <target>пользователь</target>
+      </trans-unit>
+	   <trans-unit id="197">
+        <source>rate</source>
+        <target>оценка</target>
+      </trans-unit>	
+	  <trans-unit id="198">
+        <source>rates</source>
+        <target>оценки</target>
+      </trans-unit>	
+	  <trans-unit id="199">
+        <source>bad</source>
+        <target>плохой</target>
+      </trans-unit>	
+	  <trans-unit id="200">
+        <source>poor</source>
+        <target>скудный</target>
+      </trans-unit>	
+	  <trans-unit id="201">
+        <source>regular</source>
+        <target>обычный</target>
+      </trans-unit>	
+	  <trans-unit id="202">
+        <source>good</source>
+        <target>хороший</target>
+      </trans-unit>	
+	  <trans-unit id="203">
+        <source>gorgeus</source>
+        <target>великолепный</target>
+      </trans-unit>	
+	  <trans-unit id="204">
+        <source>online</source>
+        <target>на сайте</target>
+      </trans-unit>	
+	  <trans-unit id="205">
+        <source>Favorite photos</source>
+        <target>Любимые фото</target>
+      </trans-unit>		
+	  <trans-unit id="206">
+        <source>New members</source>
+        <target>Новые пользователи</target>
+      </trans-unit>	
+	  <trans-unit id="207">
+        <source>Members last logged in</source>
+        <target>Последние пользователи вошедшие в сайт</target>
+      </trans-unit>	
+	  <trans-unit id="208">
+        <source>Popular photos</source>
+        <target>Популярные фото</target>
+      </trans-unit>	
+	  <trans-unit id="209">
+        <source>You have approved friend request from %friend_request%. This user is your friend now</source>
+        <target>Вы одобрили запрос о дружбе от %friend_request%. Этот пользователь уже ваш друг.</target>
+      </trans-unit>		
+	  <trans-unit id="210">
+        <source>You have denied friend request from %friend_request%</source>
+        <target>Вы отклонили запрос о дружбе от %friend_request%</target>
+      </trans-unit>
+	  <trans-unit id="211">
+        <source>This place is for your friends activity. Currently you do not have friends.</source>
+        <target>Это место для деятельности ваших друзей. В настоящее время у вас нет друзей.</target>
+      </trans-unit>	
+	   <trans-unit id="212">
+        <source>Previous Messages</source>
+        <target>Предыдущие Сообщения</target>
+      </trans-unit>	
+	  	  <trans-unit id="213">
+        <source>games</source>
+        <target>игры</target>
+      </trans-unit>	
+	    <trans-unit id="214">
+        <source>Games</source>
+        <target>Игры</target>
+      </trans-unit>																				       
+	  <trans-unit id="215">
+        <source>Popular games</source>
+        <target>Популярные игры</target>
+      </trans-unit>
+	  <trans-unit id="216">
+        <source>suggestions</source>
+        <target>предложения</target>
+      </trans-unit>
+	  <trans-unit id="217">
+        <source>there is a symbol in the username that is not allowed</source>
+        <target>в логине есть не допустимый символ</target>
+      </trans-unit> 
+  	  <trans-unit id="218">
+        <source>What do you think?</source>
+        <target>Что вы думаете?</target>
+      </trans-unit>
+  	  <trans-unit id="219">
+        <source>Participate in new/popular photo?</source>
+        <target>Участвовать в новых/популярных фото?</target>
+      </trans-unit>
+      <trans-unit id="220">
+        <source>sort by</source>
+        <target>сортировать по</target>
+      </trans-unit>
+      <trans-unit id="221">
+        <source>asc</source>
+        <target>восх</target>
+      </trans-unit>
+      <trans-unit id="222">
+        <source>desc</source>
+        <target>нисх</target>
+      </trans-unit>
+  	  <trans-unit id="223">
+        <source>Added to favorite</source>
+        <target>добавилено в любимые</target>
+      </trans-unit>
+   	  <trans-unit id="224">
+        <source>Delete profile</source>
+        <target>Удалить профиль</target>
+      </trans-unit>
+     <trans-unit id="225">
+        <source>Password again</source>
+        <target>Подтвердить пароль</target>
+      </trans-unit>
+      <trans-unit id="226">
+        <source>The two passwords must be the same.</source>
+        <target>Оба пароля должны быть одинаковыми</target>
+      </trans-unit>
+	  <trans-unit id="227">
+        <source>New photos</source>
+        <target>Новые фото</target>
+      </trans-unit>
+	  <trans-unit id="228">
+        <source>recently featured</source>
+        <target>недавно показываемые</target>
+      </trans-unit>
+	  <trans-unit id="229">
+        <source>most viewed</source>
+        <target>наиболее просматриваемые</target>
+      </trans-unit> 
+	  <trans-unit id="230">
+        <source>Create new videolist</source>
+        <target>Создать видеокаталог</target>
+      </trans-unit>
+      <trans-unit id="231">
+        <source>Your Videolists</source>
+        <target>Ваши видеокаталоги</target>
+      </trans-unit> 
+	  <trans-unit id="232">
+        <source>Select videolist</source>
+        <target>Выберите видеокаталог</target>
+      </trans-unit> 
+	  <trans-unit id="233">
+        <source>created by %user%</source>
+        <target>создател %user%</target>
+      </trans-unit>
+	  <trans-unit id="234">
+        <source>enter video title</source>
+        <target>введите название видео</target>
+      </trans-unit>
+	  <trans-unit id="235">
+        <source>edit videolist</source>
+        <target>изменить видеокаталог</target>
+      </trans-unit>
+      <trans-unit id="236">
+        <source>add to videolist</source>
+        <target>добавить в видеокаталог</target>
+      </trans-unit> 
+      <trans-unit id="237">
+        <source>search</source>
+        <target>поиск</target>
+      </trans-unit>
+	  <trans-unit id="238">
+        <source>Videolists</source>
+        <target>Видеокаталоги</target>
+      </trans-unit>
+	   <trans-unit id="239">
+        <source>video</source>
+        <target>видео</target>
+      </trans-unit>
+	   <trans-unit id="240">
+        <source>Birthdays</source>
+        <target>Дни рождения</target>
+      </trans-unit> 
+	  <trans-unit id="241">
+        <source>%days% days left</source>
+        <target>осталось %days% дней</target>
+      </trans-unit> 
+	  <trans-unit id="242">
+        <source>today</source>
+        <target>сегодня</target>
+      </trans-unit> 
+	   <trans-unit id="243">
+        <source>find your school</source>
+        <target>найти свою школу</target>
+      </trans-unit> 
+	  <trans-unit id="244">
+        <source>Social network for finding and connecting with classmates and friends</source>
+        <target>Социальная сеть для поиска и общения с одноклассников и друзей</target>
+      </trans-unit>   
+      <trans-unit id="245">
+        <source>This is not an image file(png,jpg,gif,bmp,tiff)</source>
+        <target>Это не файл изображения(png,jpg,gif,bmp,tiff)</target>  
+      </trans-unit>   
+    </body>
+  </file>
+</xliff>

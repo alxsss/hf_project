@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="170"
+   name=""
+   committed-date="2008-06-20T17:33:32.125000Z"
+   url="file:///C:/svnrepos/fmpsv/trunk/plugins/sfAjaxUploaderPlugin/modules/ajaxUploader"
+   last-author="Shervgi"
+   kind="dir"
+   repos="file:///C:/svnrepos/fmpsv"
+   revision="170"/>
+<entry
+   name="actions"
+   kind="dir"/>
+<entry
+   name="config"
+   kind="dir"/>
+<entry
+   name="templates"
+   kind="dir"/>
+</wc-entries>

@@ -1,0 +1,25 @@
+methods:
+  post:               [filename]
+names:
+  filename:
+    required:         Yes
+    required_msg:     Please upload a file
+    validators:       myFileValidator
+    file:             true
+
+myFileValidator:
+  class:              sfFileValidator
+  param:
+    mime_types: 
+      - 'audio/mpeg3'             
+      - 'image/jpeg'
+      - 'image/png'
+      - 'image/x-png'
+      - 'image/pjpeg'
+      - 'video/flv'
+      - 'video/mpeg'
+      - 'video/mpg'
+      - 'video/avi'
+    mime_types_error: This is not a media (image, video, music) file
+    max_size:         5120000000
+    max_size_error:   Max size is 512000Kb

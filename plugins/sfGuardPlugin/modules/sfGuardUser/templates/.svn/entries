@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="184"
+   name=""
+   committed-date="2008-11-03T05:28:51.250000Z"
+   url="file:///C:/svnrepos/fmpsv/trunk/plugins/sfGuardPlugin/modules/sfGuardUser/templates"
+   last-author="Shervgi"
+   kind="dir"
+   repos="file:///C:/svnrepos/fmpsv"
+   revision="184"/>
+<entry
+   committed-rev="184"
+   name="showSuccess.php"
+   text-time="2008-10-26T05:57:05.062500Z"
+   committed-date="2008-11-03T05:28:51.250000Z"
+   checksum="600f078b26f0c22e06559484a65ec145"
+   last-author="Shervgi"
+   kind="file"/>
+<entry
+   committed-rev="184"
+   name="_groups.php"
+   text-time="2008-11-01T04:51:11.953125Z"
+   committed-date="2008-11-03T05:28:51.250000Z"
+   checksum="24a0b1ecd6d13fc1d225fe75a72017a7"
+   last-author="Shervgi"
+   kind="file"/>
+<entry
+   committed-rev="184"
+   name="_password_bis.php"
+   text-time="2008-11-01T04:51:11.937500Z"
+   committed-date="2008-11-03T05:28:51.250000Z"
+   checksum="43d049c62485645065697f2ae098777c"
+   last-author="Shervgi"
+   kind="file"/>
+<entry
+   committed-rev="184"
+   name="interestedSuccess.php"
+   text-time="2008-04-15T06:28:22.796875Z"
+   committed-date="2008-11-03T05:28:51.250000Z"
+   checksum="215789802687359ecab64f5803115527"
+   last-author="Shervgi"
+   kind="file"/>
+<entry
+   committed-rev="184"
+   name="_password.php"
+   text-time="2008-11-01T04:51:11.937500Z"
+   committed-date="2008-11-03T05:28:51.250000Z"
+   checksum="f6e893173f92c83a6af48f227259e114"
+   last-author="Shervgi"
+   kind="file"/>
+<entry
+   committed-rev="223"
+   name="interestedVideoSuccess.php"
+   text-time="2008-11-03T06:07:37.812500Z"
+   committed-date="2008-11-03T06:41:06.656250Z"
+   checksum="1a1a2cbe2391c2d7e6ea30523260cc5c"
+   last-author="Shervgi"
+   kind="file"
+   revision="223"/>
+<entry
+   committed-rev="184"
+   name="_photo.php"
+   text-time="2008-04-27T05:41:06.000000Z"
+   committed-date="2008-11-03T05:28:51.250000Z"
+   checksum="8e33316c4a60784f368b302e3279b5c3"
+   last-author="Shervgi"
+   kind="file"/>
+</wc-entries>

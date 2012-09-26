@@ -1,0 +1,983 @@
+<?xml version="1.0" ?>
+<xliff version="1.0">
+  <file original="global" source-language="en_US" datatype="plaintext">
+    <body>
+	  <trans-unit id="1">
+        <source>about</source>
+        <target>haqqında</target>
+      </trans-unit>
+	  <trans-unit id="2">
+        <source>Advertisement</source>
+        <target>Reklam</target>
+      </trans-unit>
+      <trans-unit id="3">
+        <source>contact us</source>
+        <target>əlaqə</target>
+      </trans-unit>
+      <trans-unit id="4">
+        <source>Year graduated</source>
+        <target>Buraxılış ili</target>
+      </trans-unit>
+	  <trans-unit id="5">
+        <source>home</source>
+        <target>baş səhifə </target>
+      </trans-unit>
+	  <trans-unit id="6">
+        <source>First name</source>
+        <target>Ad</target>
+      </trans-unit>
+	  <trans-unit id="7">
+        <source>Last name</source>
+        <target>Soyad</target>
+      </trans-unit>
+	  <trans-unit id="8">
+        <source>school</source>
+        <target>məktəb</target>
+      </trans-unit>
+	  <trans-unit id="9">
+        <source>terms of service</source>
+        <target>istifadə qaydaları</target>
+      </trans-unit>
+	  <trans-unit id="10">
+        <source>Name</source>
+        <target>Adınız</target>
+      </trans-unit>	
+	  <trans-unit id="11">
+        <source>Company</source>
+        <target>Şirkət</target>
+      </trans-unit>	
+	  <trans-unit id="12">
+        <source>Email</source>
+        <target>Elektron poçtu</target>
+      </trans-unit>	
+	  <trans-unit id="13">
+        <source>Phone</source>
+        <target>Telefon</target>
+      </trans-unit>	
+	  <trans-unit id="14">
+        <source>Comment</source>
+        <target>Komentlər</target>
+      </trans-unit>	
+	  <trans-unit id="15">
+        <source>Submit</source>
+        <target>Göndər</target>
+      </trans-unit>	
+	  <trans-unit id="16">
+        <source>Thank you for your submission. We will contact you as soon as possible.</source>
+        <target>Sağ olun. Biz sizinlə tezliklə əlaqə saxlayacayıq.</target>
+      </trans-unit>	
+	  <trans-unit id="17">
+        <source>sign out</source>
+        <target>çıxış</target>
+      </trans-unit>
+	  <trans-unit id="18">
+        <source>sign in</source>
+        <target>giriş</target>
+      </trans-unit>	
+	  <trans-unit id="19">
+        <source>register</source>
+        <target>qeydiyyat</target>
+      </trans-unit>	
+	  <trans-unit id="20">
+        <source>help</source>
+        <target>kömək</target>
+      </trans-unit>	
+	  <trans-unit id="21">
+        <source>forum</source>
+        <target>forum</target>
+      </trans-unit>	
+	  <trans-unit id="22">
+        <source>Photos</source>
+        <target>Şəkillər</target>
+      </trans-unit>
+	  <trans-unit id="23">
+        <source>Add to favorite</source>
+        <target>Sevimli et</target>
+      </trans-unit>
+	  <trans-unit id="24">
+        <source>Friends</source>
+        <target>Dostlar</target>
+      </trans-unit>
+	  <trans-unit id="25">
+        <source>Registered users</source>
+        <target>Üzvlər</target>
+      </trans-unit>
+	  <trans-unit id="26">
+        <source>Your registration was successful. You will receive an email with your login information.</source>
+        <target>Siz müvəffəqiyyətlə qeyd olundunuz. Sizin istifadəçi adınız və parolunuz elektron poçtunuza göndərildi. Indi siz bu saytdan istifadə edə bilərsiniz.</target>
+      </trans-unit>	
+	  <trans-unit id="27">
+        <source>Add</source>
+        <target>Əlavə et</target>
+      </trans-unit>	
+	  <trans-unit id="28">
+        <source>What are you up to?</source>
+        <target>Sən nə edirsən?</target>
+      </trans-unit>
+	  <trans-unit id="29">
+        <source>invite friends</source>
+        <target>dostları dəvət et</target>
+      </trans-unit>
+	  <trans-unit id="30">
+        <source>see all</source>
+        <target>hamısına bax</target>
+      </trans-unit>	
+	  <trans-unit id="31">
+        <source>Username</source>
+        <target>İstifadəçi adı</target>
+      </trans-unit>
+	  <trans-unit id="32">
+        <source>Password</source>
+        <target>Parol</target>
+      </trans-unit>	
+	  <trans-unit id="33">
+        <source>Gender</source>
+        <target>Cins</target>
+      </trans-unit>	
+	  <trans-unit id="34">
+        <source>Birthday</source>
+        <target>Ad günü</target>
+      </trans-unit>
+	  <trans-unit id="35">
+        <source>Add region/village</source>
+        <target>rayon/kənd əlavə et</target>
+      </trans-unit>	
+	  <trans-unit id="36">
+        <source>Add school</source>
+        <target>məktəb əlavə et</target>
+      </trans-unit>
+	  <trans-unit id="37">
+        <source>Required.</source>
+        <target>tələb olunur</target>
+      </trans-unit>
+	  <trans-unit id="38">
+        <source>I graduated school in</source>
+        <target>Mən məktəbi bitirmişəm</target>
+      </trans-unit>
+	  <trans-unit id="39">
+        <source>Choose a region in order to find your school</source>
+        <target>Məktəbinizi tapmaq üçün bu regionlardan birini seçin</target>
+      </trans-unit>	
+	  <trans-unit id="40">
+        <source>Forgot your password?</source>
+        <target>Parolunuz yaddan çıxıb?</target>
+      </trans-unit>	
+	  <trans-unit id="41">
+        <source>Registration</source>
+        <target>Qeydiyyat</target>
+      </trans-unit>	
+	  <trans-unit id="42">
+        <source>In  hemsinif.com</source>
+        <target>hemsinif.com da</target>
+      </trans-unit>
+	   <trans-unit id="43">
+        <source>you can</source>
+        <target>siz</target>
+      </trans-unit>
+	   <trans-unit id="44">
+        <source>find classmates, friends</source>
+        <target>sinif yoldaşları, dostları tapmaq</target>
+      </trans-unit>	
+	   <trans-unit id="45">
+        <source>upload a photo</source>
+        <target>şəkil yüklə</target>
+      </trans-unit>
+	  <trans-unit id="46">
+        <source>and more</source>
+        <target>və s. edə bilərsiniz</target>
+      </trans-unit>
+	  <trans-unit id="47">
+        <source>add your school</source>
+        <target>məktəbini əlavə et</target>
+      </trans-unit>	
+	  <trans-unit id="48">
+        <source>edit profile</source>
+        <target>profilinə düzəliş et</target>
+      </trans-unit>	
+	  <trans-unit id="49">
+        <source>messages</source>
+        <target>məktublar</target>
+      </trans-unit>	
+	  <trans-unit id="50">
+        <source>friend requests</source>
+        <target>dostluq təklifi</target>
+      </trans-unit>
+	  <trans-unit id="51">
+        <source>Info</source>
+        <target>Məlumat</target>
+      </trans-unit>
+	  <trans-unit id="52">
+        <source>Recent Activity</source>
+        <target>Son Fəaliyyət</target>
+      </trans-unit>
+	  <trans-unit id="53">
+        <source>Albums</source>
+        <target>Albomlar</target>
+      </trans-unit>
+	  <trans-unit id="54">
+        <source>Schools</source>
+        <target>Məktəblər</target>
+      </trans-unit>	
+	  <trans-unit id="55">
+        <source>Search</source>
+        <target>ad və ya soyad daxil et</target>
+      </trans-unit>	
+	  <trans-unit id="56">
+        <source>Add to friends</source>
+        <target>Dost kimi əlavə et</target>
+      </trans-unit>
+	  <trans-unit id="57">
+        <source>Send a message</source>
+        <target>Məktub göndər</target>
+      </trans-unit>
+	  <trans-unit id="58">
+        <source>You message has been successfully sent</source>
+        <target>Sizin məktub göndərildi</target>
+      </trans-unit>
+	  <trans-unit id="59">
+        <source>inbox</source>
+        <target>alınmış</target>
+      </trans-unit>		
+	  <trans-unit id="60">
+        <source>sentbox</source>
+        <target>göndərilmiş</target>
+      </trans-unit>	
+	  <trans-unit id="61">
+        <source>From</source>
+        <target>Kimdən</target>
+      </trans-unit>		
+	  <trans-unit id="62">
+        <source>Subject</source>
+        <target>Məktubun başlığı</target>
+      </trans-unit>		
+	  <trans-unit id="63">
+        <source>Date</source>
+        <target>Tarix</target>
+      </trans-unit>
+	  <trans-unit id="64">
+        <source>date</source>
+        <target>tarix</target>
+      </trans-unit>				
+	  <trans-unit id="65">
+        <source>To</source>
+        <target>Kimə</target>
+      </trans-unit>		
+	  <trans-unit id="66">
+        <source>Sent at</source>
+        <target>Göndərilmişdir</target>
+      </trans-unit>		
+	  <trans-unit id="67">
+        <source>Reply</source>
+        <target>Cavab yaz</target>
+      </trans-unit>	
+	  <trans-unit id="68">
+        <source>Send</source>
+        <target>Göndər</target>
+      </trans-unit>	
+	  <trans-unit id="69">
+        <source>Cancel</source>
+        <target>Təxirə sal</target>
+      </trans-unit>	
+	  <trans-unit id="70">
+        <source>You are not authorized to view this page</source>
+        <target>Sizin bu sahifəni görmək ücün səlahiyyətiniz çatmır</target>
+      </trans-unit>	
+	  <trans-unit id="71">
+        <source>This album is set to private</source>
+        <target>Bu alboma yalnız bu istifadaçinin dostları baxa bilərlər</target>
+      </trans-unit>	
+	  <trans-unit id="72">
+        <source>No photos in this album</source>
+        <target>Bu albomda şəkil yoxdu</target>
+      </trans-unit>	
+	  <trans-unit id="73">
+        <source>'s profile</source>
+        <target> in profili</target>
+      </trans-unit>
+	   <trans-unit id="74">
+        <source>edit album</source>
+        <target>alboma düzəliş et</target>
+      </trans-unit>		
+	   <trans-unit id="75">
+        <source>edit photo</source>
+        <target>şəkilə düzəliş et</target>
+      </trans-unit>	
+	  <trans-unit id="76">
+        <source>uploaded on</source>
+        <target>şəkil yüklənmişdir</target>
+      </trans-unit>	
+	  <trans-unit id="77">
+        <source>Your comment</source>
+        <target>Sizin rəy</target>
+      </trans-unit>		
+	  <trans-unit id="78">
+        <source>You must </source>
+        <target>Siz rəy vermək üçün </target>
+      </trans-unit>		
+	  <trans-unit id="79">
+        <source> to submit a comment</source>
+        <target> etməlisiniz</target>
+      </trans-unit>
+	  <trans-unit id="80">
+        <source>recommend</source>
+        <target>bəyən</target>
+      </trans-unit>	
+	  <trans-unit id="81">
+        <source>recommended</source>
+        <target>bəyənilmişdir</target>
+      </trans-unit>
+	  <trans-unit id="82">
+        <source>description</source>
+        <target>təsvir</target>
+      </trans-unit>
+	  <trans-unit id="83">
+        <source>upload your photos</source>
+        <target>şəkillərinizi yükləmək</target>
+      </trans-unit>	
+	  <trans-unit id="84">
+        <source>Delete</source>
+        <target>Sil</target>
+      </trans-unit>
+	  <trans-unit id="85">
+        <source>title</source>
+        <target>adı</target>
+      </trans-unit>
+	  <trans-unit id="86">
+        <source>visibility</source>
+        <target>görünməsi</target>
+      </trans-unit>
+	  <trans-unit id="87">
+        <source>Save</source>
+        <target>Saxla</target>
+      </trans-unit>
+	  <trans-unit id="88">
+        <source>Friends only</source>
+        <target>Yalnız dostlar</target>
+      </trans-unit>
+	  <trans-unit id="89">
+        <source>Everyone</source>
+        <target>Hamı</target>
+      </trans-unit>
+	  <trans-unit id="90">
+        <source>album name</source>
+        <target>albomun adı</target>
+      </trans-unit>
+	  <trans-unit id="91">
+        <source>Create new album</source>
+        <target>Yeni albom yarat</target>
+      </trans-unit>
+	  <trans-unit id="92">
+        <source>Create</source>
+        <target>Yarat</target>
+      </trans-unit>	
+	  <trans-unit id="93">
+        <source>cancel</source>
+        <target>təxirə sal</target>
+      </trans-unit>
+	  <trans-unit id="94">
+        <source>edit friends</source>
+        <target>dostlara düzəliş et</target>
+      </trans-unit>	
+	  <trans-unit id="95">
+        <source>comment</source>
+        <target>rəy bildir</target>
+      </trans-unit>	
+	  <trans-unit id="96">
+        <source> hr </source>
+        <target> saat </target>
+      </trans-unit>		
+	  <trans-unit id="97">
+        <source> min ago</source>
+        <target> dəq. əvvəl</target>
+      </trans-unit>
+	  <trans-unit id="98">
+        <source>statuses</source>
+        <target>statuslar</target>
+      </trans-unit>
+	  <trans-unit id="99">
+        <source>photos</source>
+        <target>şəkillər</target>
+      </trans-unit>
+	  <trans-unit id="100">
+        <source>uploaded new photo</source>
+        <target>yeni şəkil yüklədi</target>
+      </trans-unit>
+	  <trans-unit id="101">
+        <source>commented on photo</source>
+        <target>bu şəkilə rəy bildirdi</target>
+      </trans-unit>	
+	  <trans-unit id="102">
+        <source>Are you sure?</source>
+        <target>Siz əminsiz?</target>
+      </trans-unit>	
+	   <trans-unit id="103">
+        <source>OK</source>
+        <target>Bəli</target>
+      </trans-unit>
+	  <trans-unit id="104">
+        <source>No</source>
+        <target>Xeyr</target>
+      </trans-unit>
+	  <trans-unit id="105">
+        <source>From album</source>
+        <target>Albom--</target>
+      </trans-unit>	
+	  <trans-unit id="106">
+        <source>is</source>
+        <target>indi</target>
+      </trans-unit>	  
+	  <trans-unit id="108">
+        <source>Reset</source>
+        <target>Göndər</target>
+      </trans-unit>
+	   <trans-unit id="109">
+        <source>There is no such user.</source>
+        <target>Belə istifadəçi yoxdur.</target>
+      </trans-unit>	
+	  <trans-unit id="110">
+        <source>my profile</source>
+        <target>mənim profilim</target>
+      </trans-unit>
+	  <trans-unit id="111">
+        <source>communicate with them</source>
+        <target>onlara məktub göndərmək</target>
+      </trans-unit>
+	  <trans-unit id="112">
+        <source>Male</source>
+        <target>Kişi</target>
+      </trans-unit>
+	  <trans-unit id="113">
+        <source>Female</source>
+        <target>Qadın</target>
+      </trans-unit>
+	  <trans-unit id="114">
+        <source>Profile picture</source>
+        <target>Profil şəkili</target>
+      </trans-unit>
+	  <trans-unit id="115">
+        <source>About Me</source>
+        <target>Mənim haqqımda</target>
+      </trans-unit>
+	  <trans-unit id="116">
+        <source>TV shows</source>
+        <target>TV tamaşaları</target>
+      </trans-unit>
+	   <trans-unit id="117">
+        <source>Looking for</source>
+        <target>Axtarır</target>
+      </trans-unit>
+	  <trans-unit id="118">
+        <source>City</source>
+        <target>Şəhər</target>
+      </trans-unit>
+	  <trans-unit id="119">
+        <source>State</source>
+        <target>Ştat</target>
+      </trans-unit>
+	  <trans-unit id="120">
+        <source>Country of residence</source>
+        <target>Yaşadığınız ölkə</target>
+      </trans-unit>
+	  <trans-unit id="121">
+        <source>Activities</source>
+        <target>Fəaliyyət</target>
+      </trans-unit>
+	  <trans-unit id="122">
+        <source>Books</source>
+        <target>Kitablar</target>
+      </trans-unit>
+	  <trans-unit id="123">
+        <source>Music</source>
+        <target>Musiqi</target>
+      </trans-unit>
+	  <trans-unit id="124">
+        <source>Movies</source>
+        <target>Filmlər</target>
+      </trans-unit>
+	  <trans-unit id="125">
+        <source>Zip</source>
+        <target>Zip</target>
+      </trans-unit>	
+	  <trans-unit id="126">
+        <source>If you do not see your region/village in the above list, you can add it here. If your school is not in a village, you can add it here in the schools link.</source>
+        <target>Əgər sizin rayon/kənd yuxarıdakı siyahıda deyilsə, onu burda əlavə edə bilərsiniz. Əgər sizin məktəb kənddə deyilsə onu yuxarıdakı "Məktəblər" linkinə keçəndən sonra əlavə edə bilərsiniz.</target>
+      </trans-unit>	
+	  <trans-unit id="127">
+        <source>If you do not see your school in the above list, you can add it here</source>
+        <target>Əgər sizin məktəb yuxarıdakı siyahıda deyilsə, onu burda əlavə edə bilərsiniz</target>
+      </trans-unit>
+	  <trans-unit id="128">
+        <source>Yes</source>
+        <target>Bəli</target>
+      </trans-unit>
+	  <trans-unit id="129">
+        <source>Do you really want to add</source>
+        <target>Siz əminsiz ki,</target>
+      </trans-unit>	
+	  <trans-unit id="130">
+        <source>as a friend</source>
+        <target>adlı istifadəçini dost kimi əlavə etmək istəyirsiniz</target>
+      </trans-unit>
+	  <trans-unit id="131">
+        <source>Your request has been sent. The user needs to approve it</source>
+        <target>Sizin tələb göndərildi. İstifadəçi onu təsdiq etməlidi</target>
+      </trans-unit>	
+	  <trans-unit id="132">
+        <source>Back to</source>
+        <target>  </target>
+      </trans-unit>
+	  <trans-unit id="133">
+        <source>You already have this user as a friend.</source>
+        <target>Bu istifadəçi artıq sizin dostunuzdu.</target>
+      </trans-unit>		
+	  <trans-unit id="134">
+        <source>You have already sent friend request to this user or this user has sent you a friend request.</source>
+        <target>Siz artıq bu istifadəçiyə dostluq təklifi göndərmisiniz və ya bu istifadəçi size dostluq təklifi göndərmişdir.</target>
+      </trans-unit>
+	   <trans-unit id="135">
+        <source>Interests</source>
+        <target>Maraqlar</target>
+      </trans-unit>
+	  <trans-unit id="136">
+        <source>Information</source>
+        <target>Məlumat</target>
+      </trans-unit>
+	  <trans-unit id="137">
+        <source>Approve</source>
+        <target>Qəbul et</target>
+      </trans-unit>
+	  <trans-unit id="138">
+        <source>Friend Requests</source>
+        <target>Dost təklifləri</target>
+      </trans-unit>	
+	  <trans-unit id="139">
+        <source>Message</source>
+        <target>Məktub</target>
+      </trans-unit>
+	  <trans-unit id="140">
+        <source>years old</source>
+        <target>yaş</target>
+      </trans-unit>
+	  <trans-unit id="141">
+        <source>continue</source>
+        <target>davam et</target>
+      </trans-unit>
+	  <trans-unit id="142">
+        <source>Select Gender</source>
+        <target>Cinsiyyəti seç</target>
+      </trans-unit>
+	  <trans-unit id="143">
+        <source>commented on %photo% by %author%</source>
+        <target>%author% in %photo%inə rəy bildirdi</target>
+      </trans-unit>
+	  <trans-unit id="144">
+        <source>photo</source>
+        <target>şəkil</target>
+      </trans-unit>
+	  <trans-unit id="145">
+        <source>Please fill out this contact form or email us at info at hemsinif dot az</source>
+        <target>Xahiş edirik bu əlaqə formasını doldurun və ya bizə info at hemsinif nöqtə az elektron adresinə yazın</target>
+      </trans-unit>
+	  <trans-unit id="146">
+        <source>Contact us</source>
+        <target>Əlaqə</target>
+      </trans-unit>	
+	  <trans-unit id="147">
+        <source>Visibility</source>
+        <target>Görünməsi</target>
+      </trans-unit>	
+	  <trans-unit id="148">
+        <source>All albums by %author%</source>
+        <target>%author% in bütün albomları</target>
+      </trans-unit>	
+	  <trans-unit id="149">
+        <source>All photos by %author%</source>
+        <target>%author% in bütün şəkilləri</target>
+      </trans-unit>
+	  <trans-unit id="150">
+        <source>This profile is set to private</source>
+        <target>Bu istifadəçi öz profilinin gorünməsini yalnız dostları üçün seçmişdir.</target>
+      </trans-unit>	
+	  <trans-unit id="151">
+        <source>remove the current file</source>
+        <target>bu şəkil silinsin</target>
+      </trans-unit>
+	  <trans-unit id="152">
+        <source>The username and/or password is invalid.</source>
+        <target>İstifadəçi ad və ya parol düz deyil.</target>
+      </trans-unit>	
+	   <trans-unit id="153">
+        <source>You are not registered yet?</source>
+        <target>Siz hələ qeyd olmayıbsınız?</target>
+      </trans-unit>		
+	   <trans-unit id="154">
+        <source>Register</source>
+        <target>Qeydiyyat</target>
+      </trans-unit>
+	  <trans-unit id="154">
+        <source>Select Year</source>
+        <target>İli seç</target>
+      </trans-unit>	
+	  <trans-unit id="156">
+        <source>year</source>
+        <target>il</target>
+      </trans-unit>		
+	  <trans-unit id="157">
+        <source>month</source>
+        <target>ay</target>
+      </trans-unit>		
+	  <trans-unit id="158">
+        <source>day</source>
+        <target>gün</target>
+      </trans-unit>	
+	  <trans-unit id="159">
+        <source>Invalid.</source>
+        <target>düz deyil</target>
+      </trans-unit>
+	  <trans-unit id="160">
+        <source>Please sign in first</source>
+        <target>Xahiş edirik sayta girəsiniz</target>
+      </trans-unit>
+	  <trans-unit id="161">
+        <source>Previous</source>
+        <target>Əvvəlki</target>
+      </trans-unit>
+	  <trans-unit id="162">
+        <source>Next</source>
+        <target>Sonrakı</target>
+      </trans-unit>
+	  <trans-unit id="163">
+        <source>search for %query% did not give any results. You can invite %query% using this link</source>
+        <target>%query% sozünün axtarışı nəticə vermədi. Siz %query% adlı dostunuzu bu linkdə dəvət edə bilərsiniz</target>
+      </trans-unit>
+	  <trans-unit id="164">
+        <source>New</source>
+        <target>Yeni</target>
+      </trans-unit>
+	  <trans-unit id="165">
+        <source>Delete Marked</source>
+        <target>Seçilmişləri Sil</target>
+      </trans-unit>
+	  <trans-unit id="166">
+        <source>This photo is set to private</source>
+        <target>Bu şəkilə yalnız bu istifadaçinin dostları baxa bilərlər</target>
+      </trans-unit>
+	  <trans-unit id="167">
+        <source>An object with the same "%column%" already exist.</source>
+        <target>Bu istifadaçi adı artıq göturulub</target>
+      </trans-unit>
+	  <trans-unit id="168">
+        <source>First</source>
+        <target>Birinci</target>
+      </trans-unit>	
+	  <trans-unit id="169">
+        <source>Last</source>
+        <target>Axırıncı</target>
+      </trans-unit>
+	  <trans-unit id="170">
+        <source>and</source>
+        <target>və</target>
+      </trans-unit>			
+	  <trans-unit id="171">
+        <source>are friends now</source>
+        <target>dost oldular</target>
+      </trans-unit>
+	  <trans-unit id="172">
+        <source>Suggestions</source>
+        <target>Təkliflər</target>
+      </trans-unit>
+	  <trans-unit id="173">
+        <source>the same school</source>
+        <target>eyni məktəb</target>
+      </trans-unit>	
+	  <trans-unit id="174">
+        <source>updates</source>
+        <target>dostlarda</target>
+      </trans-unit>	
+	  <trans-unit id="175">
+        <source>mutual friends</source>
+        <target>ortaq dost</target>
+      </trans-unit>
+	  <trans-unit id="176">
+        <source>Find Friends</source>
+        <target>Dostları tap</target>
+      </trans-unit>
+	  <trans-unit id="177">
+        <source>With your help we can build the most powerful social networking. Please find and invite friends. Also let us know if you have any suggestions.</source>
+        <target>Sizin köməyinizlə biz ən güclü sosial sayt yarada bilərik. Xahiş edirik dostlarınızı tapın və dəvət edin. Həmçinin öz təkliflərinizi bizə göndərin.</target>
+      </trans-unit>	
+	  <trans-unit id="178">
+        <source>select country</source>
+        <target>ölkəni seç</target>
+      </trans-unit>
+	  <trans-unit id="179">
+        <source>Password hint</source>
+        <target>Parola işarə</target>
+      </trans-unit>
+	   <trans-unit id="180">
+        <source>a word that can help you to remember your password</source>
+        <target>parolunuzu yada salmaq üçün hər hansı bir söz</target>
+      </trans-unit>
+	  <trans-unit id="181">
+        <source>is not required if you have an email</source>
+        <target>elektron poçtunuz varsa tələb olunmur</target>
+      </trans-unit>
+	  <trans-unit id="182">
+        <source>Password hint cannot be empty when there is no email</source>
+        <target>elektron poçtunuz yoxdursa parola işarə tələb olunur</target>
+      </trans-unit>	
+	  <trans-unit id="183">
+        <source>"%value%" is not an integer.</source>
+        <target>"%value%" rəqəm deyil</target>
+      </trans-unit>
+	  <trans-unit id="184">
+        <source>Marital Status</source>
+        <target>Ailə Vəziyyəti</target>
+      </trans-unit>
+	  <trans-unit id="185">
+        <source>Single</source>
+        <target>Subay</target>
+      </trans-unit>
+	  <trans-unit id="186">
+        <source>In a realtionship</source>
+        <target>Munasibətdədir</target>
+      </trans-unit>
+	  <trans-unit id="187">
+        <source>Engaged</source>
+        <target>Nişanlı</target>
+      </trans-unit>
+	  <trans-unit id="188">
+        <source>Married</source>
+        <target>Evli</target>
+      </trans-unit>
+	  <trans-unit id="189">
+        <source>It is complicated</source>
+        <target>Mürəkkəb məsələdir</target>
+      </trans-unit>
+	  <trans-unit id="190">
+        <source>Divorced/Widowed</source>
+        <target>Ayrılıb</target>
+      </trans-unit>
+	  <trans-unit id="191">
+        <source>users</source>
+        <target>üzvlər</target>
+      </trans-unit>	
+	  <trans-unit id="192">
+        <source>Website</source>
+        <target>Vebsayt</target>
+      </trans-unit>
+	   <trans-unit id="193">
+        <source>guests</source>
+        <target>qonaqlar</target>
+      </trans-unit>
+	  <trans-unit id="194">
+        <source>ignore</source>
+        <target>yenə göstərmə</target>
+      </trans-unit>
+	  <trans-unit id="195">
+        <source>last login</source>
+        <target>burda olmuşdur</target>
+      </trans-unit>
+	  <trans-unit id="196">
+        <source>user</source>
+        <target>istifadəçi</target>
+      </trans-unit>
+	  <trans-unit id="197">
+        <source>rate</source>
+        <target>qiymət</target>
+      </trans-unit>	
+	  <trans-unit id="198">
+        <source>rates</source>
+        <target>qiymətlər</target>
+      </trans-unit>	
+	  <trans-unit id="199">
+        <source>bad</source>
+        <target>pis</target>
+      </trans-unit>	
+	  <trans-unit id="200">
+        <source>poor</source>
+        <target>cüzi</target>
+      </trans-unit>	
+	  <trans-unit id="201">
+        <source>regular</source>
+        <target>adi</target>
+      </trans-unit>	
+	  <trans-unit id="202">
+        <source>good</source>
+        <target>yaxşı</target>
+      </trans-unit>	
+	  <trans-unit id="203">
+        <source>gorgeus</source>
+        <target>çox gözəl</target>
+      </trans-unit>
+	   <trans-unit id="204">
+        <source>online</source>
+        <target>saytdadır</target>
+      </trans-unit>	
+	  <trans-unit id="205">
+        <source>Favorite photos</source>
+        <target>Sevimli şəkillər</target>
+      </trans-unit>	
+	  <trans-unit id="206">
+        <source>New members</source>
+        <target>Yeni üzvlər</target>
+      </trans-unit>	
+	  <trans-unit id="207">
+        <source>Members last logged in</source>
+        <target>Saytda olan sonuncu üzvlər</target>
+      </trans-unit>		
+	  <trans-unit id="208">
+        <source>Popular photos</source>
+        <target>Populyar şəkillər</target>
+      </trans-unit>
+	  <trans-unit id="209">
+        <source>You have approved friend request from %friend_request%. This user is your friend now</source>
+        <target>Siz %friend_request% adlı istifadəçinin dostluq təklifini qebul etdiniz. Bu istifadəçi artıq sizin dostunuzdur</target>
+      </trans-unit>		
+	  <trans-unit id="210">
+        <source>You have denied friend request from %friend_request%</source>
+        <target>Siz %friend_request% adlı istifadəçinin dostluq təklifini rədd etdiniz</target>
+      </trans-unit>	
+	  <trans-unit id="211">
+        <source>This place is for your friends activity. Currently you do not have friends.</source>
+        <target>Bu yer dostlar fəaliyyəti üçündür. Hal-hazırda sizin dostunuz yoxdur.</target>
+      </trans-unit>	
+	   <trans-unit id="212">
+        <source>Previous Messages</source>
+        <target>Əvvəlki Məktublar</target>
+      </trans-unit>
+	   <trans-unit id="213">
+        <source>games</source>
+        <target>oyunlar</target>
+      </trans-unit>	
+	   <trans-unit id="214">
+        <source>Games</source>
+        <target>Oyunlar</target>
+      </trans-unit>
+      <trans-unit id="215">
+        <source>Popular games</source>
+        <target>Populyar oyunlar</target>
+      </trans-unit>	
+	  <trans-unit id="216">
+        <source>suggestions</source>
+        <target>təkliflər</target>
+      </trans-unit>
+	  <trans-unit id="217">
+        <source>there is a symbol in the username that is not allowed</source>
+        <target>istifadəçi adında icazə verilməyən simvol vardır</target>
+      </trans-unit>
+	  <trans-unit id="218">
+        <source>What do you think?</source>
+        <target>Fikrini de</target>
+      </trans-unit>
+	  <trans-unit id="219">
+        <source>Participate in new/popular photo?</source>
+        <target>Yeni/populyar şəkillərdə iştirak etsin?</target>
+      </trans-unit>
+	    <trans-unit id="220">
+        <source>sort by</source>
+        <target>sırala</target>
+      </trans-unit>
+	  <trans-unit id="221">
+        <source>asc</source>
+        <target>uca</target>
+      </trans-unit>
+      <trans-unit id="222">
+        <source>desc</source>
+        <target>enm</target>
+      </trans-unit>
+	  <trans-unit id="223">
+        <source>Added to favorite</source>
+        <target>sevimlidir</target>
+      </trans-unit>
+  	  <trans-unit id="224">
+        <source>Delete profile</source>
+        <target>Profil silinsin</target>
+      </trans-unit> 
+      <trans-unit id="225">
+        <source>Password again</source>
+        <target>Parolu təsdiqlə</target>
+      </trans-unit> 
+      <trans-unit id="226">
+        <source>The two passwords must be the same.</source>
+        <target>Parollar eyni olmalıdır</target>
+      </trans-unit> 
+	  <trans-unit id="227">
+        <source>New photos</source>
+        <target>Yeni Şəkillər</target>
+      </trans-unit> 
+	  <trans-unit id="228">
+        <source>recently featured</source>
+        <target>ən populyar</target>
+      </trans-unit>
+	  <trans-unit id="229">
+        <source>most viewed</source>
+        <target>ən çox baxılan</target>
+      </trans-unit>
+	  <trans-unit id="230">
+        <source>Create new videolist</source>
+        <target>Yeni videosiyahı yarat</target>
+      </trans-unit>
+	   <trans-unit id="231">
+        <source>Your Videolists</source>
+        <target>Sizin videosiyahılar</target>
+      </trans-unit>
+	  <trans-unit id="232">
+        <source>Select videolist</source>
+        <target>Videosiyahı seçin</target>
+      </trans-unit>
+	  <trans-unit id="233">
+        <source>created by %user%</source>
+        <target>%user% tərəfindən yaradılmışdır</target>
+      </trans-unit>
+	    <trans-unit id="234">
+        <source>enter video title</source>
+        <target>video adı daxil edin</target>
+      </trans-unit>
+     <trans-unit id="235">
+        <source>edit videolist</source>
+        <target>videosiyahıya düzəliş et</target>
+      </trans-unit>
+      <trans-unit id="236">
+        <source>add to videolist</source>
+        <target>videosiyahıya əlavə et</target>
+      </trans-unit>
+      <trans-unit id="237">
+        <source>search</source>
+        <target>axtar</target>
+      </trans-unit>
+  	  <trans-unit id="238">
+        <source>Videolists</source>
+        <target>Videosiyahılar</target>
+      </trans-unit> 
+	  <trans-unit id="239">
+        <source>video</source>
+        <target>video</target>
+      </trans-unit> 
+	  <trans-unit id="240">
+        <source>Birthdays</source>
+        <target>Ad Günləri</target>
+      </trans-unit> 
+	  <trans-unit id="241">
+        <source>%days% days left</source>
+        <target>%days% gün qalıb</target>
+      </trans-unit> 
+	  <trans-unit id="242">
+        <source>today</source>
+        <target>bu gün</target>
+      </trans-unit>
+	  <trans-unit id="243">
+        <source>find your school</source>
+        <target>məktəbini axtar</target>
+      </trans-unit> 
+       <trans-unit id="244">
+        <source>Social network for finding and connecting with classmates and friends</source>
+        <target>Sinif yoldaşlarını, dostları tapmaq və onlarla əlaqədə olmaq üçün sosial şəbəkə</target>
+      </trans-unit> 
+      <trans-unit id="245">
+        <source>This is not an image file(png,jpg,gif,bmp,tiff)</source>
+        <target>Bu bir şəkil faylı(png,jpg,gif,bmp,tiff) deyil</target>
+      </trans-unit>     
+    </body>
+  </file>
+</xliff>
