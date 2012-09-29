@@ -1,7 +1,17 @@
 all:      
   has_layout:     on
   layout:         layout_profile
+fetchSuccess:
+  has_layout:     off
 postlinkSuccess:
   has_layout:     off
+poststatusSuccess:
+  has_layout:     off
 deletestatusSuccess:
+  has_layout:     off
+deletelinkSuccess:
+  has_layout:     off
+addlinkcommentSuccess:
+  has_layout:     off
+deletelinkcommentSuccess:
   has_layout:     off

@@ -21,16 +21,19 @@
                    <div class="updates_action">
                     (<?php echo status_date(time(), format_date(time(), 'p'))?>)
                     <a href="#" class="comment_status"><?php echo __('comment')?></a>
+                     <span class="delete_status">
+                        <a href="#" id="<?php echo $link->getId()?>"  action="<?php echo url_for('@delete_link')?>"><?php echo __('delete')?></a>
+                      </span>
                  </div>
             <div class="add_status_comment">
               <?php //include_partial('photo_comment', array('user_id'=>$user_id, 'photo_id'=>$update->getId())) ?>
                           <div class="user_status_comment_new"></div>
             </div>
             <div class="status_comment_box">
-                         <form action="<?php echo url_for('@add_photo_comment')?>" method="post">
-                           <input type="hidden" value="<?php echo $update->getId()?>"  name="item_id">
+                         <form action="<?php echo url_for('@add_link_comment')?>" method="post">
+                           <input type="hidden" value="<?php echo $link->getId()?>"  name="item_id">
                <input type="hidden" value="<?php echo $user_id?>"  name="item_user_id">
-                           <input type="hidden" value="<?php echo $page ?>"  name="page">
+                           <input type="hidden" value="1"  name="page">
                            <textarea class="expand24 status_box defaultText cleardefault" id="comment" name="comment" style="height:24px;overflow:hidden;padding:0px;" title="<?php echo __('comment')?>"><?php echo __('comment')?></textarea>
                <div class="submit-row">
                  <input type="submit" value="<?php echo __('comment')?>" class="status_comment_box_form">

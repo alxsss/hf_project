@@ -81,6 +81,6 @@ propel:
     _attributes: { phpName: sfGuardUserStatusComment }
     id:
     user_id:     { type: integer, foreignTable: sf_guard_user, foreignReference: id, required: true, onDelete: cascade }
-    status_id:       { type: integer, required: true, foreignTable: sf_guard_user_status, foreignReference: id, onDelete: cascade }    
+    status_id:   { type: integer, required: true, foreignTable: sf_guard_user_status, foreignReference: id, onDelete: cascade }    
     comment:  LONGVARCHAR
     created_at:     ~

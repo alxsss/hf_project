@@ -150,15 +150,16 @@ propel:
     grad_year: { type: INTEGER}
   updates:
     _attributes: { idMethod: none, defaultIdMethod: none, readOnly: true}
-    _attributes: { idMethod: native}
+    _attributes:    { idMethod:  native }
     pid: { type: INTEGER}
     id: { type: INTEGER}
     user_id:  { type: integer, foreignTable: sf_guard_user, foreignReference: id }
-    friend_id: { type: INTEGER}
-    group_id: { type: INTEGER}
+    friend_id: { type: LONGVARCHAR}
+    group_id: { type: LONGVARCHAR}
     f_status_name: { type: LONGVARCHAR }
-    p_owner_id: {type: INTEGER}
-    num_comment: {type: INTEGER}
+    p_owner_id: {type: LONGVARCHAR}
+    num_comment: {type: LONGVARCHAR}
+    description: {type: LONGVARCHAR}
     created_at: ~ 
   ignorelist:
     _attributes: { idMethod:native }
@@ -270,10 +271,17 @@ propel:
     _attributes:{ idMethod: native}
     id: { type:INTEGER, size: '10', required:true,  autoIncrement:true, primaryKey:true }
     user_id: { type: integer, foreignTable: sf_guard_user, foreignReference: id, required: true, onDelete: cascade }
-    status_text:  LONGVARCHAR
+    status_text: {type: LONGVARCHAR }
     num_comment: { type: INTEGER }
     img: {type: varchar, size: '50'}
     url: { type:VARCHAR, size: '255'}
     title: { type:VARCHAR, size: '255'}
     description: { type: LONGVARCHAR  }
-    created_at: ~  
+    created_at: ~ 
+  user_link_comment:
+    _attributes: { idMethod: native }
+    id:
+    user_id:     { type: integer, foreignTable: sf_guard_user, foreignReference: id, required: true, onDelete: cascade }
+    link_id:       { type: integer, required: true, foreignTable: user_link, foreignReference: id, onDelete: cascade }
+    comment:  LONGVARCHAR
+    created_at:     ~

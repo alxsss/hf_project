@@ -47,7 +47,6 @@
 <div id="right_column_user">
  <div id="updates_status_right_column">  
    
-<?php if($user_id==4):?>
 <div id="post_links"><a href="#" class="post_links_elements_active" id="post_status"><?php echo __('Status')?></a><a href="#"  class="post_links_elements"  id="post_link"><?php echo __('Link')?></a></div>
     <div id="status_box">
           <form id="user_status_form" action="<?php echo url_for('links/poststatus')?>" method="post">
@@ -55,7 +54,7 @@
 
 <div id="atc_bar" align="center" action="postlink">
       <input type="text" name="url" size="40" id="url" value="http://" class="defaultText cleardefault post_link_url" title="http://" />
-      <input type="button" name="attach" value="Parse" id="attach" />
+      <input type="button" name="attach" value="<?php echo __('Parse')?>" id="attach" />
       <input type="hidden" name="cur_image" id="cur_image" />
       <div id="loader">
          <div align="center" id="atc_loading" style="display:none"><img src="/images/load.gif" alt="Loading" /></div>
@@ -86,34 +85,6 @@
           </form>
     </div>
  <div class="user_status_element_new"></div>
-<style>
-   #attach{height: 30px;background: none repeat scroll 0 0 #999900;border-style: solid none none solid;border-width: 1px medium medium 1px; box-shadow: 2px 2px 2px #CFCFCF; color: #FFFFFF; cursor: pointer; font-size: 11px;font-weight: bold;overflow: visible;padding: 2px 9px 4px 9px;}
-   .post_link_url{height:30px;padding:0 0 0 2px;width:390px;}
-   .post_link_text{height:30px;width:450px;display:none;}
-   .post_links_elements_active{padding:0 10px 0 0;color:#000;cursor:pointer;display:block;text-decoration:none;font-weight:bold;float:left;}
-   .post_links_elements{padding:0 10px 0 0;color:#3B5998;cursor:pointer;display:block;text-decoration:none;font-weight:bold;float:left;}
-   #atc_bar{width:500px;float:left;display:none;padding:5px 0;}
-   #attach_content{padding:5px;margin-top:5px;width:450px;}
-   #atc_images {width:90px;float:left;}
-   #atc_images img{width:90px}
-   #atc_info {width:300px;float:left;text-align:left; padding:10px;}
-   #atc_title {font-size:14px;display:block;}
-   #atc_url {font-size:10px;display:block;}
-   #atc_desc {font-size:12px;}
-   #atc_total_image_nav{float:left;padding-left:5px}
-   #atc_total_images_info{float:left;padding:4px 10px;font-size:12px;}
-   .link_title{float:left;width:250px;padding:5px 0 0 10px;}
-   .link_url{float:left;width:250px;font-size:11px;padding:0 0 5px 10px;}
-   .link_description{float:left;width:250px;padding:0 10px;}
-   #post_links{width:485px;padding:0 0 0 20px;float:left;}
-   .submit_status_link_button{margin: 0 0 0 20px;padding: 0 5px;display:none;}
-   .submit_status_link_input{width:450px;}
-</style>
- 
-
-
-  <?php endif;?>
-
 
 
   <?php $updates=UpdatesPeer::getUpdatesPager($page, $friendIds, $user_group_ids);?>
@@ -180,7 +151,7 @@
 			<a href="#" class="comment_status"><?php echo __('comment')?></a>
                      <?php if($user_id==$update->getUserId()):?>
                      <span class="delete_status">
-                        <a href="#" status_id="<?php echo $update->getId()?>" action="<?php echo url_for('@delete_status')?>"><?php echo __('delete')?></a>
+                        <a href="#" id="<?php echo $update->getId()?>" action="<?php echo url_for('@delete_status')?>"><?php echo __('delete')?></a>
                       </span>
                      <?php endif;?>
                </div>
@@ -294,7 +265,57 @@
 	      </div>
 		</div>
        </div>
-       <?php endif;?>		
+
+       <?php elseif($update->getPid()==6):?>
+	  <?php $user=sfGuardUserPeer::retrieveByPk($update->getUserId()); $photo=$user->getProfile()->getPhoto();  if(empty($photo)){$photo='no_pic.gif';} ?>
+          <div class="user_status">
+     <div class="user_status_photo">
+               <?php  echo link_to(image_tag('/uploads/assets/avatars/thumbnails/'.$photo, 'alt=alt=no img class=border_image'), '@user_profile?username='.$user->getUsername()) ?>
+             </div>
+          <div  class="status_text">
+               <div  class="status_photos_text">
+           <span class="update_username"><?php echo link_to($user->getUsername(), '@user_profile?username='.$user->getUsername())?></span> <?php echo $update->getFStatusName()?>
+                  </div>
+                  <div class="uploaded_photo">
+                    <a href="<?php echo url_for($update->getPOwnerId())?>">
+                      <div class="album_image">
+                        <?php echo image_tag('/uploads/assets/links/'.$update->getFriendId(),'class=image_with_border')?>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="link_title"><?php echo $update->getGroupId()?></div>
+                  <div class="link_url"><a href="<?php echo  $update->getPOwnerId()?>" target="blank"><?php echo  $update->getPOwnerId()?></a></div>
+                  <div class="link_description"><?php echo $update->getDescription()?></div>
+                  <div class="comment_actions">
+                   <div class="updates_action">
+	             (<?php echo status_date($update->getCreatedAt('U'), format_date($update->getCreatedAt(), 'p'))?>) 			            
+                    <a href="#" class="comment_status"><?php echo __('comment')?></a>
+                     <span class="delete_status">
+                        <a href="#" id="<?php echo $update->getId()?>"  action="<?php echo url_for('@delete_link')?>"><?php echo __('delete')?></a>
+                      </span>
+                 </div>
+            <div class="add_status_comment">
+              <?php include_partial('links/link_comment', array('user_id'=>$user_id, 'id'=>$update->getId())) ?>
+                          <div class="user_status_comment_new"></div>
+            </div>
+            <div class="status_comment_box">
+                         <form action="<?php echo url_for('@add_link_comment')?>" method="post">
+                           <input type="hidden" value="<?php echo $update->getId()?>"  name="item_id">
+               <input type="hidden" value="<?php echo $update->getUserId()?>"  name="item_user_id">
+                           <input type="hidden" value="<?php echo $page?>"  name="page">
+                           <textarea class="expand24 status_box defaultText cleardefault" id="comment" name="comment" style="height:24px;overflow:hidden;padding:0px;" title="<?php echo __('comment')?>"><?php echo __('comment')?></textarea>
+               <div class="submit-row">
+                 <input type="submit" value="<?php echo __('comment')?>" class="status_comment_box_form">
+               </div>
+             </form>
+           </div>
+            </div>
+          </div>
+          </div>
+	
+       <?php endif;?>	
+
+	
      <?php  endforeach; ?>
   <?php else:?>
     <div class="no_updates"><?php echo __('This place is for your friends activity. Currently you do not have friends.');?>	</div>

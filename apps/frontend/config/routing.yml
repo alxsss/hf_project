@@ -70,6 +70,15 @@ all_users:
 delete_status:
   url:   /deletestatus
   param: { module: links, action: deletestatus }
+add_link_comment:
+  url:   /addlinkcomment
+  param: { module: links, action: addlinkcomment }
+delete_link_comment:
+  url:   /deletelinkcomment
+  param: { module: links, action: deletelinkcomment }
+delete_link:
+  url:   /deletelink
+  param: { module: links, action: deletelink }
 delete_messagesfrominbox:
   url:   /deletemessagesfrominbox
   param: { module: message, action: deletemessagesfrominbox }

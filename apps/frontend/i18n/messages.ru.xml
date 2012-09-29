@@ -977,7 +977,19 @@
       <trans-unit id="245">
         <source>This is not an image file(png,jpg,gif,bmp,tiff)</source>
         <target>Это не файл изображения(png,jpg,gif,bmp,tiff)</target>  
-      </trans-unit>   
+      </trans-unit>
+      <trans-unit id="246">
+        <source>delete</source>
+        <target>удалять</target>
+      </trans-unit>
+      <trans-unit id="247">
+        <source>Parse</source>
+        <target>Парсить</target>
+      </trans-unit>
+      <trans-unit id="248">
+        <source>Say something about this link</source>
+        <target>Скажите что-нибудь об этой ссылке</target>
+      </trans-unit>     
     </body>
   </file>
 </xliff>

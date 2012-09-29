@@ -7,7 +7,7 @@ default:
     description:   hemsinif-sinif yoldaslarini ve dostlari tampaq ve onlarla elaqede olmaq ucun sosial sebeke
     keywords:  hemsinif, sinif yoldaslari, dostlar, friends
     language: az, en, ru
-  stylesheets:  [layout]
-  javascripts:  [jquery, jquery.hf.js,parse_link.js]
+  stylesheets:  [layout?ver=1]
+  javascripts:  [jquery,jquery.hf.js?ver=1]
   has_layout:  on
   layout:  layout
