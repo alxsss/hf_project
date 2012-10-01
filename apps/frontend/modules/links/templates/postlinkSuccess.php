@@ -7,6 +7,7 @@
                <div  class="status_photos_text">
              <span class="update_username"><?php echo link_to($user->getUsername(), '@user_profile?username='.$user->getUsername())?></span> <?php echo $post_link_text?>
                   </div>
+                  <?php if(!empty($filename)):?>
                   <div class="uploaded_photo">
                     <a href="<?php echo url_for($url)?>">
                       <div class="album_image">
@@ -14,6 +15,7 @@
                       </div>
                     </a>
                   </div>
+                  <?php endif;?>
                   <div class="link_title"><?php echo $title?></div>
                   <div class="link_url"><a href="<?php echo $url?>" target="blank"><?php echo $url?></a></div>
                   <div class="link_description"><?php echo $description?></div>

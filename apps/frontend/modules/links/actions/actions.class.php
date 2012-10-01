@@ -136,7 +136,7 @@ EOF;
     $this->url=$request->getParameter('url');
     $this->img_src=$request->getParameter('img_src');
     $this->filename='';
-    if (!empty($this->img_src))
+    if(!empty($this->img_src))
     {
       $thumbnail = new sfThumbnail(76, 76);
       $thumbnail->loadFile($this->img_src);
@@ -155,7 +155,7 @@ EOF;
       $link->setUserId($this->user_id);
       $link->setStatusText($this->post_link_text);
       $link->setCreatedAt(time());
-      $link->setImg($newfileName.$ext);
+      $link->setImg($this->filename);
       $link->setTitle($this->title);
       $link->setDescription($this->description);
       $link->setUrl($this->url);
@@ -179,10 +179,13 @@ EOF;
     $id=$request->getParameter('id');
     $this->forward404Unless($link = UserLinkPeer::retrieveByPk($request->getParameter('id')));
     $filename=$link->getImg();
-    $uploadDir = sfConfig::get('sf_web_dir').'/uploads/assets';
-    if(file_exists($uploadDir.'/links/'.$filename))
+    if(!empty($filename))
     {
-      unlink($uploadDir.'/links/'.$filename);    
+      $uploadDir = sfConfig::get('sf_web_dir').'/uploads/assets';
+      if(file_exists($uploadDir.'/links/'.$filename))
+      {
+        unlink($uploadDir.'/links/'.$filename);    
+      }
     }
     $link->delete();    
   }

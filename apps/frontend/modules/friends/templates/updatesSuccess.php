@@ -67,12 +67,13 @@
                <label id="atc_desc"></label>
                <br clear="all" />
             </div>
+            <br clear="all" />
+            <div class="no_thumb"><input type="checkbox" name="no_thumb" value="0" id="no_thumb"><?php echo __('No Thumbnail')?></div>
+            <br clear="all" />
             <div id="atc_total_image_nav" >
                <a href="#" id="prev"><img src="/images/prev.png"  alt="Prev" border="0" /></a><a href="#" id="next"><img src="/images/next.png" alt="Next" border="0" /></a>
             </div>
-            <div id="atc_total_images_info" >
-               Showing <span id="cur_image_num">1</span> of <span id="atc_total_images">1</span> images
-            </div>
+            <div id="atc_total_images_info" >Showing <span id="cur_image_num">1</span> of <span id="atc_total_images">1</span> images</div>
             <br clear="all" />
          </div>
       </div>
@@ -276,13 +277,16 @@
                <div  class="status_photos_text">
            <span class="update_username"><?php echo link_to($user->getUsername(), '@user_profile?username='.$user->getUsername())?></span> <?php echo $update->getFStatusName()?>
                   </div>
+                 <?php $filename=$update->getFriendId();?>
+                 <?php if(!empty($filename)):?>
                   <div class="uploaded_photo">
                     <a href="<?php echo url_for($update->getPOwnerId())?>">
                       <div class="album_image">
-                        <?php echo image_tag('/uploads/assets/links/'.$update->getFriendId(),'class=image_with_border')?>
+                        <?php echo image_tag('/uploads/assets/links/'.$filename,'class=image_with_border')?>
                       </div>
                     </a>
                   </div>
+                  <?php endif;?>
                   <div class="link_title"><?php echo $update->getGroupId()?></div>
                   <div class="link_url"><a href="<?php echo  $update->getPOwnerId()?>" target="blank"><?php echo  $update->getPOwnerId()?></a></div>
                   <div class="link_description"><?php echo $update->getDescription()?></div>
