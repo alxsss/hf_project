@@ -294,9 +294,11 @@
                    <div class="updates_action">
 	             (<?php echo status_date($update->getCreatedAt('U'), format_date($update->getCreatedAt(), 'p'))?>) 			            
                     <a href="#" class="comment_status"><?php echo __('comment')?></a>
+                     <?php if($user_id==$update->getUserId()):?>
                      <span class="delete_status">
                         <a href="#" id="<?php echo $update->getId()?>"  action="<?php echo url_for('@delete_link')?>"><?php echo __('delete')?></a>
                       </span>
+                     <?php endif;?>
                  </div>
             <div class="add_status_comment">
               <?php include_partial('links/link_comment', array('user_id'=>$user_id, 'id'=>$update->getId())) ?>

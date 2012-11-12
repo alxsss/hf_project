@@ -96,7 +96,12 @@ class friendsActions extends sfActions
     {
 	  $this->forward404Unless($request->isMethod('post'));
 	  $this->form = new FriendForm();	  
-	  $friend_id=$this->getRequestParameter('friend[friend_id]');	
+	  $friend_id=$this->getRequestParameter('friend[friend_id]');
+          //check if friend_id is the same as user
+          if($this->user_id== $friend_id)
+          {
+            $this->error='You cannot sent a friend request to yourself';
+          }	
 	  //extract name if exists
 	  $this->name=  $this->subscriber->getProfile()->getName(); 
       $this->name= trim($this->name);
@@ -104,7 +109,8 @@ class friendsActions extends sfActions
       if(empty($this->name))
       {
 	    $this->name=$username;
-	  } 
+	  }
+           
       //check if this user has already been sent friend request     
 	  $friend =  $this->subscriber->isFriendNotApproved($friend_id, true);
 	  $this->recepient = sfGuardUserPeer::retrieveByPk($friend_id);
@@ -116,7 +122,11 @@ class friendsActions extends sfActions
 	      if($approved){$this->error='You already have this user as a friend.';}
 	      else {$this->error='You have already sent friend request to this user or this user has sent you a friend request.';}
 	    }
-	   }
+	  }
+          else if($this->user_id== $friend_id) //check if friend_id is the same as user
+          {
+            $this->error='You cannot send a friend request to yourself';
+          }
 	  else
 	  { 	    
 	    if($this->recepient)
@@ -127,16 +137,16 @@ class friendsActions extends sfActions
 		    $recepient_username=$this->recepient->getUsername();
 		    $recepient_name=$this->recepient->getProfile()->getName();
 		    $recepient_name= trim($recepient_name);
-	        if(empty($recepient_name))
-            {
+	            if(empty($recepient_name))
+                    {
 		      $recepient_name=$recepient_username;
-            }
+                    }
 		    $this->sendFriendRequest(trim($email), $recepient_name,  $this->name, $p_message);
 		  }
 	    }
 	    $this->processForm($request, $this->form);
 	  }    
-      $this->setTemplate('new');
+         $this->setTemplate('new');
 	}
 	else	
 	{

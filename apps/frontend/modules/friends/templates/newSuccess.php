@@ -7,7 +7,7 @@
     <?php 
       if(!empty($error))
       {
-        echo __($error);
+        echo '<span class="invitefrienderror">'.__($error).'</span>';
         echo '<br>';
         echo __('Back to')?> <?php  echo link_to($recepient->getUsername().__('\'s profile'), 'user/'.$recepient->getUsername());
       }
