@@ -989,7 +989,11 @@
       <trans-unit id="248">
         <source>Say something about this link</source>
         <target>Bu link haqqında nəsə de</target>
-      </trans-unit>       
+      </trans-unit> 
+     <trans-unit id="249">
+        <source>You cannot send a friend request to yourself</source>
+        <target>Siz özünüzə dost təklifi göndərə bilməzsiniz</target>
+      </trans-unit>      
     </body>
   </file>
 </xliff>
