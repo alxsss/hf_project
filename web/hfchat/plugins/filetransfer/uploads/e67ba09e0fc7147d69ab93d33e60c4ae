@@ -1,0 +1,60 @@
+
+i     insert text mode
+:q!     <ENTER>  to trash all changes.
+:w     <ENTER>  to save.
+:wq     <ENTER>  to save the changes and exit.i 
+
+Copy & Select Text aka Yank
+v     Visual - move with <Up>,<Down>, <Left>, <Right> (the arrow keys) or with <Home>, <End>, <Page Up / Down> to select the text you wish to handle.
+y     Copy the selected text.
+d     Cut the selected text.
+ggVG     Select all - I know this one is a bit harsh to remember, one alternative would be just to copy the file ;-) 
+	   
+Paste aka Put:
+p     Puts the deleted text AFTER the cursor  (if a line was deleted it will go on the line below the cursor).
+
+
+Delete aka Cut:
+*NOTE: You can paste anything that is deleted... in vim "delete" and "cut" is the same.
+dw     To delete from the cursor to the end of a word type.
+d$     To delete from the cursor to the end of a line type.
+dd     To delete a whole line type.
+
+Change & Replace
+r     To replace the character under the cursor, type   r   and then the  character which will replace the original.
+cw     To change from the cursor to the end of the word
+c$     To change to the end of a line.
+
+Undo:
+u     To undo previous actions. (lowercase u)
+U     To undo all the changes on a line. (capital U)
+CTRL-R     To undo the undo's aka "Redo"
+
+Search & Search and Replace aka "Find and Replace"
+
+/someword [ENTER]    This would search for "someword".
+                     Then to find the next, type n...and previous would be <SHIFT> + n.
+:%s/old/new/gc       Search & Replace with confirmation.
+
+Execute External Commands from within Vim
+:!<command>
+:!ls       This would execute "ls" from Vim.
+
+Vim Syntax Highlighting
+To make your Vim a bit more prettier and use full enable "syntax highlighting"...
+To do so
+1. Find & Edit your vimrc file. in Ubuntu it would be: /etc/vim/vimrc
+2. Remove the quotation marks from the line that says: syntax on
+3. At the end of the file, insert a line like below: colorscheme evening
+
+Search
+Search STRING forward :/STRING
+Search STRING backward :?STRING
+Repeat search: n
+Repeat search in opposite direction : N
+
+Replace:
+First occurence on current line: :s/OLD/NEW
+Globally on current line:        :s/OLD/NEW/g
+Between two lines #,#:           :#,#s/OLD/NEW/g
+Every occurence in file:         :%s/OLD/NEW/g

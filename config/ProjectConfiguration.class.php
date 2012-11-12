@@ -34,7 +34,8 @@ class ProjectConfiguration extends sfProjectConfiguration
   public function setup()
   {
     // for compatibility / remove and enable only the plugins you want
-	$this->setWebDir($this->getRootDir().'/../www/hemsinif/web');
+	//$this->setWebDir($this->getRootDir().'/../www/hemsinif/web');
+	$this->setWebDir($this->getRootDir().'/web');
     $this->enableAllPluginsExcept(array('sfCompat10Plugin'));
     ini_set('include_path', '/var/hemsinif/lib/vendor:/usr/share/pear/'); 
    }
