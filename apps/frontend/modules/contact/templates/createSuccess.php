@@ -1,7 +1,7 @@
 <?php use_helper('I18N') ?>
 <div class="edit_left_column">
   <?php $advertise = $form->getObject() ?>
-  <?php echo __('Please fill out this contact form or email us at info at hemsinif dot az')?>
+  <?php echo __('Please fill out this contact form or email us at info at hemsinif dot com')?>
   <br>
   <br>
   <form action="<?php echo url_for('contact/create') ?>" method="post" <?php $form->isMultipart() and print 'enctype="multipart/form-data" ' ?>>

@@ -15,8 +15,8 @@ define('FORCE_MAGIC_QUOTES','0');
 
 /* DATABASE */
 /* DATABASE */
-include_once(dirname(__FILE__)."/../../../../hemsinif/config/db_hfchat.php");
-//include_once(dirname(__FILE__)."/../../config/db_hfchat.php");
+//include_once(dirname(__FILE__)."/../../../../hemsinif/config/db_hfchat.php");
+include_once(dirname(__FILE__)."/../../config/db_hfchat.php");
 
 define('DB_SERVER',                                     'localhost'                                                             );
 define('DB_PORT',                                       '3306'                                                                  );
