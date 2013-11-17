@@ -299,7 +299,7 @@
 			<a href="#" class="comment_status"><?php echo __('comment')?></a>
 	     <?php if($user_id==$subscriber->getId()):?> 
           <span class="delete_status">
-		    <a href="#" status_id="<?php echo $update->getId()?>" action="<?php echo url_for('@delete_status')?>"><?php echo __('delete')?></a>	    
+		    <a href="#" id="<?php echo $update->getId()?>" action="<?php echo url_for('@delete_status')?>"><?php echo __('delete')?></a>	    
 	      </span>  
         <?php endif;?>			
                </div>		
