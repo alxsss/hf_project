@@ -8,6 +8,6 @@ default:
     keywords:  hemsinif, sinif yoldaslari, dostlar, friends
     language: az, en, ru
   stylesheets:  [layout?ver=5]
-  javascripts:  [jquery,jquery.hf.js?ver=4]
+  javascripts:  [jquery,jquery.hf.js?ver=5]
   has_layout:  on
   layout:  layout

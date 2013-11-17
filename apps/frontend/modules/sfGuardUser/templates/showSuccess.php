@@ -273,7 +273,7 @@
     <div id="status_box">
 	  <form id="user_status_form" action="<?php echo url_for('@user_status')?>" method="post">
 	    <input type="text" id="user_status_box" name="user_status_box" class="defaultText cleardefault" title="<?php echo __('What do you think?')?>" size="50" maxlength="100" value="<?php echo __('What do you think?')?>">
-	    <span class="submit-row">
+	    <span class="submit_status_link_button">
 	      <input type="submit" value="<?php echo __('Submit')?>" id="user_status_button">
 	    </span>
 	  </form>
