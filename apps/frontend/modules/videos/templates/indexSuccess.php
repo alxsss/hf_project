@@ -14,7 +14,12 @@
   <?php
         $videoId = $ytvideo->getYtvideoId();
         $yt = new Zend_Gdata_YouTube();
-        $entry = $yt->getVideoEntry($videoId);
+        try{
+            $entry = $yt->getVideoEntry($videoId);
+         }
+         catch (Zend_Http_Client_Exception $e){
+            echo 'No videos could be retrieved. Please try again later.';
+         }
         if(!$entry)continue;
         if(empty($entry->mediaGroup->thumbnail[1]))
         {
