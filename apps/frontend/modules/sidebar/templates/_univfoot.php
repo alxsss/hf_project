@@ -8,6 +8,7 @@
    <li><?php echo link_to(__('groups'), '@sf_social_group_list') ?></li>
    <li><?php echo link_to(__('events'), '@sf_social_event_list') ?></li>
    <li><?php echo link_to(__('help'), '@help') ?></li>
+    <li style="display:none"><?php echo link_to(__('Gift Guru'), 'http://www.gift-guru.com/') ?></li>
   </ul>
 </div>
 <div id="copyright">

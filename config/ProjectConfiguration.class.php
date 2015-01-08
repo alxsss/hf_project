@@ -37,6 +37,6 @@ class ProjectConfiguration extends sfProjectConfiguration
 	//$this->setWebDir($this->getRootDir().'/../www/hemsinif/web');
 	$this->setWebDir($this->getRootDir().'/web');
     $this->enableAllPluginsExcept(array('sfCompat10Plugin'));
-    ini_set('include_path', '/var/hemsinif/lib/vendor:/usr/share/pear/'); 
+    ini_set('include_path', '/home/www/hemsinif/lib/vendor:/usr/share/pear/'); 
    }
 }

@@ -22,6 +22,24 @@ class photosActions extends sfActions
   public function executeIndex()
   { 
     $this->page=$this->getRequestParameter('page', 1); 
+       $this->popular_photos = PhotoPeer::getNewPhotosPager($this->page);
+   /* 
+     $memcache = new Memcache();
+     $memcache->connect('127.0.0.1', 11211);// or die ("Could not connect");
+      //set the key then check the cache
+     $key = md5("photo_index".$this->page);
+     $get_result = $memcache->get($key);
+     if($get_result)
+     {
+       $this->popular_photos =  $get_result;
+     }
+     else
+     {
+       // Run the query and get the data from the database then cache it
+       $this->popular_photos = PhotoPeer::getNewPhotosPager($this->page);
+       $memcache->set($key, $this->popular_photos, TRUE, 200000); // Store the result of the query for 200000 seconds
+     }
+   */
     $this->processSort();
     $this->popular_photos = PhotoPeer::getNewPhotosPager($this->page);
     $c = new Criteria();
