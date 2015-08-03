@@ -137,7 +137,7 @@ public function preExecute()
         //$this->musics = $this->subscriber->getMusicsJoinPlaylist();
         $this->playlists = $this->subscriber->getPlaylists($c);
         $this->fav_playlists = $this->subscriber->getPlaylistFavsJoinPlaylist($c);
-      
+     /* 
         //videos
         $cvideolist=new Criteria();
 	$cvideolist->setLimit(3);
@@ -145,6 +145,7 @@ public function preExecute()
 
         $this->videolists = $this->subscriber->getVideolists($cvideolist);
         $this->num_videolists = $this->subscriber->countVideolists();
+      */
         //$this->fav_videos = $this->subscriber->getYtvideoFavs($c);
        // $this->videos = $this->subscriber->getVideos($c);     
   } 

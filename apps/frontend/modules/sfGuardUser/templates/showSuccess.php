@@ -232,42 +232,8 @@
      <div class="see_all_profile"> <?php echo link_to(__('see all'), '@all_albums?username='.$username)?>  </div> 
     <?php endif;?> 
   </div> 
- <?php endif;?> 
-  <?php if($num_videolists>0):?>
-    <div class="profile_section">
-      <span class="recent_activity"><?php echo __('Videolists')?>(<?php echo $num_videolists?>)</span>
-      <div class="friends_to_be_invited_line_profile">
-        <?php foreach ($videolists as $j=>$videolist): ?>
-          <?php $lastVideo=$videolist->getLastVideolistYtvideo();?>
-          <?php  $thumbnailUrl ='/uploads/assets/photos/thumbnails/no_pic.gif';?>
-          <?php if(!empty($lastVideo)): ?>
-            <?php $videoId = $lastVideo->getYtvideoId();
-             $yt = new Zend_Gdata_YouTube();
-             $entry = $yt->getVideoEntry($videoId);
-             if(empty($entry->mediaGroup->thumbnail[0]))
-             {
-               $thumbnailUrl ='/uploads/assets/photos/thumbnails/no_pic.gif';
-             }
-             else
-             {
-              $thumbnailUrl = $entry->mediaGroup->thumbnail[1]->url;
-             }
-            ?>
-          <?php endif; //if !empty lastVideo?>
-	  <div class="user_video">
-	    <div class="user_album_title"><?php   echo $videolist->getName(); ?></div>
-	    <a href="<?php echo url_for('editvideolist/show?videolist_id='.$videolist->getId())?>">	  
-	      <?php echo image_tag($thumbnailUrl, 'alt=no img class=image_with_border')?>		
-            </a>
-	    <div class="user_album_countPhotos"><?php echo __('video')?> <?php echo $videolist->countVideolistYtvideos(); ?></div>
-	  </div>	
-        <?php endforeach; ?>
-      </div>
-      <?php if($num_videolists>3):?>
-       <div class="see_all_profile"> <?php echo link_to(__('see all'), '@videolist')?>  </div> 
-      <?php endif;?> 
-    </div> 
- <?php endif;?> 
+ <?php endif;?>
+ 
 
    <?php if($user_id==$subscriber->getId()):?>
     <div id="status_box">
