@@ -1,3 +1,4 @@
+config/db.inc
 cache/
 log/
 lib/model/om/
