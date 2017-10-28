@@ -1,4 +1,5 @@
 config/db.inc
+config/db_hfchat.php
 cache/
 log/
 lib/model/om/
